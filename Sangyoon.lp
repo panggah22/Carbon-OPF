@@ -1,24 +1,14 @@
 \ Model Case33-Linear
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  P_Gen[0,0] + P_Gen[0,1] + P_Gen[0,2] + P_Gen[0,3] + P_Gen[0,4]
-   + P_Gen[0,5] + P_Gen[0,6] + P_Gen[0,7] + P_Gen[0,8] + P_Gen[0,9]
-   + P_Gen[0,10] + P_Gen[0,11] + P_Gen[0,12] + P_Gen[0,13] + P_Gen[0,14]
-   + P_Gen[0,15] + P_Gen[0,16] + P_Gen[0,17] + P_Gen[0,18] + P_Gen[0,19]
-   + P_Gen[0,20] + P_Gen[0,21] + P_Gen[0,22] + P_Gen[0,23] + P_Gen[0,24]
-   + P_Gen[0,25] + P_Gen[0,26] + P_Gen[0,27] + P_Gen[0,28] + P_Gen[0,29]
-   + P_Gen[0,30] + P_Gen[0,31] + P_Gen[0,32] + P_Gen[0,33] + P_Gen[0,34]
-   + P_Gen[0,35] + P_Gen[0,36] + P_Gen[0,37] + P_Gen[0,38] + P_Gen[0,39]
-   + P_Gen[0,40] + P_Gen[0,41] + P_Gen[0,42] + P_Gen[0,43] + P_Gen[0,44]
-   + P_Gen[0,45] + P_Gen[0,46] + P_Gen[0,47] + P_Gen[0,48] + 0 Ess-emi[6,0]
-   + 0 Ess-emi[15,0] + 0 Ess-emi[30,0] + 0 Ess-emi[6,1] + 0 Ess-emi[15,1]
-   + 0 Ess-emi[30,1] + 0 Ess-emi[6,2] + 0 Ess-emi[15,2] + 0 Ess-emi[30,2]
-   + 0 Ess-emi[6,3] + 0 Ess-emi[15,3] + 0 Ess-emi[30,3] + 0 Ess-emi[6,4]
-   + 0 Ess-emi[15,4] + 0 Ess-emi[30,4] + 0 Ess-emi[6,5] + 0 Ess-emi[15,5]
-   + 0 Ess-emi[30,5] + 0 Ess-emi[6,6] + 0 Ess-emi[15,6] + 0 Ess-emi[30,6]
-   + 0 Ess-emi[6,7] + 0 Ess-emi[15,7] + 0 Ess-emi[30,7] + 0 Ess-emi[6,8]
-   + 0 Ess-emi[15,8] + 0 Ess-emi[30,8] + 0 Ess-emi[6,9] + 0 Ess-emi[15,9]
-   + 0 Ess-emi[30,9] + 0 Ess-emi[6,10] + 0 Ess-emi[15,10]
+  0 Ess-emi[6,0] + 0 Ess-emi[15,0] + 0 Ess-emi[30,0] + 0 Ess-emi[6,1]
+   + 0 Ess-emi[15,1] + 0 Ess-emi[30,1] + 0 Ess-emi[6,2] + 0 Ess-emi[15,2]
+   + 0 Ess-emi[30,2] + 0 Ess-emi[6,3] + 0 Ess-emi[15,3] + 0 Ess-emi[30,3]
+   + 0 Ess-emi[6,4] + 0 Ess-emi[15,4] + 0 Ess-emi[30,4] + 0 Ess-emi[6,5]
+   + 0 Ess-emi[15,5] + 0 Ess-emi[30,5] + 0 Ess-emi[6,6] + 0 Ess-emi[15,6]
+   + 0 Ess-emi[30,6] + 0 Ess-emi[6,7] + 0 Ess-emi[15,7] + 0 Ess-emi[30,7]
+   + 0 Ess-emi[6,8] + 0 Ess-emi[15,8] + 0 Ess-emi[30,8] + 0 Ess-emi[6,9]
+   + 0 Ess-emi[15,9] + 0 Ess-emi[30,9] + 0 Ess-emi[6,10] + 0 Ess-emi[15,10]
    + 0 Ess-emi[30,10] + 0 Ess-emi[6,11] + 0 Ess-emi[15,11]
    + 0 Ess-emi[30,11] + 0 Ess-emi[6,12] + 0 Ess-emi[15,12]
    + 0 Ess-emi[30,12] + 0 Ess-emi[6,13] + 0 Ess-emi[15,13]
@@ -57,7 +47,28 @@ Minimize
    + 0 Ess-emi[30,45] + 0 Ess-emi[6,46] + 0 Ess-emi[15,46]
    + 0 Ess-emi[30,46] + 0 Ess-emi[6,47] + 0 Ess-emi[15,47]
    + 0 Ess-emi[30,47] + 0 Ess-emi[6,48] + 0 Ess-emi[15,48]
-   + 0 Ess-emi[30,48]
+   + 0 Ess-emi[30,48] + 0 Ft[0] + 0 Ft[1] + 0 Ft[2] + 0 Ft[3] + 0 Ft[4]
+   + 0 Ft[5] + 0 Ft[6] + 0 Ft[7] + 0 Ft[8] + 0 Ft[9] + 0 Ft[10] + 0 Ft[11]
+   + 0 Ft[12] + 0 Ft[13] + 0 Ft[14] + 0 Ft[15] + 0 Ft[16] + 0 Ft[17]
+   + 0 Ft[18] + 0 Ft[19] + 0 Ft[20] + 0 Ft[21] + 0 Ft[22] + 0 Ft[23]
+   + 0 Ft[24] + 0 Ft[25] + 0 Ft[26] + 0 Ft[27] + 0 Ft[28] + 0 Ft[29]
+   + 0 Ft[30] + 0 Ft[31] + 0 Ft[32] + 0 Ft[33] + 0 Ft[34] + 0 Ft[35]
+   + 0 Ft[36] + 0 Ft[37] + 0 Ft[38] + 0 Ft[39] + 0 Ft[40] + 0 Ft[41]
+   + 0 Ft[42] + 0 Ft[43] + 0 Ft[44] + 0 Ft[45] + 0 Ft[46] + 0 Ft[47]
+   + 0 Ft[48] + 0 Ft[0] + 0 Ft[1] + 0 Ft[2] + 0 Ft[3] + 0 Ft[4] + 0 Ft[5]
+   + 0 Ft[6] + 0 Ft[7] + 0 Ft[8] + 0 Ft[9] + 0 Ft[10] + 0 Ft[11] + 0 Ft[12]
+   + 0 Ft[13] + 0 Ft[14] + 0 Ft[15] + 0 Ft[16] + 0 Ft[17] + 0 Ft[18]
+   + 0 Ft[19] + 0 Ft[20] + 0 Ft[21] + 0 Ft[22] + 0 Ft[23] + 0 Ft[24]
+   + 0 Ft[25] + 0 Ft[26] + 0 Ft[27] + 0 Ft[28] + 0 Ft[29] + 0 Ft[30]
+   + 0 Ft[31] + 0 Ft[32] + 0 Ft[33] + 0 Ft[34] + 0 Ft[35] + 0 Ft[36]
+   + 0 Ft[37] + 0 Ft[38] + 0 Ft[39] + 0 Ft[40] + 0 Ft[41] + 0 Ft[42]
+   + 0 Ft[43] + 0 Ft[44] + 0 Ft[45] + 0 Ft[46] + 0 Ft[47] + Ft[0] + Ft[1]
+   + Ft[2] + Ft[3] + Ft[4] + Ft[5] + Ft[6] + Ft[7] + Ft[8] + Ft[9] + Ft[10]
+   + Ft[11] + Ft[12] + Ft[13] + Ft[14] + Ft[15] + Ft[16] + Ft[17] + Ft[18]
+   + Ft[19] + Ft[20] + Ft[21] + Ft[22] + Ft[23] + Ft[24] + Ft[25] + Ft[26]
+   + Ft[27] + Ft[28] + Ft[29] + Ft[30] + Ft[31] + Ft[32] + Ft[33] + Ft[34]
+   + Ft[35] + Ft[36] + Ft[37] + Ft[38] + Ft[39] + Ft[40] + Ft[41] + Ft[42]
+   + Ft[43] + Ft[44] + Ft[45] + Ft[46] + Ft[47] + Ft[48]
 Subject To
  Pij-Flow[0,1,0]: - 1379.797487170677 Theta[0,0]
    + 1379.797487170677 Theta[1,0] - 703.3674826141192 V_bus[0,0]
@@ -52915,6 +52926,8 @@ Subject To
  peaklimit[46]: P_Gen[0,46] <= 2.5
  peaklimit[47]: P_Gen[0,47] <= 2.5
  peaklimit[48]: P_Gen[0,48] <= 2.5
+ R41019: - 0.5 P_Gen[0,48] - rate_gen[0,48] - rate_gen[17,48] + Ft[48] = 0
+ R41020: - 0.5 P_Gen[0,48] - rate_gen[0,48] - rate_gen[17,48] + Ft[48] = 0
 Bounds
  -3.141592653589793 <= Theta[0,0] <= 3.141592653589793
  -3.141592653589793 <= Theta[1,0] <= 3.141592653589793
