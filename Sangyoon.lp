@@ -1,7 +1,8 @@
 \ Model Case33-Linear
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  0 Ess-emi[6,0] + 0 Ess-emi[15,0] + 0 Ess-emi[30,0] + 0 Ess-emi[6,1]
+  0 Aux_soc_ess-t[6,0] + 0 Aux_soc_ess-t[15,0] + 0 Aux_soc_ess-t[30,0]
+   + 0 Ess-emi[6,0] + 0 Ess-emi[15,0] + 0 Ess-emi[30,0] + 0 Ess-emi[6,1]
    + 0 Ess-emi[15,1] + 0 Ess-emi[30,1] + 0 Ess-emi[6,2] + 0 Ess-emi[15,2]
    + 0 Ess-emi[30,2] + 0 Ess-emi[6,3] + 0 Ess-emi[15,3] + 0 Ess-emi[30,3]
    + 0 Ess-emi[6,4] + 0 Ess-emi[15,4] + 0 Ess-emi[30,4] + 0 Ess-emi[6,5]
@@ -47,28 +48,13 @@ Minimize
    + 0 Ess-emi[30,45] + 0 Ess-emi[6,46] + 0 Ess-emi[15,46]
    + 0 Ess-emi[30,46] + 0 Ess-emi[6,47] + 0 Ess-emi[15,47]
    + 0 Ess-emi[30,47] + 0 Ess-emi[6,48] + 0 Ess-emi[15,48]
-   + 0 Ess-emi[30,48] + 0 Ft[0] + 0 Ft[1] + 0 Ft[2] + 0 Ft[3] + 0 Ft[4]
-   + 0 Ft[5] + 0 Ft[6] + 0 Ft[7] + 0 Ft[8] + 0 Ft[9] + 0 Ft[10] + 0 Ft[11]
-   + 0 Ft[12] + 0 Ft[13] + 0 Ft[14] + 0 Ft[15] + 0 Ft[16] + 0 Ft[17]
-   + 0 Ft[18] + 0 Ft[19] + 0 Ft[20] + 0 Ft[21] + 0 Ft[22] + 0 Ft[23]
-   + 0 Ft[24] + 0 Ft[25] + 0 Ft[26] + 0 Ft[27] + 0 Ft[28] + 0 Ft[29]
-   + 0 Ft[30] + 0 Ft[31] + 0 Ft[32] + 0 Ft[33] + 0 Ft[34] + 0 Ft[35]
-   + 0 Ft[36] + 0 Ft[37] + 0 Ft[38] + 0 Ft[39] + 0 Ft[40] + 0 Ft[41]
-   + 0 Ft[42] + 0 Ft[43] + 0 Ft[44] + 0 Ft[45] + 0 Ft[46] + 0 Ft[47]
-   + 0 Ft[48] + 0 Ft[0] + 0 Ft[1] + 0 Ft[2] + 0 Ft[3] + 0 Ft[4] + 0 Ft[5]
-   + 0 Ft[6] + 0 Ft[7] + 0 Ft[8] + 0 Ft[9] + 0 Ft[10] + 0 Ft[11] + 0 Ft[12]
-   + 0 Ft[13] + 0 Ft[14] + 0 Ft[15] + 0 Ft[16] + 0 Ft[17] + 0 Ft[18]
-   + 0 Ft[19] + 0 Ft[20] + 0 Ft[21] + 0 Ft[22] + 0 Ft[23] + 0 Ft[24]
-   + 0 Ft[25] + 0 Ft[26] + 0 Ft[27] + 0 Ft[28] + 0 Ft[29] + 0 Ft[30]
-   + 0 Ft[31] + 0 Ft[32] + 0 Ft[33] + 0 Ft[34] + 0 Ft[35] + 0 Ft[36]
-   + 0 Ft[37] + 0 Ft[38] + 0 Ft[39] + 0 Ft[40] + 0 Ft[41] + 0 Ft[42]
-   + 0 Ft[43] + 0 Ft[44] + 0 Ft[45] + 0 Ft[46] + 0 Ft[47] + Ft[0] + Ft[1]
-   + Ft[2] + Ft[3] + Ft[4] + Ft[5] + Ft[6] + Ft[7] + Ft[8] + Ft[9] + Ft[10]
-   + Ft[11] + Ft[12] + Ft[13] + Ft[14] + Ft[15] + Ft[16] + Ft[17] + Ft[18]
-   + Ft[19] + Ft[20] + Ft[21] + Ft[22] + Ft[23] + Ft[24] + Ft[25] + Ft[26]
-   + Ft[27] + Ft[28] + Ft[29] + Ft[30] + Ft[31] + Ft[32] + Ft[33] + Ft[34]
-   + Ft[35] + Ft[36] + Ft[37] + Ft[38] + Ft[39] + Ft[40] + Ft[41] + Ft[42]
-   + Ft[43] + Ft[44] + Ft[45] + Ft[46] + Ft[47] + Ft[48]
+   + 0 Ess-emi[30,48] + Ft[0] + Ft[1] + Ft[2] + Ft[3] + Ft[4] + Ft[5]
+   + Ft[6] + Ft[7] + Ft[8] + Ft[9] + Ft[10] + Ft[11] + Ft[12] + Ft[13]
+   + Ft[14] + Ft[15] + Ft[16] + Ft[17] + Ft[18] + Ft[19] + Ft[20] + Ft[21]
+   + Ft[22] + Ft[23] + Ft[24] + Ft[25] + Ft[26] + Ft[27] + Ft[28] + Ft[29]
+   + Ft[30] + Ft[31] + Ft[32] + Ft[33] + Ft[34] + Ft[35] + Ft[36] + Ft[37]
+   + Ft[38] + Ft[39] + Ft[40] + Ft[41] + Ft[42] + Ft[43] + Ft[44] + Ft[45]
+   + Ft[46] + Ft[47] + Ft[48]
 Subject To
  Pij-Flow[0,1,0]: - 1379.797487170677 Theta[0,0]
    + 1379.797487170677 Theta[1,0] - 703.3674826141192 V_bus[0,0]
@@ -52877,6 +52863,1752 @@ Subject To
  Int-balance[31,48]: aux_i_ji[30,31,48] + aux_i_ji[32,31,48]
    - aux_j_ji[30,31,48] - aux_j_ji[32,31,48] = 0
  Int-balance[32,48]: aux_i_ji[31,32,48] - aux_j_ji[31,32,48] = 0
+ Lin-socet-1[6,1]: - 0.1 ess_int[6,1] + Aux_soc_ess-t[6,1] >= 0
+ Lin-socet-1[15,1]: - 0.1 ess_int[15,1] + Aux_soc_ess-t[15,1] >= 0
+ Lin-socet-1[30,1]: - 0.1 ess_int[30,1] + Aux_soc_ess-t[30,1] >= 0
+ Lin-socet-1[6,2]: - 0.1 ess_int[6,2] + Aux_soc_ess-t[6,2] >= 0
+ Lin-socet-1[15,2]: - 0.1 ess_int[15,2] + Aux_soc_ess-t[15,2] >= 0
+ Lin-socet-1[30,2]: - 0.1 ess_int[30,2] + Aux_soc_ess-t[30,2] >= 0
+ Lin-socet-1[6,3]: - 0.1 ess_int[6,3] + Aux_soc_ess-t[6,3] >= 0
+ Lin-socet-1[15,3]: - 0.1 ess_int[15,3] + Aux_soc_ess-t[15,3] >= 0
+ Lin-socet-1[30,3]: - 0.1 ess_int[30,3] + Aux_soc_ess-t[30,3] >= 0
+ Lin-socet-1[6,4]: - 0.1 ess_int[6,4] + Aux_soc_ess-t[6,4] >= 0
+ Lin-socet-1[15,4]: - 0.1 ess_int[15,4] + Aux_soc_ess-t[15,4] >= 0
+ Lin-socet-1[30,4]: - 0.1 ess_int[30,4] + Aux_soc_ess-t[30,4] >= 0
+ Lin-socet-1[6,5]: - 0.1 ess_int[6,5] + Aux_soc_ess-t[6,5] >= 0
+ Lin-socet-1[15,5]: - 0.1 ess_int[15,5] + Aux_soc_ess-t[15,5] >= 0
+ Lin-socet-1[30,5]: - 0.1 ess_int[30,5] + Aux_soc_ess-t[30,5] >= 0
+ Lin-socet-1[6,6]: - 0.1 ess_int[6,6] + Aux_soc_ess-t[6,6] >= 0
+ Lin-socet-1[15,6]: - 0.1 ess_int[15,6] + Aux_soc_ess-t[15,6] >= 0
+ Lin-socet-1[30,6]: - 0.1 ess_int[30,6] + Aux_soc_ess-t[30,6] >= 0
+ Lin-socet-1[6,7]: - 0.1 ess_int[6,7] + Aux_soc_ess-t[6,7] >= 0
+ Lin-socet-1[15,7]: - 0.1 ess_int[15,7] + Aux_soc_ess-t[15,7] >= 0
+ Lin-socet-1[30,7]: - 0.1 ess_int[30,7] + Aux_soc_ess-t[30,7] >= 0
+ Lin-socet-1[6,8]: - 0.1 ess_int[6,8] + Aux_soc_ess-t[6,8] >= 0
+ Lin-socet-1[15,8]: - 0.1 ess_int[15,8] + Aux_soc_ess-t[15,8] >= 0
+ Lin-socet-1[30,8]: - 0.1 ess_int[30,8] + Aux_soc_ess-t[30,8] >= 0
+ Lin-socet-1[6,9]: - 0.1 ess_int[6,9] + Aux_soc_ess-t[6,9] >= 0
+ Lin-socet-1[15,9]: - 0.1 ess_int[15,9] + Aux_soc_ess-t[15,9] >= 0
+ Lin-socet-1[30,9]: - 0.1 ess_int[30,9] + Aux_soc_ess-t[30,9] >= 0
+ Lin-socet-1[6,10]: - 0.1 ess_int[6,10] + Aux_soc_ess-t[6,10] >= 0
+ Lin-socet-1[15,10]: - 0.1 ess_int[15,10] + Aux_soc_ess-t[15,10] >= 0
+ Lin-socet-1[30,10]: - 0.1 ess_int[30,10] + Aux_soc_ess-t[30,10] >= 0
+ Lin-socet-1[6,11]: - 0.1 ess_int[6,11] + Aux_soc_ess-t[6,11] >= 0
+ Lin-socet-1[15,11]: - 0.1 ess_int[15,11] + Aux_soc_ess-t[15,11] >= 0
+ Lin-socet-1[30,11]: - 0.1 ess_int[30,11] + Aux_soc_ess-t[30,11] >= 0
+ Lin-socet-1[6,12]: - 0.1 ess_int[6,12] + Aux_soc_ess-t[6,12] >= 0
+ Lin-socet-1[15,12]: - 0.1 ess_int[15,12] + Aux_soc_ess-t[15,12] >= 0
+ Lin-socet-1[30,12]: - 0.1 ess_int[30,12] + Aux_soc_ess-t[30,12] >= 0
+ Lin-socet-1[6,13]: - 0.1 ess_int[6,13] + Aux_soc_ess-t[6,13] >= 0
+ Lin-socet-1[15,13]: - 0.1 ess_int[15,13] + Aux_soc_ess-t[15,13] >= 0
+ Lin-socet-1[30,13]: - 0.1 ess_int[30,13] + Aux_soc_ess-t[30,13] >= 0
+ Lin-socet-1[6,14]: - 0.1 ess_int[6,14] + Aux_soc_ess-t[6,14] >= 0
+ Lin-socet-1[15,14]: - 0.1 ess_int[15,14] + Aux_soc_ess-t[15,14] >= 0
+ Lin-socet-1[30,14]: - 0.1 ess_int[30,14] + Aux_soc_ess-t[30,14] >= 0
+ Lin-socet-1[6,15]: - 0.1 ess_int[6,15] + Aux_soc_ess-t[6,15] >= 0
+ Lin-socet-1[15,15]: - 0.1 ess_int[15,15] + Aux_soc_ess-t[15,15] >= 0
+ Lin-socet-1[30,15]: - 0.1 ess_int[30,15] + Aux_soc_ess-t[30,15] >= 0
+ Lin-socet-1[6,16]: - 0.1 ess_int[6,16] + Aux_soc_ess-t[6,16] >= 0
+ Lin-socet-1[15,16]: - 0.1 ess_int[15,16] + Aux_soc_ess-t[15,16] >= 0
+ Lin-socet-1[30,16]: - 0.1 ess_int[30,16] + Aux_soc_ess-t[30,16] >= 0
+ Lin-socet-1[6,17]: - 0.1 ess_int[6,17] + Aux_soc_ess-t[6,17] >= 0
+ Lin-socet-1[15,17]: - 0.1 ess_int[15,17] + Aux_soc_ess-t[15,17] >= 0
+ Lin-socet-1[30,17]: - 0.1 ess_int[30,17] + Aux_soc_ess-t[30,17] >= 0
+ Lin-socet-1[6,18]: - 0.1 ess_int[6,18] + Aux_soc_ess-t[6,18] >= 0
+ Lin-socet-1[15,18]: - 0.1 ess_int[15,18] + Aux_soc_ess-t[15,18] >= 0
+ Lin-socet-1[30,18]: - 0.1 ess_int[30,18] + Aux_soc_ess-t[30,18] >= 0
+ Lin-socet-1[6,19]: - 0.1 ess_int[6,19] + Aux_soc_ess-t[6,19] >= 0
+ Lin-socet-1[15,19]: - 0.1 ess_int[15,19] + Aux_soc_ess-t[15,19] >= 0
+ Lin-socet-1[30,19]: - 0.1 ess_int[30,19] + Aux_soc_ess-t[30,19] >= 0
+ Lin-socet-1[6,20]: - 0.1 ess_int[6,20] + Aux_soc_ess-t[6,20] >= 0
+ Lin-socet-1[15,20]: - 0.1 ess_int[15,20] + Aux_soc_ess-t[15,20] >= 0
+ Lin-socet-1[30,20]: - 0.1 ess_int[30,20] + Aux_soc_ess-t[30,20] >= 0
+ Lin-socet-1[6,21]: - 0.1 ess_int[6,21] + Aux_soc_ess-t[6,21] >= 0
+ Lin-socet-1[15,21]: - 0.1 ess_int[15,21] + Aux_soc_ess-t[15,21] >= 0
+ Lin-socet-1[30,21]: - 0.1 ess_int[30,21] + Aux_soc_ess-t[30,21] >= 0
+ Lin-socet-1[6,22]: - 0.1 ess_int[6,22] + Aux_soc_ess-t[6,22] >= 0
+ Lin-socet-1[15,22]: - 0.1 ess_int[15,22] + Aux_soc_ess-t[15,22] >= 0
+ Lin-socet-1[30,22]: - 0.1 ess_int[30,22] + Aux_soc_ess-t[30,22] >= 0
+ Lin-socet-1[6,23]: - 0.1 ess_int[6,23] + Aux_soc_ess-t[6,23] >= 0
+ Lin-socet-1[15,23]: - 0.1 ess_int[15,23] + Aux_soc_ess-t[15,23] >= 0
+ Lin-socet-1[30,23]: - 0.1 ess_int[30,23] + Aux_soc_ess-t[30,23] >= 0
+ Lin-socet-1[6,24]: - 0.1 ess_int[6,24] + Aux_soc_ess-t[6,24] >= 0
+ Lin-socet-1[15,24]: - 0.1 ess_int[15,24] + Aux_soc_ess-t[15,24] >= 0
+ Lin-socet-1[30,24]: - 0.1 ess_int[30,24] + Aux_soc_ess-t[30,24] >= 0
+ Lin-socet-1[6,25]: - 0.1 ess_int[6,25] + Aux_soc_ess-t[6,25] >= 0
+ Lin-socet-1[15,25]: - 0.1 ess_int[15,25] + Aux_soc_ess-t[15,25] >= 0
+ Lin-socet-1[30,25]: - 0.1 ess_int[30,25] + Aux_soc_ess-t[30,25] >= 0
+ Lin-socet-1[6,26]: - 0.1 ess_int[6,26] + Aux_soc_ess-t[6,26] >= 0
+ Lin-socet-1[15,26]: - 0.1 ess_int[15,26] + Aux_soc_ess-t[15,26] >= 0
+ Lin-socet-1[30,26]: - 0.1 ess_int[30,26] + Aux_soc_ess-t[30,26] >= 0
+ Lin-socet-1[6,27]: - 0.1 ess_int[6,27] + Aux_soc_ess-t[6,27] >= 0
+ Lin-socet-1[15,27]: - 0.1 ess_int[15,27] + Aux_soc_ess-t[15,27] >= 0
+ Lin-socet-1[30,27]: - 0.1 ess_int[30,27] + Aux_soc_ess-t[30,27] >= 0
+ Lin-socet-1[6,28]: - 0.1 ess_int[6,28] + Aux_soc_ess-t[6,28] >= 0
+ Lin-socet-1[15,28]: - 0.1 ess_int[15,28] + Aux_soc_ess-t[15,28] >= 0
+ Lin-socet-1[30,28]: - 0.1 ess_int[30,28] + Aux_soc_ess-t[30,28] >= 0
+ Lin-socet-1[6,29]: - 0.1 ess_int[6,29] + Aux_soc_ess-t[6,29] >= 0
+ Lin-socet-1[15,29]: - 0.1 ess_int[15,29] + Aux_soc_ess-t[15,29] >= 0
+ Lin-socet-1[30,29]: - 0.1 ess_int[30,29] + Aux_soc_ess-t[30,29] >= 0
+ Lin-socet-1[6,30]: - 0.1 ess_int[6,30] + Aux_soc_ess-t[6,30] >= 0
+ Lin-socet-1[15,30]: - 0.1 ess_int[15,30] + Aux_soc_ess-t[15,30] >= 0
+ Lin-socet-1[30,30]: - 0.1 ess_int[30,30] + Aux_soc_ess-t[30,30] >= 0
+ Lin-socet-1[6,31]: - 0.1 ess_int[6,31] + Aux_soc_ess-t[6,31] >= 0
+ Lin-socet-1[15,31]: - 0.1 ess_int[15,31] + Aux_soc_ess-t[15,31] >= 0
+ Lin-socet-1[30,31]: - 0.1 ess_int[30,31] + Aux_soc_ess-t[30,31] >= 0
+ Lin-socet-1[6,32]: - 0.1 ess_int[6,32] + Aux_soc_ess-t[6,32] >= 0
+ Lin-socet-1[15,32]: - 0.1 ess_int[15,32] + Aux_soc_ess-t[15,32] >= 0
+ Lin-socet-1[30,32]: - 0.1 ess_int[30,32] + Aux_soc_ess-t[30,32] >= 0
+ Lin-socet-1[6,33]: - 0.1 ess_int[6,33] + Aux_soc_ess-t[6,33] >= 0
+ Lin-socet-1[15,33]: - 0.1 ess_int[15,33] + Aux_soc_ess-t[15,33] >= 0
+ Lin-socet-1[30,33]: - 0.1 ess_int[30,33] + Aux_soc_ess-t[30,33] >= 0
+ Lin-socet-1[6,34]: - 0.1 ess_int[6,34] + Aux_soc_ess-t[6,34] >= 0
+ Lin-socet-1[15,34]: - 0.1 ess_int[15,34] + Aux_soc_ess-t[15,34] >= 0
+ Lin-socet-1[30,34]: - 0.1 ess_int[30,34] + Aux_soc_ess-t[30,34] >= 0
+ Lin-socet-1[6,35]: - 0.1 ess_int[6,35] + Aux_soc_ess-t[6,35] >= 0
+ Lin-socet-1[15,35]: - 0.1 ess_int[15,35] + Aux_soc_ess-t[15,35] >= 0
+ Lin-socet-1[30,35]: - 0.1 ess_int[30,35] + Aux_soc_ess-t[30,35] >= 0
+ Lin-socet-1[6,36]: - 0.1 ess_int[6,36] + Aux_soc_ess-t[6,36] >= 0
+ Lin-socet-1[15,36]: - 0.1 ess_int[15,36] + Aux_soc_ess-t[15,36] >= 0
+ Lin-socet-1[30,36]: - 0.1 ess_int[30,36] + Aux_soc_ess-t[30,36] >= 0
+ Lin-socet-1[6,37]: - 0.1 ess_int[6,37] + Aux_soc_ess-t[6,37] >= 0
+ Lin-socet-1[15,37]: - 0.1 ess_int[15,37] + Aux_soc_ess-t[15,37] >= 0
+ Lin-socet-1[30,37]: - 0.1 ess_int[30,37] + Aux_soc_ess-t[30,37] >= 0
+ Lin-socet-1[6,38]: - 0.1 ess_int[6,38] + Aux_soc_ess-t[6,38] >= 0
+ Lin-socet-1[15,38]: - 0.1 ess_int[15,38] + Aux_soc_ess-t[15,38] >= 0
+ Lin-socet-1[30,38]: - 0.1 ess_int[30,38] + Aux_soc_ess-t[30,38] >= 0
+ Lin-socet-1[6,39]: - 0.1 ess_int[6,39] + Aux_soc_ess-t[6,39] >= 0
+ Lin-socet-1[15,39]: - 0.1 ess_int[15,39] + Aux_soc_ess-t[15,39] >= 0
+ Lin-socet-1[30,39]: - 0.1 ess_int[30,39] + Aux_soc_ess-t[30,39] >= 0
+ Lin-socet-1[6,40]: - 0.1 ess_int[6,40] + Aux_soc_ess-t[6,40] >= 0
+ Lin-socet-1[15,40]: - 0.1 ess_int[15,40] + Aux_soc_ess-t[15,40] >= 0
+ Lin-socet-1[30,40]: - 0.1 ess_int[30,40] + Aux_soc_ess-t[30,40] >= 0
+ Lin-socet-1[6,41]: - 0.1 ess_int[6,41] + Aux_soc_ess-t[6,41] >= 0
+ Lin-socet-1[15,41]: - 0.1 ess_int[15,41] + Aux_soc_ess-t[15,41] >= 0
+ Lin-socet-1[30,41]: - 0.1 ess_int[30,41] + Aux_soc_ess-t[30,41] >= 0
+ Lin-socet-1[6,42]: - 0.1 ess_int[6,42] + Aux_soc_ess-t[6,42] >= 0
+ Lin-socet-1[15,42]: - 0.1 ess_int[15,42] + Aux_soc_ess-t[15,42] >= 0
+ Lin-socet-1[30,42]: - 0.1 ess_int[30,42] + Aux_soc_ess-t[30,42] >= 0
+ Lin-socet-1[6,43]: - 0.1 ess_int[6,43] + Aux_soc_ess-t[6,43] >= 0
+ Lin-socet-1[15,43]: - 0.1 ess_int[15,43] + Aux_soc_ess-t[15,43] >= 0
+ Lin-socet-1[30,43]: - 0.1 ess_int[30,43] + Aux_soc_ess-t[30,43] >= 0
+ Lin-socet-1[6,44]: - 0.1 ess_int[6,44] + Aux_soc_ess-t[6,44] >= 0
+ Lin-socet-1[15,44]: - 0.1 ess_int[15,44] + Aux_soc_ess-t[15,44] >= 0
+ Lin-socet-1[30,44]: - 0.1 ess_int[30,44] + Aux_soc_ess-t[30,44] >= 0
+ Lin-socet-1[6,45]: - 0.1 ess_int[6,45] + Aux_soc_ess-t[6,45] >= 0
+ Lin-socet-1[15,45]: - 0.1 ess_int[15,45] + Aux_soc_ess-t[15,45] >= 0
+ Lin-socet-1[30,45]: - 0.1 ess_int[30,45] + Aux_soc_ess-t[30,45] >= 0
+ Lin-socet-1[6,46]: - 0.1 ess_int[6,46] + Aux_soc_ess-t[6,46] >= 0
+ Lin-socet-1[15,46]: - 0.1 ess_int[15,46] + Aux_soc_ess-t[15,46] >= 0
+ Lin-socet-1[30,46]: - 0.1 ess_int[30,46] + Aux_soc_ess-t[30,46] >= 0
+ Lin-socet-1[6,47]: - 0.1 ess_int[6,47] + Aux_soc_ess-t[6,47] >= 0
+ Lin-socet-1[15,47]: - 0.1 ess_int[15,47] + Aux_soc_ess-t[15,47] >= 0
+ Lin-socet-1[30,47]: - 0.1 ess_int[30,47] + Aux_soc_ess-t[30,47] >= 0
+ Lin-socet-1[6,48]: - 0.1 ess_int[6,48] + Aux_soc_ess-t[6,48] >= 0
+ Lin-socet-1[15,48]: - 0.1 ess_int[15,48] + Aux_soc_ess-t[15,48] >= 0
+ Lin-socet-1[30,48]: - 0.1 ess_int[30,48] + Aux_soc_ess-t[30,48] >= 0
+ Lin-socet-2[6,1]: - SOC[6,0] - 0.9 ess_int[6,1] + Aux_soc_ess-t[6,1]
+   >= -0.9
+ Lin-socet-2[15,1]: - SOC[15,0] - 0.9 ess_int[15,1] + Aux_soc_ess-t[15,1]
+   >= -0.9
+ Lin-socet-2[30,1]: - SOC[30,0] - 0.9 ess_int[30,1] + Aux_soc_ess-t[30,1]
+   >= -0.9
+ Lin-socet-2[6,2]: - SOC[6,1] - 0.9 ess_int[6,2] + Aux_soc_ess-t[6,2]
+   >= -0.9
+ Lin-socet-2[15,2]: - SOC[15,1] - 0.9 ess_int[15,2] + Aux_soc_ess-t[15,2]
+   >= -0.9
+ Lin-socet-2[30,2]: - SOC[30,1] - 0.9 ess_int[30,2] + Aux_soc_ess-t[30,2]
+   >= -0.9
+ Lin-socet-2[6,3]: - SOC[6,2] - 0.9 ess_int[6,3] + Aux_soc_ess-t[6,3]
+   >= -0.9
+ Lin-socet-2[15,3]: - SOC[15,2] - 0.9 ess_int[15,3] + Aux_soc_ess-t[15,3]
+   >= -0.9
+ Lin-socet-2[30,3]: - SOC[30,2] - 0.9 ess_int[30,3] + Aux_soc_ess-t[30,3]
+   >= -0.9
+ Lin-socet-2[6,4]: - SOC[6,3] - 0.9 ess_int[6,4] + Aux_soc_ess-t[6,4]
+   >= -0.9
+ Lin-socet-2[15,4]: - SOC[15,3] - 0.9 ess_int[15,4] + Aux_soc_ess-t[15,4]
+   >= -0.9
+ Lin-socet-2[30,4]: - SOC[30,3] - 0.9 ess_int[30,4] + Aux_soc_ess-t[30,4]
+   >= -0.9
+ Lin-socet-2[6,5]: - SOC[6,4] - 0.9 ess_int[6,5] + Aux_soc_ess-t[6,5]
+   >= -0.9
+ Lin-socet-2[15,5]: - SOC[15,4] - 0.9 ess_int[15,5] + Aux_soc_ess-t[15,5]
+   >= -0.9
+ Lin-socet-2[30,5]: - SOC[30,4] - 0.9 ess_int[30,5] + Aux_soc_ess-t[30,5]
+   >= -0.9
+ Lin-socet-2[6,6]: - SOC[6,5] - 0.9 ess_int[6,6] + Aux_soc_ess-t[6,6]
+   >= -0.9
+ Lin-socet-2[15,6]: - SOC[15,5] - 0.9 ess_int[15,6] + Aux_soc_ess-t[15,6]
+   >= -0.9
+ Lin-socet-2[30,6]: - SOC[30,5] - 0.9 ess_int[30,6] + Aux_soc_ess-t[30,6]
+   >= -0.9
+ Lin-socet-2[6,7]: - SOC[6,6] - 0.9 ess_int[6,7] + Aux_soc_ess-t[6,7]
+   >= -0.9
+ Lin-socet-2[15,7]: - SOC[15,6] - 0.9 ess_int[15,7] + Aux_soc_ess-t[15,7]
+   >= -0.9
+ Lin-socet-2[30,7]: - SOC[30,6] - 0.9 ess_int[30,7] + Aux_soc_ess-t[30,7]
+   >= -0.9
+ Lin-socet-2[6,8]: - SOC[6,7] - 0.9 ess_int[6,8] + Aux_soc_ess-t[6,8]
+   >= -0.9
+ Lin-socet-2[15,8]: - SOC[15,7] - 0.9 ess_int[15,8] + Aux_soc_ess-t[15,8]
+   >= -0.9
+ Lin-socet-2[30,8]: - SOC[30,7] - 0.9 ess_int[30,8] + Aux_soc_ess-t[30,8]
+   >= -0.9
+ Lin-socet-2[6,9]: - SOC[6,8] - 0.9 ess_int[6,9] + Aux_soc_ess-t[6,9]
+   >= -0.9
+ Lin-socet-2[15,9]: - SOC[15,8] - 0.9 ess_int[15,9] + Aux_soc_ess-t[15,9]
+   >= -0.9
+ Lin-socet-2[30,9]: - SOC[30,8] - 0.9 ess_int[30,9] + Aux_soc_ess-t[30,9]
+   >= -0.9
+ Lin-socet-2[6,10]: - SOC[6,9] - 0.9 ess_int[6,10] + Aux_soc_ess-t[6,10]
+   >= -0.9
+ Lin-socet-2[15,10]: - SOC[15,9] - 0.9 ess_int[15,10]
+   + Aux_soc_ess-t[15,10] >= -0.9
+ Lin-socet-2[30,10]: - SOC[30,9] - 0.9 ess_int[30,10]
+   + Aux_soc_ess-t[30,10] >= -0.9
+ Lin-socet-2[6,11]: - SOC[6,10] - 0.9 ess_int[6,11] + Aux_soc_ess-t[6,11]
+   >= -0.9
+ Lin-socet-2[15,11]: - SOC[15,10] - 0.9 ess_int[15,11]
+   + Aux_soc_ess-t[15,11] >= -0.9
+ Lin-socet-2[30,11]: - SOC[30,10] - 0.9 ess_int[30,11]
+   + Aux_soc_ess-t[30,11] >= -0.9
+ Lin-socet-2[6,12]: - SOC[6,11] - 0.9 ess_int[6,12] + Aux_soc_ess-t[6,12]
+   >= -0.9
+ Lin-socet-2[15,12]: - SOC[15,11] - 0.9 ess_int[15,12]
+   + Aux_soc_ess-t[15,12] >= -0.9
+ Lin-socet-2[30,12]: - SOC[30,11] - 0.9 ess_int[30,12]
+   + Aux_soc_ess-t[30,12] >= -0.9
+ Lin-socet-2[6,13]: - SOC[6,12] - 0.9 ess_int[6,13] + Aux_soc_ess-t[6,13]
+   >= -0.9
+ Lin-socet-2[15,13]: - SOC[15,12] - 0.9 ess_int[15,13]
+   + Aux_soc_ess-t[15,13] >= -0.9
+ Lin-socet-2[30,13]: - SOC[30,12] - 0.9 ess_int[30,13]
+   + Aux_soc_ess-t[30,13] >= -0.9
+ Lin-socet-2[6,14]: - SOC[6,13] - 0.9 ess_int[6,14] + Aux_soc_ess-t[6,14]
+   >= -0.9
+ Lin-socet-2[15,14]: - SOC[15,13] - 0.9 ess_int[15,14]
+   + Aux_soc_ess-t[15,14] >= -0.9
+ Lin-socet-2[30,14]: - SOC[30,13] - 0.9 ess_int[30,14]
+   + Aux_soc_ess-t[30,14] >= -0.9
+ Lin-socet-2[6,15]: - SOC[6,14] - 0.9 ess_int[6,15] + Aux_soc_ess-t[6,15]
+   >= -0.9
+ Lin-socet-2[15,15]: - SOC[15,14] - 0.9 ess_int[15,15]
+   + Aux_soc_ess-t[15,15] >= -0.9
+ Lin-socet-2[30,15]: - SOC[30,14] - 0.9 ess_int[30,15]
+   + Aux_soc_ess-t[30,15] >= -0.9
+ Lin-socet-2[6,16]: - SOC[6,15] - 0.9 ess_int[6,16] + Aux_soc_ess-t[6,16]
+   >= -0.9
+ Lin-socet-2[15,16]: - SOC[15,15] - 0.9 ess_int[15,16]
+   + Aux_soc_ess-t[15,16] >= -0.9
+ Lin-socet-2[30,16]: - SOC[30,15] - 0.9 ess_int[30,16]
+   + Aux_soc_ess-t[30,16] >= -0.9
+ Lin-socet-2[6,17]: - SOC[6,16] - 0.9 ess_int[6,17] + Aux_soc_ess-t[6,17]
+   >= -0.9
+ Lin-socet-2[15,17]: - SOC[15,16] - 0.9 ess_int[15,17]
+   + Aux_soc_ess-t[15,17] >= -0.9
+ Lin-socet-2[30,17]: - SOC[30,16] - 0.9 ess_int[30,17]
+   + Aux_soc_ess-t[30,17] >= -0.9
+ Lin-socet-2[6,18]: - SOC[6,17] - 0.9 ess_int[6,18] + Aux_soc_ess-t[6,18]
+   >= -0.9
+ Lin-socet-2[15,18]: - SOC[15,17] - 0.9 ess_int[15,18]
+   + Aux_soc_ess-t[15,18] >= -0.9
+ Lin-socet-2[30,18]: - SOC[30,17] - 0.9 ess_int[30,18]
+   + Aux_soc_ess-t[30,18] >= -0.9
+ Lin-socet-2[6,19]: - SOC[6,18] - 0.9 ess_int[6,19] + Aux_soc_ess-t[6,19]
+   >= -0.9
+ Lin-socet-2[15,19]: - SOC[15,18] - 0.9 ess_int[15,19]
+   + Aux_soc_ess-t[15,19] >= -0.9
+ Lin-socet-2[30,19]: - SOC[30,18] - 0.9 ess_int[30,19]
+   + Aux_soc_ess-t[30,19] >= -0.9
+ Lin-socet-2[6,20]: - SOC[6,19] - 0.9 ess_int[6,20] + Aux_soc_ess-t[6,20]
+   >= -0.9
+ Lin-socet-2[15,20]: - SOC[15,19] - 0.9 ess_int[15,20]
+   + Aux_soc_ess-t[15,20] >= -0.9
+ Lin-socet-2[30,20]: - SOC[30,19] - 0.9 ess_int[30,20]
+   + Aux_soc_ess-t[30,20] >= -0.9
+ Lin-socet-2[6,21]: - SOC[6,20] - 0.9 ess_int[6,21] + Aux_soc_ess-t[6,21]
+   >= -0.9
+ Lin-socet-2[15,21]: - SOC[15,20] - 0.9 ess_int[15,21]
+   + Aux_soc_ess-t[15,21] >= -0.9
+ Lin-socet-2[30,21]: - SOC[30,20] - 0.9 ess_int[30,21]
+   + Aux_soc_ess-t[30,21] >= -0.9
+ Lin-socet-2[6,22]: - SOC[6,21] - 0.9 ess_int[6,22] + Aux_soc_ess-t[6,22]
+   >= -0.9
+ Lin-socet-2[15,22]: - SOC[15,21] - 0.9 ess_int[15,22]
+   + Aux_soc_ess-t[15,22] >= -0.9
+ Lin-socet-2[30,22]: - SOC[30,21] - 0.9 ess_int[30,22]
+   + Aux_soc_ess-t[30,22] >= -0.9
+ Lin-socet-2[6,23]: - SOC[6,22] - 0.9 ess_int[6,23] + Aux_soc_ess-t[6,23]
+   >= -0.9
+ Lin-socet-2[15,23]: - SOC[15,22] - 0.9 ess_int[15,23]
+   + Aux_soc_ess-t[15,23] >= -0.9
+ Lin-socet-2[30,23]: - SOC[30,22] - 0.9 ess_int[30,23]
+   + Aux_soc_ess-t[30,23] >= -0.9
+ Lin-socet-2[6,24]: - SOC[6,23] - 0.9 ess_int[6,24] + Aux_soc_ess-t[6,24]
+   >= -0.9
+ Lin-socet-2[15,24]: - SOC[15,23] - 0.9 ess_int[15,24]
+   + Aux_soc_ess-t[15,24] >= -0.9
+ Lin-socet-2[30,24]: - SOC[30,23] - 0.9 ess_int[30,24]
+   + Aux_soc_ess-t[30,24] >= -0.9
+ Lin-socet-2[6,25]: - SOC[6,24] - 0.9 ess_int[6,25] + Aux_soc_ess-t[6,25]
+   >= -0.9
+ Lin-socet-2[15,25]: - SOC[15,24] - 0.9 ess_int[15,25]
+   + Aux_soc_ess-t[15,25] >= -0.9
+ Lin-socet-2[30,25]: - SOC[30,24] - 0.9 ess_int[30,25]
+   + Aux_soc_ess-t[30,25] >= -0.9
+ Lin-socet-2[6,26]: - SOC[6,25] - 0.9 ess_int[6,26] + Aux_soc_ess-t[6,26]
+   >= -0.9
+ Lin-socet-2[15,26]: - SOC[15,25] - 0.9 ess_int[15,26]
+   + Aux_soc_ess-t[15,26] >= -0.9
+ Lin-socet-2[30,26]: - SOC[30,25] - 0.9 ess_int[30,26]
+   + Aux_soc_ess-t[30,26] >= -0.9
+ Lin-socet-2[6,27]: - SOC[6,26] - 0.9 ess_int[6,27] + Aux_soc_ess-t[6,27]
+   >= -0.9
+ Lin-socet-2[15,27]: - SOC[15,26] - 0.9 ess_int[15,27]
+   + Aux_soc_ess-t[15,27] >= -0.9
+ Lin-socet-2[30,27]: - SOC[30,26] - 0.9 ess_int[30,27]
+   + Aux_soc_ess-t[30,27] >= -0.9
+ Lin-socet-2[6,28]: - SOC[6,27] - 0.9 ess_int[6,28] + Aux_soc_ess-t[6,28]
+   >= -0.9
+ Lin-socet-2[15,28]: - SOC[15,27] - 0.9 ess_int[15,28]
+   + Aux_soc_ess-t[15,28] >= -0.9
+ Lin-socet-2[30,28]: - SOC[30,27] - 0.9 ess_int[30,28]
+   + Aux_soc_ess-t[30,28] >= -0.9
+ Lin-socet-2[6,29]: - SOC[6,28] - 0.9 ess_int[6,29] + Aux_soc_ess-t[6,29]
+   >= -0.9
+ Lin-socet-2[15,29]: - SOC[15,28] - 0.9 ess_int[15,29]
+   + Aux_soc_ess-t[15,29] >= -0.9
+ Lin-socet-2[30,29]: - SOC[30,28] - 0.9 ess_int[30,29]
+   + Aux_soc_ess-t[30,29] >= -0.9
+ Lin-socet-2[6,30]: - SOC[6,29] - 0.9 ess_int[6,30] + Aux_soc_ess-t[6,30]
+   >= -0.9
+ Lin-socet-2[15,30]: - SOC[15,29] - 0.9 ess_int[15,30]
+   + Aux_soc_ess-t[15,30] >= -0.9
+ Lin-socet-2[30,30]: - SOC[30,29] - 0.9 ess_int[30,30]
+   + Aux_soc_ess-t[30,30] >= -0.9
+ Lin-socet-2[6,31]: - SOC[6,30] - 0.9 ess_int[6,31] + Aux_soc_ess-t[6,31]
+   >= -0.9
+ Lin-socet-2[15,31]: - SOC[15,30] - 0.9 ess_int[15,31]
+   + Aux_soc_ess-t[15,31] >= -0.9
+ Lin-socet-2[30,31]: - SOC[30,30] - 0.9 ess_int[30,31]
+   + Aux_soc_ess-t[30,31] >= -0.9
+ Lin-socet-2[6,32]: - SOC[6,31] - 0.9 ess_int[6,32] + Aux_soc_ess-t[6,32]
+   >= -0.9
+ Lin-socet-2[15,32]: - SOC[15,31] - 0.9 ess_int[15,32]
+   + Aux_soc_ess-t[15,32] >= -0.9
+ Lin-socet-2[30,32]: - SOC[30,31] - 0.9 ess_int[30,32]
+   + Aux_soc_ess-t[30,32] >= -0.9
+ Lin-socet-2[6,33]: - SOC[6,32] - 0.9 ess_int[6,33] + Aux_soc_ess-t[6,33]
+   >= -0.9
+ Lin-socet-2[15,33]: - SOC[15,32] - 0.9 ess_int[15,33]
+   + Aux_soc_ess-t[15,33] >= -0.9
+ Lin-socet-2[30,33]: - SOC[30,32] - 0.9 ess_int[30,33]
+   + Aux_soc_ess-t[30,33] >= -0.9
+ Lin-socet-2[6,34]: - SOC[6,33] - 0.9 ess_int[6,34] + Aux_soc_ess-t[6,34]
+   >= -0.9
+ Lin-socet-2[15,34]: - SOC[15,33] - 0.9 ess_int[15,34]
+   + Aux_soc_ess-t[15,34] >= -0.9
+ Lin-socet-2[30,34]: - SOC[30,33] - 0.9 ess_int[30,34]
+   + Aux_soc_ess-t[30,34] >= -0.9
+ Lin-socet-2[6,35]: - SOC[6,34] - 0.9 ess_int[6,35] + Aux_soc_ess-t[6,35]
+   >= -0.9
+ Lin-socet-2[15,35]: - SOC[15,34] - 0.9 ess_int[15,35]
+   + Aux_soc_ess-t[15,35] >= -0.9
+ Lin-socet-2[30,35]: - SOC[30,34] - 0.9 ess_int[30,35]
+   + Aux_soc_ess-t[30,35] >= -0.9
+ Lin-socet-2[6,36]: - SOC[6,35] - 0.9 ess_int[6,36] + Aux_soc_ess-t[6,36]
+   >= -0.9
+ Lin-socet-2[15,36]: - SOC[15,35] - 0.9 ess_int[15,36]
+   + Aux_soc_ess-t[15,36] >= -0.9
+ Lin-socet-2[30,36]: - SOC[30,35] - 0.9 ess_int[30,36]
+   + Aux_soc_ess-t[30,36] >= -0.9
+ Lin-socet-2[6,37]: - SOC[6,36] - 0.9 ess_int[6,37] + Aux_soc_ess-t[6,37]
+   >= -0.9
+ Lin-socet-2[15,37]: - SOC[15,36] - 0.9 ess_int[15,37]
+   + Aux_soc_ess-t[15,37] >= -0.9
+ Lin-socet-2[30,37]: - SOC[30,36] - 0.9 ess_int[30,37]
+   + Aux_soc_ess-t[30,37] >= -0.9
+ Lin-socet-2[6,38]: - SOC[6,37] - 0.9 ess_int[6,38] + Aux_soc_ess-t[6,38]
+   >= -0.9
+ Lin-socet-2[15,38]: - SOC[15,37] - 0.9 ess_int[15,38]
+   + Aux_soc_ess-t[15,38] >= -0.9
+ Lin-socet-2[30,38]: - SOC[30,37] - 0.9 ess_int[30,38]
+   + Aux_soc_ess-t[30,38] >= -0.9
+ Lin-socet-2[6,39]: - SOC[6,38] - 0.9 ess_int[6,39] + Aux_soc_ess-t[6,39]
+   >= -0.9
+ Lin-socet-2[15,39]: - SOC[15,38] - 0.9 ess_int[15,39]
+   + Aux_soc_ess-t[15,39] >= -0.9
+ Lin-socet-2[30,39]: - SOC[30,38] - 0.9 ess_int[30,39]
+   + Aux_soc_ess-t[30,39] >= -0.9
+ Lin-socet-2[6,40]: - SOC[6,39] - 0.9 ess_int[6,40] + Aux_soc_ess-t[6,40]
+   >= -0.9
+ Lin-socet-2[15,40]: - SOC[15,39] - 0.9 ess_int[15,40]
+   + Aux_soc_ess-t[15,40] >= -0.9
+ Lin-socet-2[30,40]: - SOC[30,39] - 0.9 ess_int[30,40]
+   + Aux_soc_ess-t[30,40] >= -0.9
+ Lin-socet-2[6,41]: - SOC[6,40] - 0.9 ess_int[6,41] + Aux_soc_ess-t[6,41]
+   >= -0.9
+ Lin-socet-2[15,41]: - SOC[15,40] - 0.9 ess_int[15,41]
+   + Aux_soc_ess-t[15,41] >= -0.9
+ Lin-socet-2[30,41]: - SOC[30,40] - 0.9 ess_int[30,41]
+   + Aux_soc_ess-t[30,41] >= -0.9
+ Lin-socet-2[6,42]: - SOC[6,41] - 0.9 ess_int[6,42] + Aux_soc_ess-t[6,42]
+   >= -0.9
+ Lin-socet-2[15,42]: - SOC[15,41] - 0.9 ess_int[15,42]
+   + Aux_soc_ess-t[15,42] >= -0.9
+ Lin-socet-2[30,42]: - SOC[30,41] - 0.9 ess_int[30,42]
+   + Aux_soc_ess-t[30,42] >= -0.9
+ Lin-socet-2[6,43]: - SOC[6,42] - 0.9 ess_int[6,43] + Aux_soc_ess-t[6,43]
+   >= -0.9
+ Lin-socet-2[15,43]: - SOC[15,42] - 0.9 ess_int[15,43]
+   + Aux_soc_ess-t[15,43] >= -0.9
+ Lin-socet-2[30,43]: - SOC[30,42] - 0.9 ess_int[30,43]
+   + Aux_soc_ess-t[30,43] >= -0.9
+ Lin-socet-2[6,44]: - SOC[6,43] - 0.9 ess_int[6,44] + Aux_soc_ess-t[6,44]
+   >= -0.9
+ Lin-socet-2[15,44]: - SOC[15,43] - 0.9 ess_int[15,44]
+   + Aux_soc_ess-t[15,44] >= -0.9
+ Lin-socet-2[30,44]: - SOC[30,43] - 0.9 ess_int[30,44]
+   + Aux_soc_ess-t[30,44] >= -0.9
+ Lin-socet-2[6,45]: - SOC[6,44] - 0.9 ess_int[6,45] + Aux_soc_ess-t[6,45]
+   >= -0.9
+ Lin-socet-2[15,45]: - SOC[15,44] - 0.9 ess_int[15,45]
+   + Aux_soc_ess-t[15,45] >= -0.9
+ Lin-socet-2[30,45]: - SOC[30,44] - 0.9 ess_int[30,45]
+   + Aux_soc_ess-t[30,45] >= -0.9
+ Lin-socet-2[6,46]: - SOC[6,45] - 0.9 ess_int[6,46] + Aux_soc_ess-t[6,46]
+   >= -0.9
+ Lin-socet-2[15,46]: - SOC[15,45] - 0.9 ess_int[15,46]
+   + Aux_soc_ess-t[15,46] >= -0.9
+ Lin-socet-2[30,46]: - SOC[30,45] - 0.9 ess_int[30,46]
+   + Aux_soc_ess-t[30,46] >= -0.9
+ Lin-socet-2[6,47]: - SOC[6,46] - 0.9 ess_int[6,47] + Aux_soc_ess-t[6,47]
+   >= -0.9
+ Lin-socet-2[15,47]: - SOC[15,46] - 0.9 ess_int[15,47]
+   + Aux_soc_ess-t[15,47] >= -0.9
+ Lin-socet-2[30,47]: - SOC[30,46] - 0.9 ess_int[30,47]
+   + Aux_soc_ess-t[30,47] >= -0.9
+ Lin-socet-2[6,48]: - SOC[6,47] - 0.9 ess_int[6,48] + Aux_soc_ess-t[6,48]
+   >= -0.9
+ Lin-socet-2[15,48]: - SOC[15,47] - 0.9 ess_int[15,48]
+   + Aux_soc_ess-t[15,48] >= -0.9
+ Lin-socet-2[30,48]: - SOC[30,47] - 0.9 ess_int[30,48]
+   + Aux_soc_ess-t[30,48] >= -0.9
+ Lin-socet-3[6,1]: - SOC[6,0] - 0.1 ess_int[6,1] + Aux_soc_ess-t[6,1]
+   <= -0.1
+ Lin-socet-3[15,1]: - SOC[15,0] - 0.1 ess_int[15,1] + Aux_soc_ess-t[15,1]
+   <= -0.1
+ Lin-socet-3[30,1]: - SOC[30,0] - 0.1 ess_int[30,1] + Aux_soc_ess-t[30,1]
+   <= -0.1
+ Lin-socet-3[6,2]: - SOC[6,1] - 0.1 ess_int[6,2] + Aux_soc_ess-t[6,2]
+   <= -0.1
+ Lin-socet-3[15,2]: - SOC[15,1] - 0.1 ess_int[15,2] + Aux_soc_ess-t[15,2]
+   <= -0.1
+ Lin-socet-3[30,2]: - SOC[30,1] - 0.1 ess_int[30,2] + Aux_soc_ess-t[30,2]
+   <= -0.1
+ Lin-socet-3[6,3]: - SOC[6,2] - 0.1 ess_int[6,3] + Aux_soc_ess-t[6,3]
+   <= -0.1
+ Lin-socet-3[15,3]: - SOC[15,2] - 0.1 ess_int[15,3] + Aux_soc_ess-t[15,3]
+   <= -0.1
+ Lin-socet-3[30,3]: - SOC[30,2] - 0.1 ess_int[30,3] + Aux_soc_ess-t[30,3]
+   <= -0.1
+ Lin-socet-3[6,4]: - SOC[6,3] - 0.1 ess_int[6,4] + Aux_soc_ess-t[6,4]
+   <= -0.1
+ Lin-socet-3[15,4]: - SOC[15,3] - 0.1 ess_int[15,4] + Aux_soc_ess-t[15,4]
+   <= -0.1
+ Lin-socet-3[30,4]: - SOC[30,3] - 0.1 ess_int[30,4] + Aux_soc_ess-t[30,4]
+   <= -0.1
+ Lin-socet-3[6,5]: - SOC[6,4] - 0.1 ess_int[6,5] + Aux_soc_ess-t[6,5]
+   <= -0.1
+ Lin-socet-3[15,5]: - SOC[15,4] - 0.1 ess_int[15,5] + Aux_soc_ess-t[15,5]
+   <= -0.1
+ Lin-socet-3[30,5]: - SOC[30,4] - 0.1 ess_int[30,5] + Aux_soc_ess-t[30,5]
+   <= -0.1
+ Lin-socet-3[6,6]: - SOC[6,5] - 0.1 ess_int[6,6] + Aux_soc_ess-t[6,6]
+   <= -0.1
+ Lin-socet-3[15,6]: - SOC[15,5] - 0.1 ess_int[15,6] + Aux_soc_ess-t[15,6]
+   <= -0.1
+ Lin-socet-3[30,6]: - SOC[30,5] - 0.1 ess_int[30,6] + Aux_soc_ess-t[30,6]
+   <= -0.1
+ Lin-socet-3[6,7]: - SOC[6,6] - 0.1 ess_int[6,7] + Aux_soc_ess-t[6,7]
+   <= -0.1
+ Lin-socet-3[15,7]: - SOC[15,6] - 0.1 ess_int[15,7] + Aux_soc_ess-t[15,7]
+   <= -0.1
+ Lin-socet-3[30,7]: - SOC[30,6] - 0.1 ess_int[30,7] + Aux_soc_ess-t[30,7]
+   <= -0.1
+ Lin-socet-3[6,8]: - SOC[6,7] - 0.1 ess_int[6,8] + Aux_soc_ess-t[6,8]
+   <= -0.1
+ Lin-socet-3[15,8]: - SOC[15,7] - 0.1 ess_int[15,8] + Aux_soc_ess-t[15,8]
+   <= -0.1
+ Lin-socet-3[30,8]: - SOC[30,7] - 0.1 ess_int[30,8] + Aux_soc_ess-t[30,8]
+   <= -0.1
+ Lin-socet-3[6,9]: - SOC[6,8] - 0.1 ess_int[6,9] + Aux_soc_ess-t[6,9]
+   <= -0.1
+ Lin-socet-3[15,9]: - SOC[15,8] - 0.1 ess_int[15,9] + Aux_soc_ess-t[15,9]
+   <= -0.1
+ Lin-socet-3[30,9]: - SOC[30,8] - 0.1 ess_int[30,9] + Aux_soc_ess-t[30,9]
+   <= -0.1
+ Lin-socet-3[6,10]: - SOC[6,9] - 0.1 ess_int[6,10] + Aux_soc_ess-t[6,10]
+   <= -0.1
+ Lin-socet-3[15,10]: - SOC[15,9] - 0.1 ess_int[15,10]
+   + Aux_soc_ess-t[15,10] <= -0.1
+ Lin-socet-3[30,10]: - SOC[30,9] - 0.1 ess_int[30,10]
+   + Aux_soc_ess-t[30,10] <= -0.1
+ Lin-socet-3[6,11]: - SOC[6,10] - 0.1 ess_int[6,11] + Aux_soc_ess-t[6,11]
+   <= -0.1
+ Lin-socet-3[15,11]: - SOC[15,10] - 0.1 ess_int[15,11]
+   + Aux_soc_ess-t[15,11] <= -0.1
+ Lin-socet-3[30,11]: - SOC[30,10] - 0.1 ess_int[30,11]
+   + Aux_soc_ess-t[30,11] <= -0.1
+ Lin-socet-3[6,12]: - SOC[6,11] - 0.1 ess_int[6,12] + Aux_soc_ess-t[6,12]
+   <= -0.1
+ Lin-socet-3[15,12]: - SOC[15,11] - 0.1 ess_int[15,12]
+   + Aux_soc_ess-t[15,12] <= -0.1
+ Lin-socet-3[30,12]: - SOC[30,11] - 0.1 ess_int[30,12]
+   + Aux_soc_ess-t[30,12] <= -0.1
+ Lin-socet-3[6,13]: - SOC[6,12] - 0.1 ess_int[6,13] + Aux_soc_ess-t[6,13]
+   <= -0.1
+ Lin-socet-3[15,13]: - SOC[15,12] - 0.1 ess_int[15,13]
+   + Aux_soc_ess-t[15,13] <= -0.1
+ Lin-socet-3[30,13]: - SOC[30,12] - 0.1 ess_int[30,13]
+   + Aux_soc_ess-t[30,13] <= -0.1
+ Lin-socet-3[6,14]: - SOC[6,13] - 0.1 ess_int[6,14] + Aux_soc_ess-t[6,14]
+   <= -0.1
+ Lin-socet-3[15,14]: - SOC[15,13] - 0.1 ess_int[15,14]
+   + Aux_soc_ess-t[15,14] <= -0.1
+ Lin-socet-3[30,14]: - SOC[30,13] - 0.1 ess_int[30,14]
+   + Aux_soc_ess-t[30,14] <= -0.1
+ Lin-socet-3[6,15]: - SOC[6,14] - 0.1 ess_int[6,15] + Aux_soc_ess-t[6,15]
+   <= -0.1
+ Lin-socet-3[15,15]: - SOC[15,14] - 0.1 ess_int[15,15]
+   + Aux_soc_ess-t[15,15] <= -0.1
+ Lin-socet-3[30,15]: - SOC[30,14] - 0.1 ess_int[30,15]
+   + Aux_soc_ess-t[30,15] <= -0.1
+ Lin-socet-3[6,16]: - SOC[6,15] - 0.1 ess_int[6,16] + Aux_soc_ess-t[6,16]
+   <= -0.1
+ Lin-socet-3[15,16]: - SOC[15,15] - 0.1 ess_int[15,16]
+   + Aux_soc_ess-t[15,16] <= -0.1
+ Lin-socet-3[30,16]: - SOC[30,15] - 0.1 ess_int[30,16]
+   + Aux_soc_ess-t[30,16] <= -0.1
+ Lin-socet-3[6,17]: - SOC[6,16] - 0.1 ess_int[6,17] + Aux_soc_ess-t[6,17]
+   <= -0.1
+ Lin-socet-3[15,17]: - SOC[15,16] - 0.1 ess_int[15,17]
+   + Aux_soc_ess-t[15,17] <= -0.1
+ Lin-socet-3[30,17]: - SOC[30,16] - 0.1 ess_int[30,17]
+   + Aux_soc_ess-t[30,17] <= -0.1
+ Lin-socet-3[6,18]: - SOC[6,17] - 0.1 ess_int[6,18] + Aux_soc_ess-t[6,18]
+   <= -0.1
+ Lin-socet-3[15,18]: - SOC[15,17] - 0.1 ess_int[15,18]
+   + Aux_soc_ess-t[15,18] <= -0.1
+ Lin-socet-3[30,18]: - SOC[30,17] - 0.1 ess_int[30,18]
+   + Aux_soc_ess-t[30,18] <= -0.1
+ Lin-socet-3[6,19]: - SOC[6,18] - 0.1 ess_int[6,19] + Aux_soc_ess-t[6,19]
+   <= -0.1
+ Lin-socet-3[15,19]: - SOC[15,18] - 0.1 ess_int[15,19]
+   + Aux_soc_ess-t[15,19] <= -0.1
+ Lin-socet-3[30,19]: - SOC[30,18] - 0.1 ess_int[30,19]
+   + Aux_soc_ess-t[30,19] <= -0.1
+ Lin-socet-3[6,20]: - SOC[6,19] - 0.1 ess_int[6,20] + Aux_soc_ess-t[6,20]
+   <= -0.1
+ Lin-socet-3[15,20]: - SOC[15,19] - 0.1 ess_int[15,20]
+   + Aux_soc_ess-t[15,20] <= -0.1
+ Lin-socet-3[30,20]: - SOC[30,19] - 0.1 ess_int[30,20]
+   + Aux_soc_ess-t[30,20] <= -0.1
+ Lin-socet-3[6,21]: - SOC[6,20] - 0.1 ess_int[6,21] + Aux_soc_ess-t[6,21]
+   <= -0.1
+ Lin-socet-3[15,21]: - SOC[15,20] - 0.1 ess_int[15,21]
+   + Aux_soc_ess-t[15,21] <= -0.1
+ Lin-socet-3[30,21]: - SOC[30,20] - 0.1 ess_int[30,21]
+   + Aux_soc_ess-t[30,21] <= -0.1
+ Lin-socet-3[6,22]: - SOC[6,21] - 0.1 ess_int[6,22] + Aux_soc_ess-t[6,22]
+   <= -0.1
+ Lin-socet-3[15,22]: - SOC[15,21] - 0.1 ess_int[15,22]
+   + Aux_soc_ess-t[15,22] <= -0.1
+ Lin-socet-3[30,22]: - SOC[30,21] - 0.1 ess_int[30,22]
+   + Aux_soc_ess-t[30,22] <= -0.1
+ Lin-socet-3[6,23]: - SOC[6,22] - 0.1 ess_int[6,23] + Aux_soc_ess-t[6,23]
+   <= -0.1
+ Lin-socet-3[15,23]: - SOC[15,22] - 0.1 ess_int[15,23]
+   + Aux_soc_ess-t[15,23] <= -0.1
+ Lin-socet-3[30,23]: - SOC[30,22] - 0.1 ess_int[30,23]
+   + Aux_soc_ess-t[30,23] <= -0.1
+ Lin-socet-3[6,24]: - SOC[6,23] - 0.1 ess_int[6,24] + Aux_soc_ess-t[6,24]
+   <= -0.1
+ Lin-socet-3[15,24]: - SOC[15,23] - 0.1 ess_int[15,24]
+   + Aux_soc_ess-t[15,24] <= -0.1
+ Lin-socet-3[30,24]: - SOC[30,23] - 0.1 ess_int[30,24]
+   + Aux_soc_ess-t[30,24] <= -0.1
+ Lin-socet-3[6,25]: - SOC[6,24] - 0.1 ess_int[6,25] + Aux_soc_ess-t[6,25]
+   <= -0.1
+ Lin-socet-3[15,25]: - SOC[15,24] - 0.1 ess_int[15,25]
+   + Aux_soc_ess-t[15,25] <= -0.1
+ Lin-socet-3[30,25]: - SOC[30,24] - 0.1 ess_int[30,25]
+   + Aux_soc_ess-t[30,25] <= -0.1
+ Lin-socet-3[6,26]: - SOC[6,25] - 0.1 ess_int[6,26] + Aux_soc_ess-t[6,26]
+   <= -0.1
+ Lin-socet-3[15,26]: - SOC[15,25] - 0.1 ess_int[15,26]
+   + Aux_soc_ess-t[15,26] <= -0.1
+ Lin-socet-3[30,26]: - SOC[30,25] - 0.1 ess_int[30,26]
+   + Aux_soc_ess-t[30,26] <= -0.1
+ Lin-socet-3[6,27]: - SOC[6,26] - 0.1 ess_int[6,27] + Aux_soc_ess-t[6,27]
+   <= -0.1
+ Lin-socet-3[15,27]: - SOC[15,26] - 0.1 ess_int[15,27]
+   + Aux_soc_ess-t[15,27] <= -0.1
+ Lin-socet-3[30,27]: - SOC[30,26] - 0.1 ess_int[30,27]
+   + Aux_soc_ess-t[30,27] <= -0.1
+ Lin-socet-3[6,28]: - SOC[6,27] - 0.1 ess_int[6,28] + Aux_soc_ess-t[6,28]
+   <= -0.1
+ Lin-socet-3[15,28]: - SOC[15,27] - 0.1 ess_int[15,28]
+   + Aux_soc_ess-t[15,28] <= -0.1
+ Lin-socet-3[30,28]: - SOC[30,27] - 0.1 ess_int[30,28]
+   + Aux_soc_ess-t[30,28] <= -0.1
+ Lin-socet-3[6,29]: - SOC[6,28] - 0.1 ess_int[6,29] + Aux_soc_ess-t[6,29]
+   <= -0.1
+ Lin-socet-3[15,29]: - SOC[15,28] - 0.1 ess_int[15,29]
+   + Aux_soc_ess-t[15,29] <= -0.1
+ Lin-socet-3[30,29]: - SOC[30,28] - 0.1 ess_int[30,29]
+   + Aux_soc_ess-t[30,29] <= -0.1
+ Lin-socet-3[6,30]: - SOC[6,29] - 0.1 ess_int[6,30] + Aux_soc_ess-t[6,30]
+   <= -0.1
+ Lin-socet-3[15,30]: - SOC[15,29] - 0.1 ess_int[15,30]
+   + Aux_soc_ess-t[15,30] <= -0.1
+ Lin-socet-3[30,30]: - SOC[30,29] - 0.1 ess_int[30,30]
+   + Aux_soc_ess-t[30,30] <= -0.1
+ Lin-socet-3[6,31]: - SOC[6,30] - 0.1 ess_int[6,31] + Aux_soc_ess-t[6,31]
+   <= -0.1
+ Lin-socet-3[15,31]: - SOC[15,30] - 0.1 ess_int[15,31]
+   + Aux_soc_ess-t[15,31] <= -0.1
+ Lin-socet-3[30,31]: - SOC[30,30] - 0.1 ess_int[30,31]
+   + Aux_soc_ess-t[30,31] <= -0.1
+ Lin-socet-3[6,32]: - SOC[6,31] - 0.1 ess_int[6,32] + Aux_soc_ess-t[6,32]
+   <= -0.1
+ Lin-socet-3[15,32]: - SOC[15,31] - 0.1 ess_int[15,32]
+   + Aux_soc_ess-t[15,32] <= -0.1
+ Lin-socet-3[30,32]: - SOC[30,31] - 0.1 ess_int[30,32]
+   + Aux_soc_ess-t[30,32] <= -0.1
+ Lin-socet-3[6,33]: - SOC[6,32] - 0.1 ess_int[6,33] + Aux_soc_ess-t[6,33]
+   <= -0.1
+ Lin-socet-3[15,33]: - SOC[15,32] - 0.1 ess_int[15,33]
+   + Aux_soc_ess-t[15,33] <= -0.1
+ Lin-socet-3[30,33]: - SOC[30,32] - 0.1 ess_int[30,33]
+   + Aux_soc_ess-t[30,33] <= -0.1
+ Lin-socet-3[6,34]: - SOC[6,33] - 0.1 ess_int[6,34] + Aux_soc_ess-t[6,34]
+   <= -0.1
+ Lin-socet-3[15,34]: - SOC[15,33] - 0.1 ess_int[15,34]
+   + Aux_soc_ess-t[15,34] <= -0.1
+ Lin-socet-3[30,34]: - SOC[30,33] - 0.1 ess_int[30,34]
+   + Aux_soc_ess-t[30,34] <= -0.1
+ Lin-socet-3[6,35]: - SOC[6,34] - 0.1 ess_int[6,35] + Aux_soc_ess-t[6,35]
+   <= -0.1
+ Lin-socet-3[15,35]: - SOC[15,34] - 0.1 ess_int[15,35]
+   + Aux_soc_ess-t[15,35] <= -0.1
+ Lin-socet-3[30,35]: - SOC[30,34] - 0.1 ess_int[30,35]
+   + Aux_soc_ess-t[30,35] <= -0.1
+ Lin-socet-3[6,36]: - SOC[6,35] - 0.1 ess_int[6,36] + Aux_soc_ess-t[6,36]
+   <= -0.1
+ Lin-socet-3[15,36]: - SOC[15,35] - 0.1 ess_int[15,36]
+   + Aux_soc_ess-t[15,36] <= -0.1
+ Lin-socet-3[30,36]: - SOC[30,35] - 0.1 ess_int[30,36]
+   + Aux_soc_ess-t[30,36] <= -0.1
+ Lin-socet-3[6,37]: - SOC[6,36] - 0.1 ess_int[6,37] + Aux_soc_ess-t[6,37]
+   <= -0.1
+ Lin-socet-3[15,37]: - SOC[15,36] - 0.1 ess_int[15,37]
+   + Aux_soc_ess-t[15,37] <= -0.1
+ Lin-socet-3[30,37]: - SOC[30,36] - 0.1 ess_int[30,37]
+   + Aux_soc_ess-t[30,37] <= -0.1
+ Lin-socet-3[6,38]: - SOC[6,37] - 0.1 ess_int[6,38] + Aux_soc_ess-t[6,38]
+   <= -0.1
+ Lin-socet-3[15,38]: - SOC[15,37] - 0.1 ess_int[15,38]
+   + Aux_soc_ess-t[15,38] <= -0.1
+ Lin-socet-3[30,38]: - SOC[30,37] - 0.1 ess_int[30,38]
+   + Aux_soc_ess-t[30,38] <= -0.1
+ Lin-socet-3[6,39]: - SOC[6,38] - 0.1 ess_int[6,39] + Aux_soc_ess-t[6,39]
+   <= -0.1
+ Lin-socet-3[15,39]: - SOC[15,38] - 0.1 ess_int[15,39]
+   + Aux_soc_ess-t[15,39] <= -0.1
+ Lin-socet-3[30,39]: - SOC[30,38] - 0.1 ess_int[30,39]
+   + Aux_soc_ess-t[30,39] <= -0.1
+ Lin-socet-3[6,40]: - SOC[6,39] - 0.1 ess_int[6,40] + Aux_soc_ess-t[6,40]
+   <= -0.1
+ Lin-socet-3[15,40]: - SOC[15,39] - 0.1 ess_int[15,40]
+   + Aux_soc_ess-t[15,40] <= -0.1
+ Lin-socet-3[30,40]: - SOC[30,39] - 0.1 ess_int[30,40]
+   + Aux_soc_ess-t[30,40] <= -0.1
+ Lin-socet-3[6,41]: - SOC[6,40] - 0.1 ess_int[6,41] + Aux_soc_ess-t[6,41]
+   <= -0.1
+ Lin-socet-3[15,41]: - SOC[15,40] - 0.1 ess_int[15,41]
+   + Aux_soc_ess-t[15,41] <= -0.1
+ Lin-socet-3[30,41]: - SOC[30,40] - 0.1 ess_int[30,41]
+   + Aux_soc_ess-t[30,41] <= -0.1
+ Lin-socet-3[6,42]: - SOC[6,41] - 0.1 ess_int[6,42] + Aux_soc_ess-t[6,42]
+   <= -0.1
+ Lin-socet-3[15,42]: - SOC[15,41] - 0.1 ess_int[15,42]
+   + Aux_soc_ess-t[15,42] <= -0.1
+ Lin-socet-3[30,42]: - SOC[30,41] - 0.1 ess_int[30,42]
+   + Aux_soc_ess-t[30,42] <= -0.1
+ Lin-socet-3[6,43]: - SOC[6,42] - 0.1 ess_int[6,43] + Aux_soc_ess-t[6,43]
+   <= -0.1
+ Lin-socet-3[15,43]: - SOC[15,42] - 0.1 ess_int[15,43]
+   + Aux_soc_ess-t[15,43] <= -0.1
+ Lin-socet-3[30,43]: - SOC[30,42] - 0.1 ess_int[30,43]
+   + Aux_soc_ess-t[30,43] <= -0.1
+ Lin-socet-3[6,44]: - SOC[6,43] - 0.1 ess_int[6,44] + Aux_soc_ess-t[6,44]
+   <= -0.1
+ Lin-socet-3[15,44]: - SOC[15,43] - 0.1 ess_int[15,44]
+   + Aux_soc_ess-t[15,44] <= -0.1
+ Lin-socet-3[30,44]: - SOC[30,43] - 0.1 ess_int[30,44]
+   + Aux_soc_ess-t[30,44] <= -0.1
+ Lin-socet-3[6,45]: - SOC[6,44] - 0.1 ess_int[6,45] + Aux_soc_ess-t[6,45]
+   <= -0.1
+ Lin-socet-3[15,45]: - SOC[15,44] - 0.1 ess_int[15,45]
+   + Aux_soc_ess-t[15,45] <= -0.1
+ Lin-socet-3[30,45]: - SOC[30,44] - 0.1 ess_int[30,45]
+   + Aux_soc_ess-t[30,45] <= -0.1
+ Lin-socet-3[6,46]: - SOC[6,45] - 0.1 ess_int[6,46] + Aux_soc_ess-t[6,46]
+   <= -0.1
+ Lin-socet-3[15,46]: - SOC[15,45] - 0.1 ess_int[15,46]
+   + Aux_soc_ess-t[15,46] <= -0.1
+ Lin-socet-3[30,46]: - SOC[30,45] - 0.1 ess_int[30,46]
+   + Aux_soc_ess-t[30,46] <= -0.1
+ Lin-socet-3[6,47]: - SOC[6,46] - 0.1 ess_int[6,47] + Aux_soc_ess-t[6,47]
+   <= -0.1
+ Lin-socet-3[15,47]: - SOC[15,46] - 0.1 ess_int[15,47]
+   + Aux_soc_ess-t[15,47] <= -0.1
+ Lin-socet-3[30,47]: - SOC[30,46] - 0.1 ess_int[30,47]
+   + Aux_soc_ess-t[30,47] <= -0.1
+ Lin-socet-3[6,48]: - SOC[6,47] - 0.1 ess_int[6,48] + Aux_soc_ess-t[6,48]
+   <= -0.1
+ Lin-socet-3[15,48]: - SOC[15,47] - 0.1 ess_int[15,48]
+   + Aux_soc_ess-t[15,48] <= -0.1
+ Lin-socet-3[30,48]: - SOC[30,47] - 0.1 ess_int[30,48]
+   + Aux_soc_ess-t[30,48] <= -0.1
+ Lin-socet-4[6,1]: - 0.9 ess_int[6,1] + Aux_soc_ess-t[6,1] <= 0
+ Lin-socet-4[15,1]: - 0.9 ess_int[15,1] + Aux_soc_ess-t[15,1] <= 0
+ Lin-socet-4[30,1]: - 0.9 ess_int[30,1] + Aux_soc_ess-t[30,1] <= 0
+ Lin-socet-4[6,2]: - 0.9 ess_int[6,2] + Aux_soc_ess-t[6,2] <= 0
+ Lin-socet-4[15,2]: - 0.9 ess_int[15,2] + Aux_soc_ess-t[15,2] <= 0
+ Lin-socet-4[30,2]: - 0.9 ess_int[30,2] + Aux_soc_ess-t[30,2] <= 0
+ Lin-socet-4[6,3]: - 0.9 ess_int[6,3] + Aux_soc_ess-t[6,3] <= 0
+ Lin-socet-4[15,3]: - 0.9 ess_int[15,3] + Aux_soc_ess-t[15,3] <= 0
+ Lin-socet-4[30,3]: - 0.9 ess_int[30,3] + Aux_soc_ess-t[30,3] <= 0
+ Lin-socet-4[6,4]: - 0.9 ess_int[6,4] + Aux_soc_ess-t[6,4] <= 0
+ Lin-socet-4[15,4]: - 0.9 ess_int[15,4] + Aux_soc_ess-t[15,4] <= 0
+ Lin-socet-4[30,4]: - 0.9 ess_int[30,4] + Aux_soc_ess-t[30,4] <= 0
+ Lin-socet-4[6,5]: - 0.9 ess_int[6,5] + Aux_soc_ess-t[6,5] <= 0
+ Lin-socet-4[15,5]: - 0.9 ess_int[15,5] + Aux_soc_ess-t[15,5] <= 0
+ Lin-socet-4[30,5]: - 0.9 ess_int[30,5] + Aux_soc_ess-t[30,5] <= 0
+ Lin-socet-4[6,6]: - 0.9 ess_int[6,6] + Aux_soc_ess-t[6,6] <= 0
+ Lin-socet-4[15,6]: - 0.9 ess_int[15,6] + Aux_soc_ess-t[15,6] <= 0
+ Lin-socet-4[30,6]: - 0.9 ess_int[30,6] + Aux_soc_ess-t[30,6] <= 0
+ Lin-socet-4[6,7]: - 0.9 ess_int[6,7] + Aux_soc_ess-t[6,7] <= 0
+ Lin-socet-4[15,7]: - 0.9 ess_int[15,7] + Aux_soc_ess-t[15,7] <= 0
+ Lin-socet-4[30,7]: - 0.9 ess_int[30,7] + Aux_soc_ess-t[30,7] <= 0
+ Lin-socet-4[6,8]: - 0.9 ess_int[6,8] + Aux_soc_ess-t[6,8] <= 0
+ Lin-socet-4[15,8]: - 0.9 ess_int[15,8] + Aux_soc_ess-t[15,8] <= 0
+ Lin-socet-4[30,8]: - 0.9 ess_int[30,8] + Aux_soc_ess-t[30,8] <= 0
+ Lin-socet-4[6,9]: - 0.9 ess_int[6,9] + Aux_soc_ess-t[6,9] <= 0
+ Lin-socet-4[15,9]: - 0.9 ess_int[15,9] + Aux_soc_ess-t[15,9] <= 0
+ Lin-socet-4[30,9]: - 0.9 ess_int[30,9] + Aux_soc_ess-t[30,9] <= 0
+ Lin-socet-4[6,10]: - 0.9 ess_int[6,10] + Aux_soc_ess-t[6,10] <= 0
+ Lin-socet-4[15,10]: - 0.9 ess_int[15,10] + Aux_soc_ess-t[15,10] <= 0
+ Lin-socet-4[30,10]: - 0.9 ess_int[30,10] + Aux_soc_ess-t[30,10] <= 0
+ Lin-socet-4[6,11]: - 0.9 ess_int[6,11] + Aux_soc_ess-t[6,11] <= 0
+ Lin-socet-4[15,11]: - 0.9 ess_int[15,11] + Aux_soc_ess-t[15,11] <= 0
+ Lin-socet-4[30,11]: - 0.9 ess_int[30,11] + Aux_soc_ess-t[30,11] <= 0
+ Lin-socet-4[6,12]: - 0.9 ess_int[6,12] + Aux_soc_ess-t[6,12] <= 0
+ Lin-socet-4[15,12]: - 0.9 ess_int[15,12] + Aux_soc_ess-t[15,12] <= 0
+ Lin-socet-4[30,12]: - 0.9 ess_int[30,12] + Aux_soc_ess-t[30,12] <= 0
+ Lin-socet-4[6,13]: - 0.9 ess_int[6,13] + Aux_soc_ess-t[6,13] <= 0
+ Lin-socet-4[15,13]: - 0.9 ess_int[15,13] + Aux_soc_ess-t[15,13] <= 0
+ Lin-socet-4[30,13]: - 0.9 ess_int[30,13] + Aux_soc_ess-t[30,13] <= 0
+ Lin-socet-4[6,14]: - 0.9 ess_int[6,14] + Aux_soc_ess-t[6,14] <= 0
+ Lin-socet-4[15,14]: - 0.9 ess_int[15,14] + Aux_soc_ess-t[15,14] <= 0
+ Lin-socet-4[30,14]: - 0.9 ess_int[30,14] + Aux_soc_ess-t[30,14] <= 0
+ Lin-socet-4[6,15]: - 0.9 ess_int[6,15] + Aux_soc_ess-t[6,15] <= 0
+ Lin-socet-4[15,15]: - 0.9 ess_int[15,15] + Aux_soc_ess-t[15,15] <= 0
+ Lin-socet-4[30,15]: - 0.9 ess_int[30,15] + Aux_soc_ess-t[30,15] <= 0
+ Lin-socet-4[6,16]: - 0.9 ess_int[6,16] + Aux_soc_ess-t[6,16] <= 0
+ Lin-socet-4[15,16]: - 0.9 ess_int[15,16] + Aux_soc_ess-t[15,16] <= 0
+ Lin-socet-4[30,16]: - 0.9 ess_int[30,16] + Aux_soc_ess-t[30,16] <= 0
+ Lin-socet-4[6,17]: - 0.9 ess_int[6,17] + Aux_soc_ess-t[6,17] <= 0
+ Lin-socet-4[15,17]: - 0.9 ess_int[15,17] + Aux_soc_ess-t[15,17] <= 0
+ Lin-socet-4[30,17]: - 0.9 ess_int[30,17] + Aux_soc_ess-t[30,17] <= 0
+ Lin-socet-4[6,18]: - 0.9 ess_int[6,18] + Aux_soc_ess-t[6,18] <= 0
+ Lin-socet-4[15,18]: - 0.9 ess_int[15,18] + Aux_soc_ess-t[15,18] <= 0
+ Lin-socet-4[30,18]: - 0.9 ess_int[30,18] + Aux_soc_ess-t[30,18] <= 0
+ Lin-socet-4[6,19]: - 0.9 ess_int[6,19] + Aux_soc_ess-t[6,19] <= 0
+ Lin-socet-4[15,19]: - 0.9 ess_int[15,19] + Aux_soc_ess-t[15,19] <= 0
+ Lin-socet-4[30,19]: - 0.9 ess_int[30,19] + Aux_soc_ess-t[30,19] <= 0
+ Lin-socet-4[6,20]: - 0.9 ess_int[6,20] + Aux_soc_ess-t[6,20] <= 0
+ Lin-socet-4[15,20]: - 0.9 ess_int[15,20] + Aux_soc_ess-t[15,20] <= 0
+ Lin-socet-4[30,20]: - 0.9 ess_int[30,20] + Aux_soc_ess-t[30,20] <= 0
+ Lin-socet-4[6,21]: - 0.9 ess_int[6,21] + Aux_soc_ess-t[6,21] <= 0
+ Lin-socet-4[15,21]: - 0.9 ess_int[15,21] + Aux_soc_ess-t[15,21] <= 0
+ Lin-socet-4[30,21]: - 0.9 ess_int[30,21] + Aux_soc_ess-t[30,21] <= 0
+ Lin-socet-4[6,22]: - 0.9 ess_int[6,22] + Aux_soc_ess-t[6,22] <= 0
+ Lin-socet-4[15,22]: - 0.9 ess_int[15,22] + Aux_soc_ess-t[15,22] <= 0
+ Lin-socet-4[30,22]: - 0.9 ess_int[30,22] + Aux_soc_ess-t[30,22] <= 0
+ Lin-socet-4[6,23]: - 0.9 ess_int[6,23] + Aux_soc_ess-t[6,23] <= 0
+ Lin-socet-4[15,23]: - 0.9 ess_int[15,23] + Aux_soc_ess-t[15,23] <= 0
+ Lin-socet-4[30,23]: - 0.9 ess_int[30,23] + Aux_soc_ess-t[30,23] <= 0
+ Lin-socet-4[6,24]: - 0.9 ess_int[6,24] + Aux_soc_ess-t[6,24] <= 0
+ Lin-socet-4[15,24]: - 0.9 ess_int[15,24] + Aux_soc_ess-t[15,24] <= 0
+ Lin-socet-4[30,24]: - 0.9 ess_int[30,24] + Aux_soc_ess-t[30,24] <= 0
+ Lin-socet-4[6,25]: - 0.9 ess_int[6,25] + Aux_soc_ess-t[6,25] <= 0
+ Lin-socet-4[15,25]: - 0.9 ess_int[15,25] + Aux_soc_ess-t[15,25] <= 0
+ Lin-socet-4[30,25]: - 0.9 ess_int[30,25] + Aux_soc_ess-t[30,25] <= 0
+ Lin-socet-4[6,26]: - 0.9 ess_int[6,26] + Aux_soc_ess-t[6,26] <= 0
+ Lin-socet-4[15,26]: - 0.9 ess_int[15,26] + Aux_soc_ess-t[15,26] <= 0
+ Lin-socet-4[30,26]: - 0.9 ess_int[30,26] + Aux_soc_ess-t[30,26] <= 0
+ Lin-socet-4[6,27]: - 0.9 ess_int[6,27] + Aux_soc_ess-t[6,27] <= 0
+ Lin-socet-4[15,27]: - 0.9 ess_int[15,27] + Aux_soc_ess-t[15,27] <= 0
+ Lin-socet-4[30,27]: - 0.9 ess_int[30,27] + Aux_soc_ess-t[30,27] <= 0
+ Lin-socet-4[6,28]: - 0.9 ess_int[6,28] + Aux_soc_ess-t[6,28] <= 0
+ Lin-socet-4[15,28]: - 0.9 ess_int[15,28] + Aux_soc_ess-t[15,28] <= 0
+ Lin-socet-4[30,28]: - 0.9 ess_int[30,28] + Aux_soc_ess-t[30,28] <= 0
+ Lin-socet-4[6,29]: - 0.9 ess_int[6,29] + Aux_soc_ess-t[6,29] <= 0
+ Lin-socet-4[15,29]: - 0.9 ess_int[15,29] + Aux_soc_ess-t[15,29] <= 0
+ Lin-socet-4[30,29]: - 0.9 ess_int[30,29] + Aux_soc_ess-t[30,29] <= 0
+ Lin-socet-4[6,30]: - 0.9 ess_int[6,30] + Aux_soc_ess-t[6,30] <= 0
+ Lin-socet-4[15,30]: - 0.9 ess_int[15,30] + Aux_soc_ess-t[15,30] <= 0
+ Lin-socet-4[30,30]: - 0.9 ess_int[30,30] + Aux_soc_ess-t[30,30] <= 0
+ Lin-socet-4[6,31]: - 0.9 ess_int[6,31] + Aux_soc_ess-t[6,31] <= 0
+ Lin-socet-4[15,31]: - 0.9 ess_int[15,31] + Aux_soc_ess-t[15,31] <= 0
+ Lin-socet-4[30,31]: - 0.9 ess_int[30,31] + Aux_soc_ess-t[30,31] <= 0
+ Lin-socet-4[6,32]: - 0.9 ess_int[6,32] + Aux_soc_ess-t[6,32] <= 0
+ Lin-socet-4[15,32]: - 0.9 ess_int[15,32] + Aux_soc_ess-t[15,32] <= 0
+ Lin-socet-4[30,32]: - 0.9 ess_int[30,32] + Aux_soc_ess-t[30,32] <= 0
+ Lin-socet-4[6,33]: - 0.9 ess_int[6,33] + Aux_soc_ess-t[6,33] <= 0
+ Lin-socet-4[15,33]: - 0.9 ess_int[15,33] + Aux_soc_ess-t[15,33] <= 0
+ Lin-socet-4[30,33]: - 0.9 ess_int[30,33] + Aux_soc_ess-t[30,33] <= 0
+ Lin-socet-4[6,34]: - 0.9 ess_int[6,34] + Aux_soc_ess-t[6,34] <= 0
+ Lin-socet-4[15,34]: - 0.9 ess_int[15,34] + Aux_soc_ess-t[15,34] <= 0
+ Lin-socet-4[30,34]: - 0.9 ess_int[30,34] + Aux_soc_ess-t[30,34] <= 0
+ Lin-socet-4[6,35]: - 0.9 ess_int[6,35] + Aux_soc_ess-t[6,35] <= 0
+ Lin-socet-4[15,35]: - 0.9 ess_int[15,35] + Aux_soc_ess-t[15,35] <= 0
+ Lin-socet-4[30,35]: - 0.9 ess_int[30,35] + Aux_soc_ess-t[30,35] <= 0
+ Lin-socet-4[6,36]: - 0.9 ess_int[6,36] + Aux_soc_ess-t[6,36] <= 0
+ Lin-socet-4[15,36]: - 0.9 ess_int[15,36] + Aux_soc_ess-t[15,36] <= 0
+ Lin-socet-4[30,36]: - 0.9 ess_int[30,36] + Aux_soc_ess-t[30,36] <= 0
+ Lin-socet-4[6,37]: - 0.9 ess_int[6,37] + Aux_soc_ess-t[6,37] <= 0
+ Lin-socet-4[15,37]: - 0.9 ess_int[15,37] + Aux_soc_ess-t[15,37] <= 0
+ Lin-socet-4[30,37]: - 0.9 ess_int[30,37] + Aux_soc_ess-t[30,37] <= 0
+ Lin-socet-4[6,38]: - 0.9 ess_int[6,38] + Aux_soc_ess-t[6,38] <= 0
+ Lin-socet-4[15,38]: - 0.9 ess_int[15,38] + Aux_soc_ess-t[15,38] <= 0
+ Lin-socet-4[30,38]: - 0.9 ess_int[30,38] + Aux_soc_ess-t[30,38] <= 0
+ Lin-socet-4[6,39]: - 0.9 ess_int[6,39] + Aux_soc_ess-t[6,39] <= 0
+ Lin-socet-4[15,39]: - 0.9 ess_int[15,39] + Aux_soc_ess-t[15,39] <= 0
+ Lin-socet-4[30,39]: - 0.9 ess_int[30,39] + Aux_soc_ess-t[30,39] <= 0
+ Lin-socet-4[6,40]: - 0.9 ess_int[6,40] + Aux_soc_ess-t[6,40] <= 0
+ Lin-socet-4[15,40]: - 0.9 ess_int[15,40] + Aux_soc_ess-t[15,40] <= 0
+ Lin-socet-4[30,40]: - 0.9 ess_int[30,40] + Aux_soc_ess-t[30,40] <= 0
+ Lin-socet-4[6,41]: - 0.9 ess_int[6,41] + Aux_soc_ess-t[6,41] <= 0
+ Lin-socet-4[15,41]: - 0.9 ess_int[15,41] + Aux_soc_ess-t[15,41] <= 0
+ Lin-socet-4[30,41]: - 0.9 ess_int[30,41] + Aux_soc_ess-t[30,41] <= 0
+ Lin-socet-4[6,42]: - 0.9 ess_int[6,42] + Aux_soc_ess-t[6,42] <= 0
+ Lin-socet-4[15,42]: - 0.9 ess_int[15,42] + Aux_soc_ess-t[15,42] <= 0
+ Lin-socet-4[30,42]: - 0.9 ess_int[30,42] + Aux_soc_ess-t[30,42] <= 0
+ Lin-socet-4[6,43]: - 0.9 ess_int[6,43] + Aux_soc_ess-t[6,43] <= 0
+ Lin-socet-4[15,43]: - 0.9 ess_int[15,43] + Aux_soc_ess-t[15,43] <= 0
+ Lin-socet-4[30,43]: - 0.9 ess_int[30,43] + Aux_soc_ess-t[30,43] <= 0
+ Lin-socet-4[6,44]: - 0.9 ess_int[6,44] + Aux_soc_ess-t[6,44] <= 0
+ Lin-socet-4[15,44]: - 0.9 ess_int[15,44] + Aux_soc_ess-t[15,44] <= 0
+ Lin-socet-4[30,44]: - 0.9 ess_int[30,44] + Aux_soc_ess-t[30,44] <= 0
+ Lin-socet-4[6,45]: - 0.9 ess_int[6,45] + Aux_soc_ess-t[6,45] <= 0
+ Lin-socet-4[15,45]: - 0.9 ess_int[15,45] + Aux_soc_ess-t[15,45] <= 0
+ Lin-socet-4[30,45]: - 0.9 ess_int[30,45] + Aux_soc_ess-t[30,45] <= 0
+ Lin-socet-4[6,46]: - 0.9 ess_int[6,46] + Aux_soc_ess-t[6,46] <= 0
+ Lin-socet-4[15,46]: - 0.9 ess_int[15,46] + Aux_soc_ess-t[15,46] <= 0
+ Lin-socet-4[30,46]: - 0.9 ess_int[30,46] + Aux_soc_ess-t[30,46] <= 0
+ Lin-socet-4[6,47]: - 0.9 ess_int[6,47] + Aux_soc_ess-t[6,47] <= 0
+ Lin-socet-4[15,47]: - 0.9 ess_int[15,47] + Aux_soc_ess-t[15,47] <= 0
+ Lin-socet-4[30,47]: - 0.9 ess_int[30,47] + Aux_soc_ess-t[30,47] <= 0
+ Lin-socet-4[6,48]: - 0.9 ess_int[6,48] + Aux_soc_ess-t[6,48] <= 0
+ Lin-socet-4[15,48]: - 0.9 ess_int[15,48] + Aux_soc_ess-t[15,48] <= 0
+ Lin-socet-4[30,48]: - 0.9 ess_int[30,48] + Aux_soc_ess-t[30,48] <= 0
+ Lin-socet-1[6,0]: - 0.1 ess_int[6,0] + Aux_soc_ess-t[6,0] >= 0
+ Lin-socet-1[15,0]: - 0.1 ess_int[15,0] + Aux_soc_ess-t[15,0] >= 0
+ Lin-socet-1[30,0]: - 0.1 ess_int[30,0] + Aux_soc_ess-t[30,0] >= 0
+ Lin-socet-1[6,1]: - 0.1 ess_int[6,1] + Aux_soc_ess-t[6,1] >= 0
+ Lin-socet-1[15,1]: - 0.1 ess_int[15,1] + Aux_soc_ess-t[15,1] >= 0
+ Lin-socet-1[30,1]: - 0.1 ess_int[30,1] + Aux_soc_ess-t[30,1] >= 0
+ Lin-socet-1[6,2]: - 0.1 ess_int[6,2] + Aux_soc_ess-t[6,2] >= 0
+ Lin-socet-1[15,2]: - 0.1 ess_int[15,2] + Aux_soc_ess-t[15,2] >= 0
+ Lin-socet-1[30,2]: - 0.1 ess_int[30,2] + Aux_soc_ess-t[30,2] >= 0
+ Lin-socet-1[6,3]: - 0.1 ess_int[6,3] + Aux_soc_ess-t[6,3] >= 0
+ Lin-socet-1[15,3]: - 0.1 ess_int[15,3] + Aux_soc_ess-t[15,3] >= 0
+ Lin-socet-1[30,3]: - 0.1 ess_int[30,3] + Aux_soc_ess-t[30,3] >= 0
+ Lin-socet-1[6,4]: - 0.1 ess_int[6,4] + Aux_soc_ess-t[6,4] >= 0
+ Lin-socet-1[15,4]: - 0.1 ess_int[15,4] + Aux_soc_ess-t[15,4] >= 0
+ Lin-socet-1[30,4]: - 0.1 ess_int[30,4] + Aux_soc_ess-t[30,4] >= 0
+ Lin-socet-1[6,5]: - 0.1 ess_int[6,5] + Aux_soc_ess-t[6,5] >= 0
+ Lin-socet-1[15,5]: - 0.1 ess_int[15,5] + Aux_soc_ess-t[15,5] >= 0
+ Lin-socet-1[30,5]: - 0.1 ess_int[30,5] + Aux_soc_ess-t[30,5] >= 0
+ Lin-socet-1[6,6]: - 0.1 ess_int[6,6] + Aux_soc_ess-t[6,6] >= 0
+ Lin-socet-1[15,6]: - 0.1 ess_int[15,6] + Aux_soc_ess-t[15,6] >= 0
+ Lin-socet-1[30,6]: - 0.1 ess_int[30,6] + Aux_soc_ess-t[30,6] >= 0
+ Lin-socet-1[6,7]: - 0.1 ess_int[6,7] + Aux_soc_ess-t[6,7] >= 0
+ Lin-socet-1[15,7]: - 0.1 ess_int[15,7] + Aux_soc_ess-t[15,7] >= 0
+ Lin-socet-1[30,7]: - 0.1 ess_int[30,7] + Aux_soc_ess-t[30,7] >= 0
+ Lin-socet-1[6,8]: - 0.1 ess_int[6,8] + Aux_soc_ess-t[6,8] >= 0
+ Lin-socet-1[15,8]: - 0.1 ess_int[15,8] + Aux_soc_ess-t[15,8] >= 0
+ Lin-socet-1[30,8]: - 0.1 ess_int[30,8] + Aux_soc_ess-t[30,8] >= 0
+ Lin-socet-1[6,9]: - 0.1 ess_int[6,9] + Aux_soc_ess-t[6,9] >= 0
+ Lin-socet-1[15,9]: - 0.1 ess_int[15,9] + Aux_soc_ess-t[15,9] >= 0
+ Lin-socet-1[30,9]: - 0.1 ess_int[30,9] + Aux_soc_ess-t[30,9] >= 0
+ Lin-socet-1[6,10]: - 0.1 ess_int[6,10] + Aux_soc_ess-t[6,10] >= 0
+ Lin-socet-1[15,10]: - 0.1 ess_int[15,10] + Aux_soc_ess-t[15,10] >= 0
+ Lin-socet-1[30,10]: - 0.1 ess_int[30,10] + Aux_soc_ess-t[30,10] >= 0
+ Lin-socet-1[6,11]: - 0.1 ess_int[6,11] + Aux_soc_ess-t[6,11] >= 0
+ Lin-socet-1[15,11]: - 0.1 ess_int[15,11] + Aux_soc_ess-t[15,11] >= 0
+ Lin-socet-1[30,11]: - 0.1 ess_int[30,11] + Aux_soc_ess-t[30,11] >= 0
+ Lin-socet-1[6,12]: - 0.1 ess_int[6,12] + Aux_soc_ess-t[6,12] >= 0
+ Lin-socet-1[15,12]: - 0.1 ess_int[15,12] + Aux_soc_ess-t[15,12] >= 0
+ Lin-socet-1[30,12]: - 0.1 ess_int[30,12] + Aux_soc_ess-t[30,12] >= 0
+ Lin-socet-1[6,13]: - 0.1 ess_int[6,13] + Aux_soc_ess-t[6,13] >= 0
+ Lin-socet-1[15,13]: - 0.1 ess_int[15,13] + Aux_soc_ess-t[15,13] >= 0
+ Lin-socet-1[30,13]: - 0.1 ess_int[30,13] + Aux_soc_ess-t[30,13] >= 0
+ Lin-socet-1[6,14]: - 0.1 ess_int[6,14] + Aux_soc_ess-t[6,14] >= 0
+ Lin-socet-1[15,14]: - 0.1 ess_int[15,14] + Aux_soc_ess-t[15,14] >= 0
+ Lin-socet-1[30,14]: - 0.1 ess_int[30,14] + Aux_soc_ess-t[30,14] >= 0
+ Lin-socet-1[6,15]: - 0.1 ess_int[6,15] + Aux_soc_ess-t[6,15] >= 0
+ Lin-socet-1[15,15]: - 0.1 ess_int[15,15] + Aux_soc_ess-t[15,15] >= 0
+ Lin-socet-1[30,15]: - 0.1 ess_int[30,15] + Aux_soc_ess-t[30,15] >= 0
+ Lin-socet-1[6,16]: - 0.1 ess_int[6,16] + Aux_soc_ess-t[6,16] >= 0
+ Lin-socet-1[15,16]: - 0.1 ess_int[15,16] + Aux_soc_ess-t[15,16] >= 0
+ Lin-socet-1[30,16]: - 0.1 ess_int[30,16] + Aux_soc_ess-t[30,16] >= 0
+ Lin-socet-1[6,17]: - 0.1 ess_int[6,17] + Aux_soc_ess-t[6,17] >= 0
+ Lin-socet-1[15,17]: - 0.1 ess_int[15,17] + Aux_soc_ess-t[15,17] >= 0
+ Lin-socet-1[30,17]: - 0.1 ess_int[30,17] + Aux_soc_ess-t[30,17] >= 0
+ Lin-socet-1[6,18]: - 0.1 ess_int[6,18] + Aux_soc_ess-t[6,18] >= 0
+ Lin-socet-1[15,18]: - 0.1 ess_int[15,18] + Aux_soc_ess-t[15,18] >= 0
+ Lin-socet-1[30,18]: - 0.1 ess_int[30,18] + Aux_soc_ess-t[30,18] >= 0
+ Lin-socet-1[6,19]: - 0.1 ess_int[6,19] + Aux_soc_ess-t[6,19] >= 0
+ Lin-socet-1[15,19]: - 0.1 ess_int[15,19] + Aux_soc_ess-t[15,19] >= 0
+ Lin-socet-1[30,19]: - 0.1 ess_int[30,19] + Aux_soc_ess-t[30,19] >= 0
+ Lin-socet-1[6,20]: - 0.1 ess_int[6,20] + Aux_soc_ess-t[6,20] >= 0
+ Lin-socet-1[15,20]: - 0.1 ess_int[15,20] + Aux_soc_ess-t[15,20] >= 0
+ Lin-socet-1[30,20]: - 0.1 ess_int[30,20] + Aux_soc_ess-t[30,20] >= 0
+ Lin-socet-1[6,21]: - 0.1 ess_int[6,21] + Aux_soc_ess-t[6,21] >= 0
+ Lin-socet-1[15,21]: - 0.1 ess_int[15,21] + Aux_soc_ess-t[15,21] >= 0
+ Lin-socet-1[30,21]: - 0.1 ess_int[30,21] + Aux_soc_ess-t[30,21] >= 0
+ Lin-socet-1[6,22]: - 0.1 ess_int[6,22] + Aux_soc_ess-t[6,22] >= 0
+ Lin-socet-1[15,22]: - 0.1 ess_int[15,22] + Aux_soc_ess-t[15,22] >= 0
+ Lin-socet-1[30,22]: - 0.1 ess_int[30,22] + Aux_soc_ess-t[30,22] >= 0
+ Lin-socet-1[6,23]: - 0.1 ess_int[6,23] + Aux_soc_ess-t[6,23] >= 0
+ Lin-socet-1[15,23]: - 0.1 ess_int[15,23] + Aux_soc_ess-t[15,23] >= 0
+ Lin-socet-1[30,23]: - 0.1 ess_int[30,23] + Aux_soc_ess-t[30,23] >= 0
+ Lin-socet-1[6,24]: - 0.1 ess_int[6,24] + Aux_soc_ess-t[6,24] >= 0
+ Lin-socet-1[15,24]: - 0.1 ess_int[15,24] + Aux_soc_ess-t[15,24] >= 0
+ Lin-socet-1[30,24]: - 0.1 ess_int[30,24] + Aux_soc_ess-t[30,24] >= 0
+ Lin-socet-1[6,25]: - 0.1 ess_int[6,25] + Aux_soc_ess-t[6,25] >= 0
+ Lin-socet-1[15,25]: - 0.1 ess_int[15,25] + Aux_soc_ess-t[15,25] >= 0
+ Lin-socet-1[30,25]: - 0.1 ess_int[30,25] + Aux_soc_ess-t[30,25] >= 0
+ Lin-socet-1[6,26]: - 0.1 ess_int[6,26] + Aux_soc_ess-t[6,26] >= 0
+ Lin-socet-1[15,26]: - 0.1 ess_int[15,26] + Aux_soc_ess-t[15,26] >= 0
+ Lin-socet-1[30,26]: - 0.1 ess_int[30,26] + Aux_soc_ess-t[30,26] >= 0
+ Lin-socet-1[6,27]: - 0.1 ess_int[6,27] + Aux_soc_ess-t[6,27] >= 0
+ Lin-socet-1[15,27]: - 0.1 ess_int[15,27] + Aux_soc_ess-t[15,27] >= 0
+ Lin-socet-1[30,27]: - 0.1 ess_int[30,27] + Aux_soc_ess-t[30,27] >= 0
+ Lin-socet-1[6,28]: - 0.1 ess_int[6,28] + Aux_soc_ess-t[6,28] >= 0
+ Lin-socet-1[15,28]: - 0.1 ess_int[15,28] + Aux_soc_ess-t[15,28] >= 0
+ Lin-socet-1[30,28]: - 0.1 ess_int[30,28] + Aux_soc_ess-t[30,28] >= 0
+ Lin-socet-1[6,29]: - 0.1 ess_int[6,29] + Aux_soc_ess-t[6,29] >= 0
+ Lin-socet-1[15,29]: - 0.1 ess_int[15,29] + Aux_soc_ess-t[15,29] >= 0
+ Lin-socet-1[30,29]: - 0.1 ess_int[30,29] + Aux_soc_ess-t[30,29] >= 0
+ Lin-socet-1[6,30]: - 0.1 ess_int[6,30] + Aux_soc_ess-t[6,30] >= 0
+ Lin-socet-1[15,30]: - 0.1 ess_int[15,30] + Aux_soc_ess-t[15,30] >= 0
+ Lin-socet-1[30,30]: - 0.1 ess_int[30,30] + Aux_soc_ess-t[30,30] >= 0
+ Lin-socet-1[6,31]: - 0.1 ess_int[6,31] + Aux_soc_ess-t[6,31] >= 0
+ Lin-socet-1[15,31]: - 0.1 ess_int[15,31] + Aux_soc_ess-t[15,31] >= 0
+ Lin-socet-1[30,31]: - 0.1 ess_int[30,31] + Aux_soc_ess-t[30,31] >= 0
+ Lin-socet-1[6,32]: - 0.1 ess_int[6,32] + Aux_soc_ess-t[6,32] >= 0
+ Lin-socet-1[15,32]: - 0.1 ess_int[15,32] + Aux_soc_ess-t[15,32] >= 0
+ Lin-socet-1[30,32]: - 0.1 ess_int[30,32] + Aux_soc_ess-t[30,32] >= 0
+ Lin-socet-1[6,33]: - 0.1 ess_int[6,33] + Aux_soc_ess-t[6,33] >= 0
+ Lin-socet-1[15,33]: - 0.1 ess_int[15,33] + Aux_soc_ess-t[15,33] >= 0
+ Lin-socet-1[30,33]: - 0.1 ess_int[30,33] + Aux_soc_ess-t[30,33] >= 0
+ Lin-socet-1[6,34]: - 0.1 ess_int[6,34] + Aux_soc_ess-t[6,34] >= 0
+ Lin-socet-1[15,34]: - 0.1 ess_int[15,34] + Aux_soc_ess-t[15,34] >= 0
+ Lin-socet-1[30,34]: - 0.1 ess_int[30,34] + Aux_soc_ess-t[30,34] >= 0
+ Lin-socet-1[6,35]: - 0.1 ess_int[6,35] + Aux_soc_ess-t[6,35] >= 0
+ Lin-socet-1[15,35]: - 0.1 ess_int[15,35] + Aux_soc_ess-t[15,35] >= 0
+ Lin-socet-1[30,35]: - 0.1 ess_int[30,35] + Aux_soc_ess-t[30,35] >= 0
+ Lin-socet-1[6,36]: - 0.1 ess_int[6,36] + Aux_soc_ess-t[6,36] >= 0
+ Lin-socet-1[15,36]: - 0.1 ess_int[15,36] + Aux_soc_ess-t[15,36] >= 0
+ Lin-socet-1[30,36]: - 0.1 ess_int[30,36] + Aux_soc_ess-t[30,36] >= 0
+ Lin-socet-1[6,37]: - 0.1 ess_int[6,37] + Aux_soc_ess-t[6,37] >= 0
+ Lin-socet-1[15,37]: - 0.1 ess_int[15,37] + Aux_soc_ess-t[15,37] >= 0
+ Lin-socet-1[30,37]: - 0.1 ess_int[30,37] + Aux_soc_ess-t[30,37] >= 0
+ Lin-socet-1[6,38]: - 0.1 ess_int[6,38] + Aux_soc_ess-t[6,38] >= 0
+ Lin-socet-1[15,38]: - 0.1 ess_int[15,38] + Aux_soc_ess-t[15,38] >= 0
+ Lin-socet-1[30,38]: - 0.1 ess_int[30,38] + Aux_soc_ess-t[30,38] >= 0
+ Lin-socet-1[6,39]: - 0.1 ess_int[6,39] + Aux_soc_ess-t[6,39] >= 0
+ Lin-socet-1[15,39]: - 0.1 ess_int[15,39] + Aux_soc_ess-t[15,39] >= 0
+ Lin-socet-1[30,39]: - 0.1 ess_int[30,39] + Aux_soc_ess-t[30,39] >= 0
+ Lin-socet-1[6,40]: - 0.1 ess_int[6,40] + Aux_soc_ess-t[6,40] >= 0
+ Lin-socet-1[15,40]: - 0.1 ess_int[15,40] + Aux_soc_ess-t[15,40] >= 0
+ Lin-socet-1[30,40]: - 0.1 ess_int[30,40] + Aux_soc_ess-t[30,40] >= 0
+ Lin-socet-1[6,41]: - 0.1 ess_int[6,41] + Aux_soc_ess-t[6,41] >= 0
+ Lin-socet-1[15,41]: - 0.1 ess_int[15,41] + Aux_soc_ess-t[15,41] >= 0
+ Lin-socet-1[30,41]: - 0.1 ess_int[30,41] + Aux_soc_ess-t[30,41] >= 0
+ Lin-socet-1[6,42]: - 0.1 ess_int[6,42] + Aux_soc_ess-t[6,42] >= 0
+ Lin-socet-1[15,42]: - 0.1 ess_int[15,42] + Aux_soc_ess-t[15,42] >= 0
+ Lin-socet-1[30,42]: - 0.1 ess_int[30,42] + Aux_soc_ess-t[30,42] >= 0
+ Lin-socet-1[6,43]: - 0.1 ess_int[6,43] + Aux_soc_ess-t[6,43] >= 0
+ Lin-socet-1[15,43]: - 0.1 ess_int[15,43] + Aux_soc_ess-t[15,43] >= 0
+ Lin-socet-1[30,43]: - 0.1 ess_int[30,43] + Aux_soc_ess-t[30,43] >= 0
+ Lin-socet-1[6,44]: - 0.1 ess_int[6,44] + Aux_soc_ess-t[6,44] >= 0
+ Lin-socet-1[15,44]: - 0.1 ess_int[15,44] + Aux_soc_ess-t[15,44] >= 0
+ Lin-socet-1[30,44]: - 0.1 ess_int[30,44] + Aux_soc_ess-t[30,44] >= 0
+ Lin-socet-1[6,45]: - 0.1 ess_int[6,45] + Aux_soc_ess-t[6,45] >= 0
+ Lin-socet-1[15,45]: - 0.1 ess_int[15,45] + Aux_soc_ess-t[15,45] >= 0
+ Lin-socet-1[30,45]: - 0.1 ess_int[30,45] + Aux_soc_ess-t[30,45] >= 0
+ Lin-socet-1[6,46]: - 0.1 ess_int[6,46] + Aux_soc_ess-t[6,46] >= 0
+ Lin-socet-1[15,46]: - 0.1 ess_int[15,46] + Aux_soc_ess-t[15,46] >= 0
+ Lin-socet-1[30,46]: - 0.1 ess_int[30,46] + Aux_soc_ess-t[30,46] >= 0
+ Lin-socet-1[6,47]: - 0.1 ess_int[6,47] + Aux_soc_ess-t[6,47] >= 0
+ Lin-socet-1[15,47]: - 0.1 ess_int[15,47] + Aux_soc_ess-t[15,47] >= 0
+ Lin-socet-1[30,47]: - 0.1 ess_int[30,47] + Aux_soc_ess-t[30,47] >= 0
+ Lin-socet-1[6,48]: - 0.1 ess_int[6,48] + Aux_soc_ess-t[6,48] >= 0
+ Lin-socet-1[15,48]: - 0.1 ess_int[15,48] + Aux_soc_ess-t[15,48] >= 0
+ Lin-socet-1[30,48]: - 0.1 ess_int[30,48] + Aux_soc_ess-t[30,48] >= 0
+ Lin-socet-2[6,0]: - SOC[6,0] - 0.9 ess_int[6,0] + Aux_soc_ess-t[6,0]
+   >= -0.9
+ Lin-socet-2[15,0]: - SOC[15,0] - 0.9 ess_int[15,0] + Aux_soc_ess-t[15,0]
+   >= -0.9
+ Lin-socet-2[30,0]: - SOC[30,0] - 0.9 ess_int[30,0] + Aux_soc_ess-t[30,0]
+   >= -0.9
+ Lin-socet-2[6,1]: - SOC[6,1] - 0.9 ess_int[6,1] + Aux_soc_ess-t[6,1]
+   >= -0.9
+ Lin-socet-2[15,1]: - SOC[15,1] - 0.9 ess_int[15,1] + Aux_soc_ess-t[15,1]
+   >= -0.9
+ Lin-socet-2[30,1]: - SOC[30,1] - 0.9 ess_int[30,1] + Aux_soc_ess-t[30,1]
+   >= -0.9
+ Lin-socet-2[6,2]: - SOC[6,2] - 0.9 ess_int[6,2] + Aux_soc_ess-t[6,2]
+   >= -0.9
+ Lin-socet-2[15,2]: - SOC[15,2] - 0.9 ess_int[15,2] + Aux_soc_ess-t[15,2]
+   >= -0.9
+ Lin-socet-2[30,2]: - SOC[30,2] - 0.9 ess_int[30,2] + Aux_soc_ess-t[30,2]
+   >= -0.9
+ Lin-socet-2[6,3]: - SOC[6,3] - 0.9 ess_int[6,3] + Aux_soc_ess-t[6,3]
+   >= -0.9
+ Lin-socet-2[15,3]: - SOC[15,3] - 0.9 ess_int[15,3] + Aux_soc_ess-t[15,3]
+   >= -0.9
+ Lin-socet-2[30,3]: - SOC[30,3] - 0.9 ess_int[30,3] + Aux_soc_ess-t[30,3]
+   >= -0.9
+ Lin-socet-2[6,4]: - SOC[6,4] - 0.9 ess_int[6,4] + Aux_soc_ess-t[6,4]
+   >= -0.9
+ Lin-socet-2[15,4]: - SOC[15,4] - 0.9 ess_int[15,4] + Aux_soc_ess-t[15,4]
+   >= -0.9
+ Lin-socet-2[30,4]: - SOC[30,4] - 0.9 ess_int[30,4] + Aux_soc_ess-t[30,4]
+   >= -0.9
+ Lin-socet-2[6,5]: - SOC[6,5] - 0.9 ess_int[6,5] + Aux_soc_ess-t[6,5]
+   >= -0.9
+ Lin-socet-2[15,5]: - SOC[15,5] - 0.9 ess_int[15,5] + Aux_soc_ess-t[15,5]
+   >= -0.9
+ Lin-socet-2[30,5]: - SOC[30,5] - 0.9 ess_int[30,5] + Aux_soc_ess-t[30,5]
+   >= -0.9
+ Lin-socet-2[6,6]: - SOC[6,6] - 0.9 ess_int[6,6] + Aux_soc_ess-t[6,6]
+   >= -0.9
+ Lin-socet-2[15,6]: - SOC[15,6] - 0.9 ess_int[15,6] + Aux_soc_ess-t[15,6]
+   >= -0.9
+ Lin-socet-2[30,6]: - SOC[30,6] - 0.9 ess_int[30,6] + Aux_soc_ess-t[30,6]
+   >= -0.9
+ Lin-socet-2[6,7]: - SOC[6,7] - 0.9 ess_int[6,7] + Aux_soc_ess-t[6,7]
+   >= -0.9
+ Lin-socet-2[15,7]: - SOC[15,7] - 0.9 ess_int[15,7] + Aux_soc_ess-t[15,7]
+   >= -0.9
+ Lin-socet-2[30,7]: - SOC[30,7] - 0.9 ess_int[30,7] + Aux_soc_ess-t[30,7]
+   >= -0.9
+ Lin-socet-2[6,8]: - SOC[6,8] - 0.9 ess_int[6,8] + Aux_soc_ess-t[6,8]
+   >= -0.9
+ Lin-socet-2[15,8]: - SOC[15,8] - 0.9 ess_int[15,8] + Aux_soc_ess-t[15,8]
+   >= -0.9
+ Lin-socet-2[30,8]: - SOC[30,8] - 0.9 ess_int[30,8] + Aux_soc_ess-t[30,8]
+   >= -0.9
+ Lin-socet-2[6,9]: - SOC[6,9] - 0.9 ess_int[6,9] + Aux_soc_ess-t[6,9]
+   >= -0.9
+ Lin-socet-2[15,9]: - SOC[15,9] - 0.9 ess_int[15,9] + Aux_soc_ess-t[15,9]
+   >= -0.9
+ Lin-socet-2[30,9]: - SOC[30,9] - 0.9 ess_int[30,9] + Aux_soc_ess-t[30,9]
+   >= -0.9
+ Lin-socet-2[6,10]: - SOC[6,10] - 0.9 ess_int[6,10] + Aux_soc_ess-t[6,10]
+   >= -0.9
+ Lin-socet-2[15,10]: - SOC[15,10] - 0.9 ess_int[15,10]
+   + Aux_soc_ess-t[15,10] >= -0.9
+ Lin-socet-2[30,10]: - SOC[30,10] - 0.9 ess_int[30,10]
+   + Aux_soc_ess-t[30,10] >= -0.9
+ Lin-socet-2[6,11]: - SOC[6,11] - 0.9 ess_int[6,11] + Aux_soc_ess-t[6,11]
+   >= -0.9
+ Lin-socet-2[15,11]: - SOC[15,11] - 0.9 ess_int[15,11]
+   + Aux_soc_ess-t[15,11] >= -0.9
+ Lin-socet-2[30,11]: - SOC[30,11] - 0.9 ess_int[30,11]
+   + Aux_soc_ess-t[30,11] >= -0.9
+ Lin-socet-2[6,12]: - SOC[6,12] - 0.9 ess_int[6,12] + Aux_soc_ess-t[6,12]
+   >= -0.9
+ Lin-socet-2[15,12]: - SOC[15,12] - 0.9 ess_int[15,12]
+   + Aux_soc_ess-t[15,12] >= -0.9
+ Lin-socet-2[30,12]: - SOC[30,12] - 0.9 ess_int[30,12]
+   + Aux_soc_ess-t[30,12] >= -0.9
+ Lin-socet-2[6,13]: - SOC[6,13] - 0.9 ess_int[6,13] + Aux_soc_ess-t[6,13]
+   >= -0.9
+ Lin-socet-2[15,13]: - SOC[15,13] - 0.9 ess_int[15,13]
+   + Aux_soc_ess-t[15,13] >= -0.9
+ Lin-socet-2[30,13]: - SOC[30,13] - 0.9 ess_int[30,13]
+   + Aux_soc_ess-t[30,13] >= -0.9
+ Lin-socet-2[6,14]: - SOC[6,14] - 0.9 ess_int[6,14] + Aux_soc_ess-t[6,14]
+   >= -0.9
+ Lin-socet-2[15,14]: - SOC[15,14] - 0.9 ess_int[15,14]
+   + Aux_soc_ess-t[15,14] >= -0.9
+ Lin-socet-2[30,14]: - SOC[30,14] - 0.9 ess_int[30,14]
+   + Aux_soc_ess-t[30,14] >= -0.9
+ Lin-socet-2[6,15]: - SOC[6,15] - 0.9 ess_int[6,15] + Aux_soc_ess-t[6,15]
+   >= -0.9
+ Lin-socet-2[15,15]: - SOC[15,15] - 0.9 ess_int[15,15]
+   + Aux_soc_ess-t[15,15] >= -0.9
+ Lin-socet-2[30,15]: - SOC[30,15] - 0.9 ess_int[30,15]
+   + Aux_soc_ess-t[30,15] >= -0.9
+ Lin-socet-2[6,16]: - SOC[6,16] - 0.9 ess_int[6,16] + Aux_soc_ess-t[6,16]
+   >= -0.9
+ Lin-socet-2[15,16]: - SOC[15,16] - 0.9 ess_int[15,16]
+   + Aux_soc_ess-t[15,16] >= -0.9
+ Lin-socet-2[30,16]: - SOC[30,16] - 0.9 ess_int[30,16]
+   + Aux_soc_ess-t[30,16] >= -0.9
+ Lin-socet-2[6,17]: - SOC[6,17] - 0.9 ess_int[6,17] + Aux_soc_ess-t[6,17]
+   >= -0.9
+ Lin-socet-2[15,17]: - SOC[15,17] - 0.9 ess_int[15,17]
+   + Aux_soc_ess-t[15,17] >= -0.9
+ Lin-socet-2[30,17]: - SOC[30,17] - 0.9 ess_int[30,17]
+   + Aux_soc_ess-t[30,17] >= -0.9
+ Lin-socet-2[6,18]: - SOC[6,18] - 0.9 ess_int[6,18] + Aux_soc_ess-t[6,18]
+   >= -0.9
+ Lin-socet-2[15,18]: - SOC[15,18] - 0.9 ess_int[15,18]
+   + Aux_soc_ess-t[15,18] >= -0.9
+ Lin-socet-2[30,18]: - SOC[30,18] - 0.9 ess_int[30,18]
+   + Aux_soc_ess-t[30,18] >= -0.9
+ Lin-socet-2[6,19]: - SOC[6,19] - 0.9 ess_int[6,19] + Aux_soc_ess-t[6,19]
+   >= -0.9
+ Lin-socet-2[15,19]: - SOC[15,19] - 0.9 ess_int[15,19]
+   + Aux_soc_ess-t[15,19] >= -0.9
+ Lin-socet-2[30,19]: - SOC[30,19] - 0.9 ess_int[30,19]
+   + Aux_soc_ess-t[30,19] >= -0.9
+ Lin-socet-2[6,20]: - SOC[6,20] - 0.9 ess_int[6,20] + Aux_soc_ess-t[6,20]
+   >= -0.9
+ Lin-socet-2[15,20]: - SOC[15,20] - 0.9 ess_int[15,20]
+   + Aux_soc_ess-t[15,20] >= -0.9
+ Lin-socet-2[30,20]: - SOC[30,20] - 0.9 ess_int[30,20]
+   + Aux_soc_ess-t[30,20] >= -0.9
+ Lin-socet-2[6,21]: - SOC[6,21] - 0.9 ess_int[6,21] + Aux_soc_ess-t[6,21]
+   >= -0.9
+ Lin-socet-2[15,21]: - SOC[15,21] - 0.9 ess_int[15,21]
+   + Aux_soc_ess-t[15,21] >= -0.9
+ Lin-socet-2[30,21]: - SOC[30,21] - 0.9 ess_int[30,21]
+   + Aux_soc_ess-t[30,21] >= -0.9
+ Lin-socet-2[6,22]: - SOC[6,22] - 0.9 ess_int[6,22] + Aux_soc_ess-t[6,22]
+   >= -0.9
+ Lin-socet-2[15,22]: - SOC[15,22] - 0.9 ess_int[15,22]
+   + Aux_soc_ess-t[15,22] >= -0.9
+ Lin-socet-2[30,22]: - SOC[30,22] - 0.9 ess_int[30,22]
+   + Aux_soc_ess-t[30,22] >= -0.9
+ Lin-socet-2[6,23]: - SOC[6,23] - 0.9 ess_int[6,23] + Aux_soc_ess-t[6,23]
+   >= -0.9
+ Lin-socet-2[15,23]: - SOC[15,23] - 0.9 ess_int[15,23]
+   + Aux_soc_ess-t[15,23] >= -0.9
+ Lin-socet-2[30,23]: - SOC[30,23] - 0.9 ess_int[30,23]
+   + Aux_soc_ess-t[30,23] >= -0.9
+ Lin-socet-2[6,24]: - SOC[6,24] - 0.9 ess_int[6,24] + Aux_soc_ess-t[6,24]
+   >= -0.9
+ Lin-socet-2[15,24]: - SOC[15,24] - 0.9 ess_int[15,24]
+   + Aux_soc_ess-t[15,24] >= -0.9
+ Lin-socet-2[30,24]: - SOC[30,24] - 0.9 ess_int[30,24]
+   + Aux_soc_ess-t[30,24] >= -0.9
+ Lin-socet-2[6,25]: - SOC[6,25] - 0.9 ess_int[6,25] + Aux_soc_ess-t[6,25]
+   >= -0.9
+ Lin-socet-2[15,25]: - SOC[15,25] - 0.9 ess_int[15,25]
+   + Aux_soc_ess-t[15,25] >= -0.9
+ Lin-socet-2[30,25]: - SOC[30,25] - 0.9 ess_int[30,25]
+   + Aux_soc_ess-t[30,25] >= -0.9
+ Lin-socet-2[6,26]: - SOC[6,26] - 0.9 ess_int[6,26] + Aux_soc_ess-t[6,26]
+   >= -0.9
+ Lin-socet-2[15,26]: - SOC[15,26] - 0.9 ess_int[15,26]
+   + Aux_soc_ess-t[15,26] >= -0.9
+ Lin-socet-2[30,26]: - SOC[30,26] - 0.9 ess_int[30,26]
+   + Aux_soc_ess-t[30,26] >= -0.9
+ Lin-socet-2[6,27]: - SOC[6,27] - 0.9 ess_int[6,27] + Aux_soc_ess-t[6,27]
+   >= -0.9
+ Lin-socet-2[15,27]: - SOC[15,27] - 0.9 ess_int[15,27]
+   + Aux_soc_ess-t[15,27] >= -0.9
+ Lin-socet-2[30,27]: - SOC[30,27] - 0.9 ess_int[30,27]
+   + Aux_soc_ess-t[30,27] >= -0.9
+ Lin-socet-2[6,28]: - SOC[6,28] - 0.9 ess_int[6,28] + Aux_soc_ess-t[6,28]
+   >= -0.9
+ Lin-socet-2[15,28]: - SOC[15,28] - 0.9 ess_int[15,28]
+   + Aux_soc_ess-t[15,28] >= -0.9
+ Lin-socet-2[30,28]: - SOC[30,28] - 0.9 ess_int[30,28]
+   + Aux_soc_ess-t[30,28] >= -0.9
+ Lin-socet-2[6,29]: - SOC[6,29] - 0.9 ess_int[6,29] + Aux_soc_ess-t[6,29]
+   >= -0.9
+ Lin-socet-2[15,29]: - SOC[15,29] - 0.9 ess_int[15,29]
+   + Aux_soc_ess-t[15,29] >= -0.9
+ Lin-socet-2[30,29]: - SOC[30,29] - 0.9 ess_int[30,29]
+   + Aux_soc_ess-t[30,29] >= -0.9
+ Lin-socet-2[6,30]: - SOC[6,30] - 0.9 ess_int[6,30] + Aux_soc_ess-t[6,30]
+   >= -0.9
+ Lin-socet-2[15,30]: - SOC[15,30] - 0.9 ess_int[15,30]
+   + Aux_soc_ess-t[15,30] >= -0.9
+ Lin-socet-2[30,30]: - SOC[30,30] - 0.9 ess_int[30,30]
+   + Aux_soc_ess-t[30,30] >= -0.9
+ Lin-socet-2[6,31]: - SOC[6,31] - 0.9 ess_int[6,31] + Aux_soc_ess-t[6,31]
+   >= -0.9
+ Lin-socet-2[15,31]: - SOC[15,31] - 0.9 ess_int[15,31]
+   + Aux_soc_ess-t[15,31] >= -0.9
+ Lin-socet-2[30,31]: - SOC[30,31] - 0.9 ess_int[30,31]
+   + Aux_soc_ess-t[30,31] >= -0.9
+ Lin-socet-2[6,32]: - SOC[6,32] - 0.9 ess_int[6,32] + Aux_soc_ess-t[6,32]
+   >= -0.9
+ Lin-socet-2[15,32]: - SOC[15,32] - 0.9 ess_int[15,32]
+   + Aux_soc_ess-t[15,32] >= -0.9
+ Lin-socet-2[30,32]: - SOC[30,32] - 0.9 ess_int[30,32]
+   + Aux_soc_ess-t[30,32] >= -0.9
+ Lin-socet-2[6,33]: - SOC[6,33] - 0.9 ess_int[6,33] + Aux_soc_ess-t[6,33]
+   >= -0.9
+ Lin-socet-2[15,33]: - SOC[15,33] - 0.9 ess_int[15,33]
+   + Aux_soc_ess-t[15,33] >= -0.9
+ Lin-socet-2[30,33]: - SOC[30,33] - 0.9 ess_int[30,33]
+   + Aux_soc_ess-t[30,33] >= -0.9
+ Lin-socet-2[6,34]: - SOC[6,34] - 0.9 ess_int[6,34] + Aux_soc_ess-t[6,34]
+   >= -0.9
+ Lin-socet-2[15,34]: - SOC[15,34] - 0.9 ess_int[15,34]
+   + Aux_soc_ess-t[15,34] >= -0.9
+ Lin-socet-2[30,34]: - SOC[30,34] - 0.9 ess_int[30,34]
+   + Aux_soc_ess-t[30,34] >= -0.9
+ Lin-socet-2[6,35]: - SOC[6,35] - 0.9 ess_int[6,35] + Aux_soc_ess-t[6,35]
+   >= -0.9
+ Lin-socet-2[15,35]: - SOC[15,35] - 0.9 ess_int[15,35]
+   + Aux_soc_ess-t[15,35] >= -0.9
+ Lin-socet-2[30,35]: - SOC[30,35] - 0.9 ess_int[30,35]
+   + Aux_soc_ess-t[30,35] >= -0.9
+ Lin-socet-2[6,36]: - SOC[6,36] - 0.9 ess_int[6,36] + Aux_soc_ess-t[6,36]
+   >= -0.9
+ Lin-socet-2[15,36]: - SOC[15,36] - 0.9 ess_int[15,36]
+   + Aux_soc_ess-t[15,36] >= -0.9
+ Lin-socet-2[30,36]: - SOC[30,36] - 0.9 ess_int[30,36]
+   + Aux_soc_ess-t[30,36] >= -0.9
+ Lin-socet-2[6,37]: - SOC[6,37] - 0.9 ess_int[6,37] + Aux_soc_ess-t[6,37]
+   >= -0.9
+ Lin-socet-2[15,37]: - SOC[15,37] - 0.9 ess_int[15,37]
+   + Aux_soc_ess-t[15,37] >= -0.9
+ Lin-socet-2[30,37]: - SOC[30,37] - 0.9 ess_int[30,37]
+   + Aux_soc_ess-t[30,37] >= -0.9
+ Lin-socet-2[6,38]: - SOC[6,38] - 0.9 ess_int[6,38] + Aux_soc_ess-t[6,38]
+   >= -0.9
+ Lin-socet-2[15,38]: - SOC[15,38] - 0.9 ess_int[15,38]
+   + Aux_soc_ess-t[15,38] >= -0.9
+ Lin-socet-2[30,38]: - SOC[30,38] - 0.9 ess_int[30,38]
+   + Aux_soc_ess-t[30,38] >= -0.9
+ Lin-socet-2[6,39]: - SOC[6,39] - 0.9 ess_int[6,39] + Aux_soc_ess-t[6,39]
+   >= -0.9
+ Lin-socet-2[15,39]: - SOC[15,39] - 0.9 ess_int[15,39]
+   + Aux_soc_ess-t[15,39] >= -0.9
+ Lin-socet-2[30,39]: - SOC[30,39] - 0.9 ess_int[30,39]
+   + Aux_soc_ess-t[30,39] >= -0.9
+ Lin-socet-2[6,40]: - SOC[6,40] - 0.9 ess_int[6,40] + Aux_soc_ess-t[6,40]
+   >= -0.9
+ Lin-socet-2[15,40]: - SOC[15,40] - 0.9 ess_int[15,40]
+   + Aux_soc_ess-t[15,40] >= -0.9
+ Lin-socet-2[30,40]: - SOC[30,40] - 0.9 ess_int[30,40]
+   + Aux_soc_ess-t[30,40] >= -0.9
+ Lin-socet-2[6,41]: - SOC[6,41] - 0.9 ess_int[6,41] + Aux_soc_ess-t[6,41]
+   >= -0.9
+ Lin-socet-2[15,41]: - SOC[15,41] - 0.9 ess_int[15,41]
+   + Aux_soc_ess-t[15,41] >= -0.9
+ Lin-socet-2[30,41]: - SOC[30,41] - 0.9 ess_int[30,41]
+   + Aux_soc_ess-t[30,41] >= -0.9
+ Lin-socet-2[6,42]: - SOC[6,42] - 0.9 ess_int[6,42] + Aux_soc_ess-t[6,42]
+   >= -0.9
+ Lin-socet-2[15,42]: - SOC[15,42] - 0.9 ess_int[15,42]
+   + Aux_soc_ess-t[15,42] >= -0.9
+ Lin-socet-2[30,42]: - SOC[30,42] - 0.9 ess_int[30,42]
+   + Aux_soc_ess-t[30,42] >= -0.9
+ Lin-socet-2[6,43]: - SOC[6,43] - 0.9 ess_int[6,43] + Aux_soc_ess-t[6,43]
+   >= -0.9
+ Lin-socet-2[15,43]: - SOC[15,43] - 0.9 ess_int[15,43]
+   + Aux_soc_ess-t[15,43] >= -0.9
+ Lin-socet-2[30,43]: - SOC[30,43] - 0.9 ess_int[30,43]
+   + Aux_soc_ess-t[30,43] >= -0.9
+ Lin-socet-2[6,44]: - SOC[6,44] - 0.9 ess_int[6,44] + Aux_soc_ess-t[6,44]
+   >= -0.9
+ Lin-socet-2[15,44]: - SOC[15,44] - 0.9 ess_int[15,44]
+   + Aux_soc_ess-t[15,44] >= -0.9
+ Lin-socet-2[30,44]: - SOC[30,44] - 0.9 ess_int[30,44]
+   + Aux_soc_ess-t[30,44] >= -0.9
+ Lin-socet-2[6,45]: - SOC[6,45] - 0.9 ess_int[6,45] + Aux_soc_ess-t[6,45]
+   >= -0.9
+ Lin-socet-2[15,45]: - SOC[15,45] - 0.9 ess_int[15,45]
+   + Aux_soc_ess-t[15,45] >= -0.9
+ Lin-socet-2[30,45]: - SOC[30,45] - 0.9 ess_int[30,45]
+   + Aux_soc_ess-t[30,45] >= -0.9
+ Lin-socet-2[6,46]: - SOC[6,46] - 0.9 ess_int[6,46] + Aux_soc_ess-t[6,46]
+   >= -0.9
+ Lin-socet-2[15,46]: - SOC[15,46] - 0.9 ess_int[15,46]
+   + Aux_soc_ess-t[15,46] >= -0.9
+ Lin-socet-2[30,46]: - SOC[30,46] - 0.9 ess_int[30,46]
+   + Aux_soc_ess-t[30,46] >= -0.9
+ Lin-socet-2[6,47]: - SOC[6,47] - 0.9 ess_int[6,47] + Aux_soc_ess-t[6,47]
+   >= -0.9
+ Lin-socet-2[15,47]: - SOC[15,47] - 0.9 ess_int[15,47]
+   + Aux_soc_ess-t[15,47] >= -0.9
+ Lin-socet-2[30,47]: - SOC[30,47] - 0.9 ess_int[30,47]
+   + Aux_soc_ess-t[30,47] >= -0.9
+ Lin-socet-2[6,48]: - SOC[6,48] - 0.9 ess_int[6,48] + Aux_soc_ess-t[6,48]
+   >= -0.9
+ Lin-socet-2[15,48]: - SOC[15,48] - 0.9 ess_int[15,48]
+   + Aux_soc_ess-t[15,48] >= -0.9
+ Lin-socet-2[30,48]: - SOC[30,48] - 0.9 ess_int[30,48]
+   + Aux_soc_ess-t[30,48] >= -0.9
+ Lin-socet-3[6,0]: - SOC[6,0] - 0.1 ess_int[6,0] + Aux_soc_ess-t[6,0]
+   <= -0.1
+ Lin-socet-3[15,0]: - SOC[15,0] - 0.1 ess_int[15,0] + Aux_soc_ess-t[15,0]
+   <= -0.1
+ Lin-socet-3[30,0]: - SOC[30,0] - 0.1 ess_int[30,0] + Aux_soc_ess-t[30,0]
+   <= -0.1
+ Lin-socet-3[6,1]: - SOC[6,1] - 0.1 ess_int[6,1] + Aux_soc_ess-t[6,1]
+   <= -0.1
+ Lin-socet-3[15,1]: - SOC[15,1] - 0.1 ess_int[15,1] + Aux_soc_ess-t[15,1]
+   <= -0.1
+ Lin-socet-3[30,1]: - SOC[30,1] - 0.1 ess_int[30,1] + Aux_soc_ess-t[30,1]
+   <= -0.1
+ Lin-socet-3[6,2]: - SOC[6,2] - 0.1 ess_int[6,2] + Aux_soc_ess-t[6,2]
+   <= -0.1
+ Lin-socet-3[15,2]: - SOC[15,2] - 0.1 ess_int[15,2] + Aux_soc_ess-t[15,2]
+   <= -0.1
+ Lin-socet-3[30,2]: - SOC[30,2] - 0.1 ess_int[30,2] + Aux_soc_ess-t[30,2]
+   <= -0.1
+ Lin-socet-3[6,3]: - SOC[6,3] - 0.1 ess_int[6,3] + Aux_soc_ess-t[6,3]
+   <= -0.1
+ Lin-socet-3[15,3]: - SOC[15,3] - 0.1 ess_int[15,3] + Aux_soc_ess-t[15,3]
+   <= -0.1
+ Lin-socet-3[30,3]: - SOC[30,3] - 0.1 ess_int[30,3] + Aux_soc_ess-t[30,3]
+   <= -0.1
+ Lin-socet-3[6,4]: - SOC[6,4] - 0.1 ess_int[6,4] + Aux_soc_ess-t[6,4]
+   <= -0.1
+ Lin-socet-3[15,4]: - SOC[15,4] - 0.1 ess_int[15,4] + Aux_soc_ess-t[15,4]
+   <= -0.1
+ Lin-socet-3[30,4]: - SOC[30,4] - 0.1 ess_int[30,4] + Aux_soc_ess-t[30,4]
+   <= -0.1
+ Lin-socet-3[6,5]: - SOC[6,5] - 0.1 ess_int[6,5] + Aux_soc_ess-t[6,5]
+   <= -0.1
+ Lin-socet-3[15,5]: - SOC[15,5] - 0.1 ess_int[15,5] + Aux_soc_ess-t[15,5]
+   <= -0.1
+ Lin-socet-3[30,5]: - SOC[30,5] - 0.1 ess_int[30,5] + Aux_soc_ess-t[30,5]
+   <= -0.1
+ Lin-socet-3[6,6]: - SOC[6,6] - 0.1 ess_int[6,6] + Aux_soc_ess-t[6,6]
+   <= -0.1
+ Lin-socet-3[15,6]: - SOC[15,6] - 0.1 ess_int[15,6] + Aux_soc_ess-t[15,6]
+   <= -0.1
+ Lin-socet-3[30,6]: - SOC[30,6] - 0.1 ess_int[30,6] + Aux_soc_ess-t[30,6]
+   <= -0.1
+ Lin-socet-3[6,7]: - SOC[6,7] - 0.1 ess_int[6,7] + Aux_soc_ess-t[6,7]
+   <= -0.1
+ Lin-socet-3[15,7]: - SOC[15,7] - 0.1 ess_int[15,7] + Aux_soc_ess-t[15,7]
+   <= -0.1
+ Lin-socet-3[30,7]: - SOC[30,7] - 0.1 ess_int[30,7] + Aux_soc_ess-t[30,7]
+   <= -0.1
+ Lin-socet-3[6,8]: - SOC[6,8] - 0.1 ess_int[6,8] + Aux_soc_ess-t[6,8]
+   <= -0.1
+ Lin-socet-3[15,8]: - SOC[15,8] - 0.1 ess_int[15,8] + Aux_soc_ess-t[15,8]
+   <= -0.1
+ Lin-socet-3[30,8]: - SOC[30,8] - 0.1 ess_int[30,8] + Aux_soc_ess-t[30,8]
+   <= -0.1
+ Lin-socet-3[6,9]: - SOC[6,9] - 0.1 ess_int[6,9] + Aux_soc_ess-t[6,9]
+   <= -0.1
+ Lin-socet-3[15,9]: - SOC[15,9] - 0.1 ess_int[15,9] + Aux_soc_ess-t[15,9]
+   <= -0.1
+ Lin-socet-3[30,9]: - SOC[30,9] - 0.1 ess_int[30,9] + Aux_soc_ess-t[30,9]
+   <= -0.1
+ Lin-socet-3[6,10]: - SOC[6,10] - 0.1 ess_int[6,10] + Aux_soc_ess-t[6,10]
+   <= -0.1
+ Lin-socet-3[15,10]: - SOC[15,10] - 0.1 ess_int[15,10]
+   + Aux_soc_ess-t[15,10] <= -0.1
+ Lin-socet-3[30,10]: - SOC[30,10] - 0.1 ess_int[30,10]
+   + Aux_soc_ess-t[30,10] <= -0.1
+ Lin-socet-3[6,11]: - SOC[6,11] - 0.1 ess_int[6,11] + Aux_soc_ess-t[6,11]
+   <= -0.1
+ Lin-socet-3[15,11]: - SOC[15,11] - 0.1 ess_int[15,11]
+   + Aux_soc_ess-t[15,11] <= -0.1
+ Lin-socet-3[30,11]: - SOC[30,11] - 0.1 ess_int[30,11]
+   + Aux_soc_ess-t[30,11] <= -0.1
+ Lin-socet-3[6,12]: - SOC[6,12] - 0.1 ess_int[6,12] + Aux_soc_ess-t[6,12]
+   <= -0.1
+ Lin-socet-3[15,12]: - SOC[15,12] - 0.1 ess_int[15,12]
+   + Aux_soc_ess-t[15,12] <= -0.1
+ Lin-socet-3[30,12]: - SOC[30,12] - 0.1 ess_int[30,12]
+   + Aux_soc_ess-t[30,12] <= -0.1
+ Lin-socet-3[6,13]: - SOC[6,13] - 0.1 ess_int[6,13] + Aux_soc_ess-t[6,13]
+   <= -0.1
+ Lin-socet-3[15,13]: - SOC[15,13] - 0.1 ess_int[15,13]
+   + Aux_soc_ess-t[15,13] <= -0.1
+ Lin-socet-3[30,13]: - SOC[30,13] - 0.1 ess_int[30,13]
+   + Aux_soc_ess-t[30,13] <= -0.1
+ Lin-socet-3[6,14]: - SOC[6,14] - 0.1 ess_int[6,14] + Aux_soc_ess-t[6,14]
+   <= -0.1
+ Lin-socet-3[15,14]: - SOC[15,14] - 0.1 ess_int[15,14]
+   + Aux_soc_ess-t[15,14] <= -0.1
+ Lin-socet-3[30,14]: - SOC[30,14] - 0.1 ess_int[30,14]
+   + Aux_soc_ess-t[30,14] <= -0.1
+ Lin-socet-3[6,15]: - SOC[6,15] - 0.1 ess_int[6,15] + Aux_soc_ess-t[6,15]
+   <= -0.1
+ Lin-socet-3[15,15]: - SOC[15,15] - 0.1 ess_int[15,15]
+   + Aux_soc_ess-t[15,15] <= -0.1
+ Lin-socet-3[30,15]: - SOC[30,15] - 0.1 ess_int[30,15]
+   + Aux_soc_ess-t[30,15] <= -0.1
+ Lin-socet-3[6,16]: - SOC[6,16] - 0.1 ess_int[6,16] + Aux_soc_ess-t[6,16]
+   <= -0.1
+ Lin-socet-3[15,16]: - SOC[15,16] - 0.1 ess_int[15,16]
+   + Aux_soc_ess-t[15,16] <= -0.1
+ Lin-socet-3[30,16]: - SOC[30,16] - 0.1 ess_int[30,16]
+   + Aux_soc_ess-t[30,16] <= -0.1
+ Lin-socet-3[6,17]: - SOC[6,17] - 0.1 ess_int[6,17] + Aux_soc_ess-t[6,17]
+   <= -0.1
+ Lin-socet-3[15,17]: - SOC[15,17] - 0.1 ess_int[15,17]
+   + Aux_soc_ess-t[15,17] <= -0.1
+ Lin-socet-3[30,17]: - SOC[30,17] - 0.1 ess_int[30,17]
+   + Aux_soc_ess-t[30,17] <= -0.1
+ Lin-socet-3[6,18]: - SOC[6,18] - 0.1 ess_int[6,18] + Aux_soc_ess-t[6,18]
+   <= -0.1
+ Lin-socet-3[15,18]: - SOC[15,18] - 0.1 ess_int[15,18]
+   + Aux_soc_ess-t[15,18] <= -0.1
+ Lin-socet-3[30,18]: - SOC[30,18] - 0.1 ess_int[30,18]
+   + Aux_soc_ess-t[30,18] <= -0.1
+ Lin-socet-3[6,19]: - SOC[6,19] - 0.1 ess_int[6,19] + Aux_soc_ess-t[6,19]
+   <= -0.1
+ Lin-socet-3[15,19]: - SOC[15,19] - 0.1 ess_int[15,19]
+   + Aux_soc_ess-t[15,19] <= -0.1
+ Lin-socet-3[30,19]: - SOC[30,19] - 0.1 ess_int[30,19]
+   + Aux_soc_ess-t[30,19] <= -0.1
+ Lin-socet-3[6,20]: - SOC[6,20] - 0.1 ess_int[6,20] + Aux_soc_ess-t[6,20]
+   <= -0.1
+ Lin-socet-3[15,20]: - SOC[15,20] - 0.1 ess_int[15,20]
+   + Aux_soc_ess-t[15,20] <= -0.1
+ Lin-socet-3[30,20]: - SOC[30,20] - 0.1 ess_int[30,20]
+   + Aux_soc_ess-t[30,20] <= -0.1
+ Lin-socet-3[6,21]: - SOC[6,21] - 0.1 ess_int[6,21] + Aux_soc_ess-t[6,21]
+   <= -0.1
+ Lin-socet-3[15,21]: - SOC[15,21] - 0.1 ess_int[15,21]
+   + Aux_soc_ess-t[15,21] <= -0.1
+ Lin-socet-3[30,21]: - SOC[30,21] - 0.1 ess_int[30,21]
+   + Aux_soc_ess-t[30,21] <= -0.1
+ Lin-socet-3[6,22]: - SOC[6,22] - 0.1 ess_int[6,22] + Aux_soc_ess-t[6,22]
+   <= -0.1
+ Lin-socet-3[15,22]: - SOC[15,22] - 0.1 ess_int[15,22]
+   + Aux_soc_ess-t[15,22] <= -0.1
+ Lin-socet-3[30,22]: - SOC[30,22] - 0.1 ess_int[30,22]
+   + Aux_soc_ess-t[30,22] <= -0.1
+ Lin-socet-3[6,23]: - SOC[6,23] - 0.1 ess_int[6,23] + Aux_soc_ess-t[6,23]
+   <= -0.1
+ Lin-socet-3[15,23]: - SOC[15,23] - 0.1 ess_int[15,23]
+   + Aux_soc_ess-t[15,23] <= -0.1
+ Lin-socet-3[30,23]: - SOC[30,23] - 0.1 ess_int[30,23]
+   + Aux_soc_ess-t[30,23] <= -0.1
+ Lin-socet-3[6,24]: - SOC[6,24] - 0.1 ess_int[6,24] + Aux_soc_ess-t[6,24]
+   <= -0.1
+ Lin-socet-3[15,24]: - SOC[15,24] - 0.1 ess_int[15,24]
+   + Aux_soc_ess-t[15,24] <= -0.1
+ Lin-socet-3[30,24]: - SOC[30,24] - 0.1 ess_int[30,24]
+   + Aux_soc_ess-t[30,24] <= -0.1
+ Lin-socet-3[6,25]: - SOC[6,25] - 0.1 ess_int[6,25] + Aux_soc_ess-t[6,25]
+   <= -0.1
+ Lin-socet-3[15,25]: - SOC[15,25] - 0.1 ess_int[15,25]
+   + Aux_soc_ess-t[15,25] <= -0.1
+ Lin-socet-3[30,25]: - SOC[30,25] - 0.1 ess_int[30,25]
+   + Aux_soc_ess-t[30,25] <= -0.1
+ Lin-socet-3[6,26]: - SOC[6,26] - 0.1 ess_int[6,26] + Aux_soc_ess-t[6,26]
+   <= -0.1
+ Lin-socet-3[15,26]: - SOC[15,26] - 0.1 ess_int[15,26]
+   + Aux_soc_ess-t[15,26] <= -0.1
+ Lin-socet-3[30,26]: - SOC[30,26] - 0.1 ess_int[30,26]
+   + Aux_soc_ess-t[30,26] <= -0.1
+ Lin-socet-3[6,27]: - SOC[6,27] - 0.1 ess_int[6,27] + Aux_soc_ess-t[6,27]
+   <= -0.1
+ Lin-socet-3[15,27]: - SOC[15,27] - 0.1 ess_int[15,27]
+   + Aux_soc_ess-t[15,27] <= -0.1
+ Lin-socet-3[30,27]: - SOC[30,27] - 0.1 ess_int[30,27]
+   + Aux_soc_ess-t[30,27] <= -0.1
+ Lin-socet-3[6,28]: - SOC[6,28] - 0.1 ess_int[6,28] + Aux_soc_ess-t[6,28]
+   <= -0.1
+ Lin-socet-3[15,28]: - SOC[15,28] - 0.1 ess_int[15,28]
+   + Aux_soc_ess-t[15,28] <= -0.1
+ Lin-socet-3[30,28]: - SOC[30,28] - 0.1 ess_int[30,28]
+   + Aux_soc_ess-t[30,28] <= -0.1
+ Lin-socet-3[6,29]: - SOC[6,29] - 0.1 ess_int[6,29] + Aux_soc_ess-t[6,29]
+   <= -0.1
+ Lin-socet-3[15,29]: - SOC[15,29] - 0.1 ess_int[15,29]
+   + Aux_soc_ess-t[15,29] <= -0.1
+ Lin-socet-3[30,29]: - SOC[30,29] - 0.1 ess_int[30,29]
+   + Aux_soc_ess-t[30,29] <= -0.1
+ Lin-socet-3[6,30]: - SOC[6,30] - 0.1 ess_int[6,30] + Aux_soc_ess-t[6,30]
+   <= -0.1
+ Lin-socet-3[15,30]: - SOC[15,30] - 0.1 ess_int[15,30]
+   + Aux_soc_ess-t[15,30] <= -0.1
+ Lin-socet-3[30,30]: - SOC[30,30] - 0.1 ess_int[30,30]
+   + Aux_soc_ess-t[30,30] <= -0.1
+ Lin-socet-3[6,31]: - SOC[6,31] - 0.1 ess_int[6,31] + Aux_soc_ess-t[6,31]
+   <= -0.1
+ Lin-socet-3[15,31]: - SOC[15,31] - 0.1 ess_int[15,31]
+   + Aux_soc_ess-t[15,31] <= -0.1
+ Lin-socet-3[30,31]: - SOC[30,31] - 0.1 ess_int[30,31]
+   + Aux_soc_ess-t[30,31] <= -0.1
+ Lin-socet-3[6,32]: - SOC[6,32] - 0.1 ess_int[6,32] + Aux_soc_ess-t[6,32]
+   <= -0.1
+ Lin-socet-3[15,32]: - SOC[15,32] - 0.1 ess_int[15,32]
+   + Aux_soc_ess-t[15,32] <= -0.1
+ Lin-socet-3[30,32]: - SOC[30,32] - 0.1 ess_int[30,32]
+   + Aux_soc_ess-t[30,32] <= -0.1
+ Lin-socet-3[6,33]: - SOC[6,33] - 0.1 ess_int[6,33] + Aux_soc_ess-t[6,33]
+   <= -0.1
+ Lin-socet-3[15,33]: - SOC[15,33] - 0.1 ess_int[15,33]
+   + Aux_soc_ess-t[15,33] <= -0.1
+ Lin-socet-3[30,33]: - SOC[30,33] - 0.1 ess_int[30,33]
+   + Aux_soc_ess-t[30,33] <= -0.1
+ Lin-socet-3[6,34]: - SOC[6,34] - 0.1 ess_int[6,34] + Aux_soc_ess-t[6,34]
+   <= -0.1
+ Lin-socet-3[15,34]: - SOC[15,34] - 0.1 ess_int[15,34]
+   + Aux_soc_ess-t[15,34] <= -0.1
+ Lin-socet-3[30,34]: - SOC[30,34] - 0.1 ess_int[30,34]
+   + Aux_soc_ess-t[30,34] <= -0.1
+ Lin-socet-3[6,35]: - SOC[6,35] - 0.1 ess_int[6,35] + Aux_soc_ess-t[6,35]
+   <= -0.1
+ Lin-socet-3[15,35]: - SOC[15,35] - 0.1 ess_int[15,35]
+   + Aux_soc_ess-t[15,35] <= -0.1
+ Lin-socet-3[30,35]: - SOC[30,35] - 0.1 ess_int[30,35]
+   + Aux_soc_ess-t[30,35] <= -0.1
+ Lin-socet-3[6,36]: - SOC[6,36] - 0.1 ess_int[6,36] + Aux_soc_ess-t[6,36]
+   <= -0.1
+ Lin-socet-3[15,36]: - SOC[15,36] - 0.1 ess_int[15,36]
+   + Aux_soc_ess-t[15,36] <= -0.1
+ Lin-socet-3[30,36]: - SOC[30,36] - 0.1 ess_int[30,36]
+   + Aux_soc_ess-t[30,36] <= -0.1
+ Lin-socet-3[6,37]: - SOC[6,37] - 0.1 ess_int[6,37] + Aux_soc_ess-t[6,37]
+   <= -0.1
+ Lin-socet-3[15,37]: - SOC[15,37] - 0.1 ess_int[15,37]
+   + Aux_soc_ess-t[15,37] <= -0.1
+ Lin-socet-3[30,37]: - SOC[30,37] - 0.1 ess_int[30,37]
+   + Aux_soc_ess-t[30,37] <= -0.1
+ Lin-socet-3[6,38]: - SOC[6,38] - 0.1 ess_int[6,38] + Aux_soc_ess-t[6,38]
+   <= -0.1
+ Lin-socet-3[15,38]: - SOC[15,38] - 0.1 ess_int[15,38]
+   + Aux_soc_ess-t[15,38] <= -0.1
+ Lin-socet-3[30,38]: - SOC[30,38] - 0.1 ess_int[30,38]
+   + Aux_soc_ess-t[30,38] <= -0.1
+ Lin-socet-3[6,39]: - SOC[6,39] - 0.1 ess_int[6,39] + Aux_soc_ess-t[6,39]
+   <= -0.1
+ Lin-socet-3[15,39]: - SOC[15,39] - 0.1 ess_int[15,39]
+   + Aux_soc_ess-t[15,39] <= -0.1
+ Lin-socet-3[30,39]: - SOC[30,39] - 0.1 ess_int[30,39]
+   + Aux_soc_ess-t[30,39] <= -0.1
+ Lin-socet-3[6,40]: - SOC[6,40] - 0.1 ess_int[6,40] + Aux_soc_ess-t[6,40]
+   <= -0.1
+ Lin-socet-3[15,40]: - SOC[15,40] - 0.1 ess_int[15,40]
+   + Aux_soc_ess-t[15,40] <= -0.1
+ Lin-socet-3[30,40]: - SOC[30,40] - 0.1 ess_int[30,40]
+   + Aux_soc_ess-t[30,40] <= -0.1
+ Lin-socet-3[6,41]: - SOC[6,41] - 0.1 ess_int[6,41] + Aux_soc_ess-t[6,41]
+   <= -0.1
+ Lin-socet-3[15,41]: - SOC[15,41] - 0.1 ess_int[15,41]
+   + Aux_soc_ess-t[15,41] <= -0.1
+ Lin-socet-3[30,41]: - SOC[30,41] - 0.1 ess_int[30,41]
+   + Aux_soc_ess-t[30,41] <= -0.1
+ Lin-socet-3[6,42]: - SOC[6,42] - 0.1 ess_int[6,42] + Aux_soc_ess-t[6,42]
+   <= -0.1
+ Lin-socet-3[15,42]: - SOC[15,42] - 0.1 ess_int[15,42]
+   + Aux_soc_ess-t[15,42] <= -0.1
+ Lin-socet-3[30,42]: - SOC[30,42] - 0.1 ess_int[30,42]
+   + Aux_soc_ess-t[30,42] <= -0.1
+ Lin-socet-3[6,43]: - SOC[6,43] - 0.1 ess_int[6,43] + Aux_soc_ess-t[6,43]
+   <= -0.1
+ Lin-socet-3[15,43]: - SOC[15,43] - 0.1 ess_int[15,43]
+   + Aux_soc_ess-t[15,43] <= -0.1
+ Lin-socet-3[30,43]: - SOC[30,43] - 0.1 ess_int[30,43]
+   + Aux_soc_ess-t[30,43] <= -0.1
+ Lin-socet-3[6,44]: - SOC[6,44] - 0.1 ess_int[6,44] + Aux_soc_ess-t[6,44]
+   <= -0.1
+ Lin-socet-3[15,44]: - SOC[15,44] - 0.1 ess_int[15,44]
+   + Aux_soc_ess-t[15,44] <= -0.1
+ Lin-socet-3[30,44]: - SOC[30,44] - 0.1 ess_int[30,44]
+   + Aux_soc_ess-t[30,44] <= -0.1
+ Lin-socet-3[6,45]: - SOC[6,45] - 0.1 ess_int[6,45] + Aux_soc_ess-t[6,45]
+   <= -0.1
+ Lin-socet-3[15,45]: - SOC[15,45] - 0.1 ess_int[15,45]
+   + Aux_soc_ess-t[15,45] <= -0.1
+ Lin-socet-3[30,45]: - SOC[30,45] - 0.1 ess_int[30,45]
+   + Aux_soc_ess-t[30,45] <= -0.1
+ Lin-socet-3[6,46]: - SOC[6,46] - 0.1 ess_int[6,46] + Aux_soc_ess-t[6,46]
+   <= -0.1
+ Lin-socet-3[15,46]: - SOC[15,46] - 0.1 ess_int[15,46]
+   + Aux_soc_ess-t[15,46] <= -0.1
+ Lin-socet-3[30,46]: - SOC[30,46] - 0.1 ess_int[30,46]
+   + Aux_soc_ess-t[30,46] <= -0.1
+ Lin-socet-3[6,47]: - SOC[6,47] - 0.1 ess_int[6,47] + Aux_soc_ess-t[6,47]
+   <= -0.1
+ Lin-socet-3[15,47]: - SOC[15,47] - 0.1 ess_int[15,47]
+   + Aux_soc_ess-t[15,47] <= -0.1
+ Lin-socet-3[30,47]: - SOC[30,47] - 0.1 ess_int[30,47]
+   + Aux_soc_ess-t[30,47] <= -0.1
+ Lin-socet-3[6,48]: - SOC[6,48] - 0.1 ess_int[6,48] + Aux_soc_ess-t[6,48]
+   <= -0.1
+ Lin-socet-3[15,48]: - SOC[15,48] - 0.1 ess_int[15,48]
+   + Aux_soc_ess-t[15,48] <= -0.1
+ Lin-socet-3[30,48]: - SOC[30,48] - 0.1 ess_int[30,48]
+   + Aux_soc_ess-t[30,48] <= -0.1
+ Lin-socet-4[6,0]: - 0.9 ess_int[6,0] + Aux_soc_ess-t[6,0] <= 0
+ Lin-socet-4[15,0]: - 0.9 ess_int[15,0] + Aux_soc_ess-t[15,0] <= 0
+ Lin-socet-4[30,0]: - 0.9 ess_int[30,0] + Aux_soc_ess-t[30,0] <= 0
+ Lin-socet-4[6,1]: - 0.9 ess_int[6,1] + Aux_soc_ess-t[6,1] <= 0
+ Lin-socet-4[15,1]: - 0.9 ess_int[15,1] + Aux_soc_ess-t[15,1] <= 0
+ Lin-socet-4[30,1]: - 0.9 ess_int[30,1] + Aux_soc_ess-t[30,1] <= 0
+ Lin-socet-4[6,2]: - 0.9 ess_int[6,2] + Aux_soc_ess-t[6,2] <= 0
+ Lin-socet-4[15,2]: - 0.9 ess_int[15,2] + Aux_soc_ess-t[15,2] <= 0
+ Lin-socet-4[30,2]: - 0.9 ess_int[30,2] + Aux_soc_ess-t[30,2] <= 0
+ Lin-socet-4[6,3]: - 0.9 ess_int[6,3] + Aux_soc_ess-t[6,3] <= 0
+ Lin-socet-4[15,3]: - 0.9 ess_int[15,3] + Aux_soc_ess-t[15,3] <= 0
+ Lin-socet-4[30,3]: - 0.9 ess_int[30,3] + Aux_soc_ess-t[30,3] <= 0
+ Lin-socet-4[6,4]: - 0.9 ess_int[6,4] + Aux_soc_ess-t[6,4] <= 0
+ Lin-socet-4[15,4]: - 0.9 ess_int[15,4] + Aux_soc_ess-t[15,4] <= 0
+ Lin-socet-4[30,4]: - 0.9 ess_int[30,4] + Aux_soc_ess-t[30,4] <= 0
+ Lin-socet-4[6,5]: - 0.9 ess_int[6,5] + Aux_soc_ess-t[6,5] <= 0
+ Lin-socet-4[15,5]: - 0.9 ess_int[15,5] + Aux_soc_ess-t[15,5] <= 0
+ Lin-socet-4[30,5]: - 0.9 ess_int[30,5] + Aux_soc_ess-t[30,5] <= 0
+ Lin-socet-4[6,6]: - 0.9 ess_int[6,6] + Aux_soc_ess-t[6,6] <= 0
+ Lin-socet-4[15,6]: - 0.9 ess_int[15,6] + Aux_soc_ess-t[15,6] <= 0
+ Lin-socet-4[30,6]: - 0.9 ess_int[30,6] + Aux_soc_ess-t[30,6] <= 0
+ Lin-socet-4[6,7]: - 0.9 ess_int[6,7] + Aux_soc_ess-t[6,7] <= 0
+ Lin-socet-4[15,7]: - 0.9 ess_int[15,7] + Aux_soc_ess-t[15,7] <= 0
+ Lin-socet-4[30,7]: - 0.9 ess_int[30,7] + Aux_soc_ess-t[30,7] <= 0
+ Lin-socet-4[6,8]: - 0.9 ess_int[6,8] + Aux_soc_ess-t[6,8] <= 0
+ Lin-socet-4[15,8]: - 0.9 ess_int[15,8] + Aux_soc_ess-t[15,8] <= 0
+ Lin-socet-4[30,8]: - 0.9 ess_int[30,8] + Aux_soc_ess-t[30,8] <= 0
+ Lin-socet-4[6,9]: - 0.9 ess_int[6,9] + Aux_soc_ess-t[6,9] <= 0
+ Lin-socet-4[15,9]: - 0.9 ess_int[15,9] + Aux_soc_ess-t[15,9] <= 0
+ Lin-socet-4[30,9]: - 0.9 ess_int[30,9] + Aux_soc_ess-t[30,9] <= 0
+ Lin-socet-4[6,10]: - 0.9 ess_int[6,10] + Aux_soc_ess-t[6,10] <= 0
+ Lin-socet-4[15,10]: - 0.9 ess_int[15,10] + Aux_soc_ess-t[15,10] <= 0
+ Lin-socet-4[30,10]: - 0.9 ess_int[30,10] + Aux_soc_ess-t[30,10] <= 0
+ Lin-socet-4[6,11]: - 0.9 ess_int[6,11] + Aux_soc_ess-t[6,11] <= 0
+ Lin-socet-4[15,11]: - 0.9 ess_int[15,11] + Aux_soc_ess-t[15,11] <= 0
+ Lin-socet-4[30,11]: - 0.9 ess_int[30,11] + Aux_soc_ess-t[30,11] <= 0
+ Lin-socet-4[6,12]: - 0.9 ess_int[6,12] + Aux_soc_ess-t[6,12] <= 0
+ Lin-socet-4[15,12]: - 0.9 ess_int[15,12] + Aux_soc_ess-t[15,12] <= 0
+ Lin-socet-4[30,12]: - 0.9 ess_int[30,12] + Aux_soc_ess-t[30,12] <= 0
+ Lin-socet-4[6,13]: - 0.9 ess_int[6,13] + Aux_soc_ess-t[6,13] <= 0
+ Lin-socet-4[15,13]: - 0.9 ess_int[15,13] + Aux_soc_ess-t[15,13] <= 0
+ Lin-socet-4[30,13]: - 0.9 ess_int[30,13] + Aux_soc_ess-t[30,13] <= 0
+ Lin-socet-4[6,14]: - 0.9 ess_int[6,14] + Aux_soc_ess-t[6,14] <= 0
+ Lin-socet-4[15,14]: - 0.9 ess_int[15,14] + Aux_soc_ess-t[15,14] <= 0
+ Lin-socet-4[30,14]: - 0.9 ess_int[30,14] + Aux_soc_ess-t[30,14] <= 0
+ Lin-socet-4[6,15]: - 0.9 ess_int[6,15] + Aux_soc_ess-t[6,15] <= 0
+ Lin-socet-4[15,15]: - 0.9 ess_int[15,15] + Aux_soc_ess-t[15,15] <= 0
+ Lin-socet-4[30,15]: - 0.9 ess_int[30,15] + Aux_soc_ess-t[30,15] <= 0
+ Lin-socet-4[6,16]: - 0.9 ess_int[6,16] + Aux_soc_ess-t[6,16] <= 0
+ Lin-socet-4[15,16]: - 0.9 ess_int[15,16] + Aux_soc_ess-t[15,16] <= 0
+ Lin-socet-4[30,16]: - 0.9 ess_int[30,16] + Aux_soc_ess-t[30,16] <= 0
+ Lin-socet-4[6,17]: - 0.9 ess_int[6,17] + Aux_soc_ess-t[6,17] <= 0
+ Lin-socet-4[15,17]: - 0.9 ess_int[15,17] + Aux_soc_ess-t[15,17] <= 0
+ Lin-socet-4[30,17]: - 0.9 ess_int[30,17] + Aux_soc_ess-t[30,17] <= 0
+ Lin-socet-4[6,18]: - 0.9 ess_int[6,18] + Aux_soc_ess-t[6,18] <= 0
+ Lin-socet-4[15,18]: - 0.9 ess_int[15,18] + Aux_soc_ess-t[15,18] <= 0
+ Lin-socet-4[30,18]: - 0.9 ess_int[30,18] + Aux_soc_ess-t[30,18] <= 0
+ Lin-socet-4[6,19]: - 0.9 ess_int[6,19] + Aux_soc_ess-t[6,19] <= 0
+ Lin-socet-4[15,19]: - 0.9 ess_int[15,19] + Aux_soc_ess-t[15,19] <= 0
+ Lin-socet-4[30,19]: - 0.9 ess_int[30,19] + Aux_soc_ess-t[30,19] <= 0
+ Lin-socet-4[6,20]: - 0.9 ess_int[6,20] + Aux_soc_ess-t[6,20] <= 0
+ Lin-socet-4[15,20]: - 0.9 ess_int[15,20] + Aux_soc_ess-t[15,20] <= 0
+ Lin-socet-4[30,20]: - 0.9 ess_int[30,20] + Aux_soc_ess-t[30,20] <= 0
+ Lin-socet-4[6,21]: - 0.9 ess_int[6,21] + Aux_soc_ess-t[6,21] <= 0
+ Lin-socet-4[15,21]: - 0.9 ess_int[15,21] + Aux_soc_ess-t[15,21] <= 0
+ Lin-socet-4[30,21]: - 0.9 ess_int[30,21] + Aux_soc_ess-t[30,21] <= 0
+ Lin-socet-4[6,22]: - 0.9 ess_int[6,22] + Aux_soc_ess-t[6,22] <= 0
+ Lin-socet-4[15,22]: - 0.9 ess_int[15,22] + Aux_soc_ess-t[15,22] <= 0
+ Lin-socet-4[30,22]: - 0.9 ess_int[30,22] + Aux_soc_ess-t[30,22] <= 0
+ Lin-socet-4[6,23]: - 0.9 ess_int[6,23] + Aux_soc_ess-t[6,23] <= 0
+ Lin-socet-4[15,23]: - 0.9 ess_int[15,23] + Aux_soc_ess-t[15,23] <= 0
+ Lin-socet-4[30,23]: - 0.9 ess_int[30,23] + Aux_soc_ess-t[30,23] <= 0
+ Lin-socet-4[6,24]: - 0.9 ess_int[6,24] + Aux_soc_ess-t[6,24] <= 0
+ Lin-socet-4[15,24]: - 0.9 ess_int[15,24] + Aux_soc_ess-t[15,24] <= 0
+ Lin-socet-4[30,24]: - 0.9 ess_int[30,24] + Aux_soc_ess-t[30,24] <= 0
+ Lin-socet-4[6,25]: - 0.9 ess_int[6,25] + Aux_soc_ess-t[6,25] <= 0
+ Lin-socet-4[15,25]: - 0.9 ess_int[15,25] + Aux_soc_ess-t[15,25] <= 0
+ Lin-socet-4[30,25]: - 0.9 ess_int[30,25] + Aux_soc_ess-t[30,25] <= 0
+ Lin-socet-4[6,26]: - 0.9 ess_int[6,26] + Aux_soc_ess-t[6,26] <= 0
+ Lin-socet-4[15,26]: - 0.9 ess_int[15,26] + Aux_soc_ess-t[15,26] <= 0
+ Lin-socet-4[30,26]: - 0.9 ess_int[30,26] + Aux_soc_ess-t[30,26] <= 0
+ Lin-socet-4[6,27]: - 0.9 ess_int[6,27] + Aux_soc_ess-t[6,27] <= 0
+ Lin-socet-4[15,27]: - 0.9 ess_int[15,27] + Aux_soc_ess-t[15,27] <= 0
+ Lin-socet-4[30,27]: - 0.9 ess_int[30,27] + Aux_soc_ess-t[30,27] <= 0
+ Lin-socet-4[6,28]: - 0.9 ess_int[6,28] + Aux_soc_ess-t[6,28] <= 0
+ Lin-socet-4[15,28]: - 0.9 ess_int[15,28] + Aux_soc_ess-t[15,28] <= 0
+ Lin-socet-4[30,28]: - 0.9 ess_int[30,28] + Aux_soc_ess-t[30,28] <= 0
+ Lin-socet-4[6,29]: - 0.9 ess_int[6,29] + Aux_soc_ess-t[6,29] <= 0
+ Lin-socet-4[15,29]: - 0.9 ess_int[15,29] + Aux_soc_ess-t[15,29] <= 0
+ Lin-socet-4[30,29]: - 0.9 ess_int[30,29] + Aux_soc_ess-t[30,29] <= 0
+ Lin-socet-4[6,30]: - 0.9 ess_int[6,30] + Aux_soc_ess-t[6,30] <= 0
+ Lin-socet-4[15,30]: - 0.9 ess_int[15,30] + Aux_soc_ess-t[15,30] <= 0
+ Lin-socet-4[30,30]: - 0.9 ess_int[30,30] + Aux_soc_ess-t[30,30] <= 0
+ Lin-socet-4[6,31]: - 0.9 ess_int[6,31] + Aux_soc_ess-t[6,31] <= 0
+ Lin-socet-4[15,31]: - 0.9 ess_int[15,31] + Aux_soc_ess-t[15,31] <= 0
+ Lin-socet-4[30,31]: - 0.9 ess_int[30,31] + Aux_soc_ess-t[30,31] <= 0
+ Lin-socet-4[6,32]: - 0.9 ess_int[6,32] + Aux_soc_ess-t[6,32] <= 0
+ Lin-socet-4[15,32]: - 0.9 ess_int[15,32] + Aux_soc_ess-t[15,32] <= 0
+ Lin-socet-4[30,32]: - 0.9 ess_int[30,32] + Aux_soc_ess-t[30,32] <= 0
+ Lin-socet-4[6,33]: - 0.9 ess_int[6,33] + Aux_soc_ess-t[6,33] <= 0
+ Lin-socet-4[15,33]: - 0.9 ess_int[15,33] + Aux_soc_ess-t[15,33] <= 0
+ Lin-socet-4[30,33]: - 0.9 ess_int[30,33] + Aux_soc_ess-t[30,33] <= 0
+ Lin-socet-4[6,34]: - 0.9 ess_int[6,34] + Aux_soc_ess-t[6,34] <= 0
+ Lin-socet-4[15,34]: - 0.9 ess_int[15,34] + Aux_soc_ess-t[15,34] <= 0
+ Lin-socet-4[30,34]: - 0.9 ess_int[30,34] + Aux_soc_ess-t[30,34] <= 0
+ Lin-socet-4[6,35]: - 0.9 ess_int[6,35] + Aux_soc_ess-t[6,35] <= 0
+ Lin-socet-4[15,35]: - 0.9 ess_int[15,35] + Aux_soc_ess-t[15,35] <= 0
+ Lin-socet-4[30,35]: - 0.9 ess_int[30,35] + Aux_soc_ess-t[30,35] <= 0
+ Lin-socet-4[6,36]: - 0.9 ess_int[6,36] + Aux_soc_ess-t[6,36] <= 0
+ Lin-socet-4[15,36]: - 0.9 ess_int[15,36] + Aux_soc_ess-t[15,36] <= 0
+ Lin-socet-4[30,36]: - 0.9 ess_int[30,36] + Aux_soc_ess-t[30,36] <= 0
+ Lin-socet-4[6,37]: - 0.9 ess_int[6,37] + Aux_soc_ess-t[6,37] <= 0
+ Lin-socet-4[15,37]: - 0.9 ess_int[15,37] + Aux_soc_ess-t[15,37] <= 0
+ Lin-socet-4[30,37]: - 0.9 ess_int[30,37] + Aux_soc_ess-t[30,37] <= 0
+ Lin-socet-4[6,38]: - 0.9 ess_int[6,38] + Aux_soc_ess-t[6,38] <= 0
+ Lin-socet-4[15,38]: - 0.9 ess_int[15,38] + Aux_soc_ess-t[15,38] <= 0
+ Lin-socet-4[30,38]: - 0.9 ess_int[30,38] + Aux_soc_ess-t[30,38] <= 0
+ Lin-socet-4[6,39]: - 0.9 ess_int[6,39] + Aux_soc_ess-t[6,39] <= 0
+ Lin-socet-4[15,39]: - 0.9 ess_int[15,39] + Aux_soc_ess-t[15,39] <= 0
+ Lin-socet-4[30,39]: - 0.9 ess_int[30,39] + Aux_soc_ess-t[30,39] <= 0
+ Lin-socet-4[6,40]: - 0.9 ess_int[6,40] + Aux_soc_ess-t[6,40] <= 0
+ Lin-socet-4[15,40]: - 0.9 ess_int[15,40] + Aux_soc_ess-t[15,40] <= 0
+ Lin-socet-4[30,40]: - 0.9 ess_int[30,40] + Aux_soc_ess-t[30,40] <= 0
+ Lin-socet-4[6,41]: - 0.9 ess_int[6,41] + Aux_soc_ess-t[6,41] <= 0
+ Lin-socet-4[15,41]: - 0.9 ess_int[15,41] + Aux_soc_ess-t[15,41] <= 0
+ Lin-socet-4[30,41]: - 0.9 ess_int[30,41] + Aux_soc_ess-t[30,41] <= 0
+ Lin-socet-4[6,42]: - 0.9 ess_int[6,42] + Aux_soc_ess-t[6,42] <= 0
+ Lin-socet-4[15,42]: - 0.9 ess_int[15,42] + Aux_soc_ess-t[15,42] <= 0
+ Lin-socet-4[30,42]: - 0.9 ess_int[30,42] + Aux_soc_ess-t[30,42] <= 0
+ Lin-socet-4[6,43]: - 0.9 ess_int[6,43] + Aux_soc_ess-t[6,43] <= 0
+ Lin-socet-4[15,43]: - 0.9 ess_int[15,43] + Aux_soc_ess-t[15,43] <= 0
+ Lin-socet-4[30,43]: - 0.9 ess_int[30,43] + Aux_soc_ess-t[30,43] <= 0
+ Lin-socet-4[6,44]: - 0.9 ess_int[6,44] + Aux_soc_ess-t[6,44] <= 0
+ Lin-socet-4[15,44]: - 0.9 ess_int[15,44] + Aux_soc_ess-t[15,44] <= 0
+ Lin-socet-4[30,44]: - 0.9 ess_int[30,44] + Aux_soc_ess-t[30,44] <= 0
+ Lin-socet-4[6,45]: - 0.9 ess_int[6,45] + Aux_soc_ess-t[6,45] <= 0
+ Lin-socet-4[15,45]: - 0.9 ess_int[15,45] + Aux_soc_ess-t[15,45] <= 0
+ Lin-socet-4[30,45]: - 0.9 ess_int[30,45] + Aux_soc_ess-t[30,45] <= 0
+ Lin-socet-4[6,46]: - 0.9 ess_int[6,46] + Aux_soc_ess-t[6,46] <= 0
+ Lin-socet-4[15,46]: - 0.9 ess_int[15,46] + Aux_soc_ess-t[15,46] <= 0
+ Lin-socet-4[30,46]: - 0.9 ess_int[30,46] + Aux_soc_ess-t[30,46] <= 0
+ Lin-socet-4[6,47]: - 0.9 ess_int[6,47] + Aux_soc_ess-t[6,47] <= 0
+ Lin-socet-4[15,47]: - 0.9 ess_int[15,47] + Aux_soc_ess-t[15,47] <= 0
+ Lin-socet-4[30,47]: - 0.9 ess_int[30,47] + Aux_soc_ess-t[30,47] <= 0
+ Lin-socet-4[6,48]: - 0.9 ess_int[6,48] + Aux_soc_ess-t[6,48] <= 0
+ Lin-socet-4[15,48]: - 0.9 ess_int[15,48] + Aux_soc_ess-t[15,48] <= 0
+ Lin-socet-4[30,48]: - 0.9 ess_int[30,48] + Aux_soc_ess-t[30,48] <= 0
  peaklimit[0]: P_Gen[0,0] <= 2.5
  peaklimit[1]: P_Gen[0,1] <= 2.5
  peaklimit[2]: P_Gen[0,2] <= 2.5
@@ -52926,8 +54658,441 @@ Subject To
  peaklimit[46]: P_Gen[0,46] <= 2.5
  peaklimit[47]: P_Gen[0,47] <= 2.5
  peaklimit[48]: P_Gen[0,48] <= 2.5
- R41019: - 0.5 P_Gen[0,48] - rate_gen[0,48] - rate_gen[17,48] + Ft[48] = 0
- R41020: - 0.5 P_Gen[0,48] - rate_gen[0,48] - rate_gen[17,48] + Ft[48] = 0
+ R42183: - 0.5 P_Gen[0,48] + 666.6666666666666 SOH[6,48]
+   + 666.6666666666666 SOH[15,48] + 666.6666666666666 SOH[30,48]
+   - rate_gen[0,48] - rate_gen[17,48] + Ft[48] = 2000
+ ESS_Int[6,1]: Aux_soc_ess-t[6,1] - Aux_soc_ess-t[6,0] + [
+   - 0.5 P_Chg_Ess[6,0] * node_int[6,0] + 0.5 P_Chg_Ess[6,0] * ess_int[6,1]
+   ] = 0
+ ESS_Int[15,1]: Aux_soc_ess-t[15,1] - Aux_soc_ess-t[15,0] + [
+   - 0.5 P_Chg_Ess[15,0] * node_int[15,0]
+   + 0.5 P_Chg_Ess[15,0] * ess_int[15,1] ] = 0
+ ESS_Int[30,1]: Aux_soc_ess-t[30,1] - Aux_soc_ess-t[30,0] + [
+   - 0.5 P_Chg_Ess[30,0] * node_int[30,0]
+   + 0.5 P_Chg_Ess[30,0] * ess_int[30,1] ] = 0
+ ESS_Int[6,2]: Aux_soc_ess-t[6,2] - Aux_soc_ess-t[6,1] + [
+   - 0.5 P_Chg_Ess[6,1] * node_int[6,1] + 0.5 P_Chg_Ess[6,1] * ess_int[6,2]
+   ] = 0
+ ESS_Int[15,2]: Aux_soc_ess-t[15,2] - Aux_soc_ess-t[15,1] + [
+   - 0.5 P_Chg_Ess[15,1] * node_int[15,1]
+   + 0.5 P_Chg_Ess[15,1] * ess_int[15,2] ] = 0
+ ESS_Int[30,2]: Aux_soc_ess-t[30,2] - Aux_soc_ess-t[30,1] + [
+   - 0.5 P_Chg_Ess[30,1] * node_int[30,1]
+   + 0.5 P_Chg_Ess[30,1] * ess_int[30,2] ] = 0
+ ESS_Int[6,3]: Aux_soc_ess-t[6,3] - Aux_soc_ess-t[6,2] + [
+   - 0.5 P_Chg_Ess[6,2] * node_int[6,2] + 0.5 P_Chg_Ess[6,2] * ess_int[6,3]
+   ] = 0
+ ESS_Int[15,3]: Aux_soc_ess-t[15,3] - Aux_soc_ess-t[15,2] + [
+   - 0.5 P_Chg_Ess[15,2] * node_int[15,2]
+   + 0.5 P_Chg_Ess[15,2] * ess_int[15,3] ] = 0
+ ESS_Int[30,3]: Aux_soc_ess-t[30,3] - Aux_soc_ess-t[30,2] + [
+   - 0.5 P_Chg_Ess[30,2] * node_int[30,2]
+   + 0.5 P_Chg_Ess[30,2] * ess_int[30,3] ] = 0
+ ESS_Int[6,4]: Aux_soc_ess-t[6,4] - Aux_soc_ess-t[6,3] + [
+   - 0.5 P_Chg_Ess[6,3] * node_int[6,3] + 0.5 P_Chg_Ess[6,3] * ess_int[6,4]
+   ] = 0
+ ESS_Int[15,4]: Aux_soc_ess-t[15,4] - Aux_soc_ess-t[15,3] + [
+   - 0.5 P_Chg_Ess[15,3] * node_int[15,3]
+   + 0.5 P_Chg_Ess[15,3] * ess_int[15,4] ] = 0
+ ESS_Int[30,4]: Aux_soc_ess-t[30,4] - Aux_soc_ess-t[30,3] + [
+   - 0.5 P_Chg_Ess[30,3] * node_int[30,3]
+   + 0.5 P_Chg_Ess[30,3] * ess_int[30,4] ] = 0
+ ESS_Int[6,5]: Aux_soc_ess-t[6,5] - Aux_soc_ess-t[6,4] + [
+   - 0.5 P_Chg_Ess[6,4] * node_int[6,4] + 0.5 P_Chg_Ess[6,4] * ess_int[6,5]
+   ] = 0
+ ESS_Int[15,5]: Aux_soc_ess-t[15,5] - Aux_soc_ess-t[15,4] + [
+   - 0.5 P_Chg_Ess[15,4] * node_int[15,4]
+   + 0.5 P_Chg_Ess[15,4] * ess_int[15,5] ] = 0
+ ESS_Int[30,5]: Aux_soc_ess-t[30,5] - Aux_soc_ess-t[30,4] + [
+   - 0.5 P_Chg_Ess[30,4] * node_int[30,4]
+   + 0.5 P_Chg_Ess[30,4] * ess_int[30,5] ] = 0
+ ESS_Int[6,6]: Aux_soc_ess-t[6,6] - Aux_soc_ess-t[6,5] + [
+   - 0.5 P_Chg_Ess[6,5] * node_int[6,5] + 0.5 P_Chg_Ess[6,5] * ess_int[6,6]
+   ] = 0
+ ESS_Int[15,6]: Aux_soc_ess-t[15,6] - Aux_soc_ess-t[15,5] + [
+   - 0.5 P_Chg_Ess[15,5] * node_int[15,5]
+   + 0.5 P_Chg_Ess[15,5] * ess_int[15,6] ] = 0
+ ESS_Int[30,6]: Aux_soc_ess-t[30,6] - Aux_soc_ess-t[30,5] + [
+   - 0.5 P_Chg_Ess[30,5] * node_int[30,5]
+   + 0.5 P_Chg_Ess[30,5] * ess_int[30,6] ] = 0
+ ESS_Int[6,7]: Aux_soc_ess-t[6,7] - Aux_soc_ess-t[6,6] + [
+   - 0.5 P_Chg_Ess[6,6] * node_int[6,6] + 0.5 P_Chg_Ess[6,6] * ess_int[6,7]
+   ] = 0
+ ESS_Int[15,7]: Aux_soc_ess-t[15,7] - Aux_soc_ess-t[15,6] + [
+   - 0.5 P_Chg_Ess[15,6] * node_int[15,6]
+   + 0.5 P_Chg_Ess[15,6] * ess_int[15,7] ] = 0
+ ESS_Int[30,7]: Aux_soc_ess-t[30,7] - Aux_soc_ess-t[30,6] + [
+   - 0.5 P_Chg_Ess[30,6] * node_int[30,6]
+   + 0.5 P_Chg_Ess[30,6] * ess_int[30,7] ] = 0
+ ESS_Int[6,8]: Aux_soc_ess-t[6,8] - Aux_soc_ess-t[6,7] + [
+   - 0.5 P_Chg_Ess[6,7] * node_int[6,7] + 0.5 P_Chg_Ess[6,7] * ess_int[6,8]
+   ] = 0
+ ESS_Int[15,8]: Aux_soc_ess-t[15,8] - Aux_soc_ess-t[15,7] + [
+   - 0.5 P_Chg_Ess[15,7] * node_int[15,7]
+   + 0.5 P_Chg_Ess[15,7] * ess_int[15,8] ] = 0
+ ESS_Int[30,8]: Aux_soc_ess-t[30,8] - Aux_soc_ess-t[30,7] + [
+   - 0.5 P_Chg_Ess[30,7] * node_int[30,7]
+   + 0.5 P_Chg_Ess[30,7] * ess_int[30,8] ] = 0
+ ESS_Int[6,9]: Aux_soc_ess-t[6,9] - Aux_soc_ess-t[6,8] + [
+   - 0.5 P_Chg_Ess[6,8] * node_int[6,8] + 0.5 P_Chg_Ess[6,8] * ess_int[6,9]
+   ] = 0
+ ESS_Int[15,9]: Aux_soc_ess-t[15,9] - Aux_soc_ess-t[15,8] + [
+   - 0.5 P_Chg_Ess[15,8] * node_int[15,8]
+   + 0.5 P_Chg_Ess[15,8] * ess_int[15,9] ] = 0
+ ESS_Int[30,9]: Aux_soc_ess-t[30,9] - Aux_soc_ess-t[30,8] + [
+   - 0.5 P_Chg_Ess[30,8] * node_int[30,8]
+   + 0.5 P_Chg_Ess[30,8] * ess_int[30,9] ] = 0
+ ESS_Int[6,10]: Aux_soc_ess-t[6,10] - Aux_soc_ess-t[6,9] + [
+   - 0.5 P_Chg_Ess[6,9] * node_int[6,9]
+   + 0.5 P_Chg_Ess[6,9] * ess_int[6,10] ] = 0
+ ESS_Int[15,10]: Aux_soc_ess-t[15,10] - Aux_soc_ess-t[15,9] + [
+   - 0.5 P_Chg_Ess[15,9] * node_int[15,9]
+   + 0.5 P_Chg_Ess[15,9] * ess_int[15,10] ] = 0
+ ESS_Int[30,10]: Aux_soc_ess-t[30,10] - Aux_soc_ess-t[30,9] + [
+   - 0.5 P_Chg_Ess[30,9] * node_int[30,9]
+   + 0.5 P_Chg_Ess[30,9] * ess_int[30,10] ] = 0
+ ESS_Int[6,11]: Aux_soc_ess-t[6,11] - Aux_soc_ess-t[6,10] + [
+   - 0.5 P_Chg_Ess[6,10] * node_int[6,10]
+   + 0.5 P_Chg_Ess[6,10] * ess_int[6,11] ] = 0
+ ESS_Int[15,11]: Aux_soc_ess-t[15,11] - Aux_soc_ess-t[15,10] + [
+   - 0.5 P_Chg_Ess[15,10] * node_int[15,10]
+   + 0.5 P_Chg_Ess[15,10] * ess_int[15,11] ] = 0
+ ESS_Int[30,11]: Aux_soc_ess-t[30,11] - Aux_soc_ess-t[30,10] + [
+   - 0.5 P_Chg_Ess[30,10] * node_int[30,10]
+   + 0.5 P_Chg_Ess[30,10] * ess_int[30,11] ] = 0
+ ESS_Int[6,12]: Aux_soc_ess-t[6,12] - Aux_soc_ess-t[6,11] + [
+   - 0.5 P_Chg_Ess[6,11] * node_int[6,11]
+   + 0.5 P_Chg_Ess[6,11] * ess_int[6,12] ] = 0
+ ESS_Int[15,12]: Aux_soc_ess-t[15,12] - Aux_soc_ess-t[15,11] + [
+   - 0.5 P_Chg_Ess[15,11] * node_int[15,11]
+   + 0.5 P_Chg_Ess[15,11] * ess_int[15,12] ] = 0
+ ESS_Int[30,12]: Aux_soc_ess-t[30,12] - Aux_soc_ess-t[30,11] + [
+   - 0.5 P_Chg_Ess[30,11] * node_int[30,11]
+   + 0.5 P_Chg_Ess[30,11] * ess_int[30,12] ] = 0
+ ESS_Int[6,13]: Aux_soc_ess-t[6,13] - Aux_soc_ess-t[6,12] + [
+   - 0.5 P_Chg_Ess[6,12] * node_int[6,12]
+   + 0.5 P_Chg_Ess[6,12] * ess_int[6,13] ] = 0
+ ESS_Int[15,13]: Aux_soc_ess-t[15,13] - Aux_soc_ess-t[15,12] + [
+   - 0.5 P_Chg_Ess[15,12] * node_int[15,12]
+   + 0.5 P_Chg_Ess[15,12] * ess_int[15,13] ] = 0
+ ESS_Int[30,13]: Aux_soc_ess-t[30,13] - Aux_soc_ess-t[30,12] + [
+   - 0.5 P_Chg_Ess[30,12] * node_int[30,12]
+   + 0.5 P_Chg_Ess[30,12] * ess_int[30,13] ] = 0
+ ESS_Int[6,14]: Aux_soc_ess-t[6,14] - Aux_soc_ess-t[6,13] + [
+   - 0.5 P_Chg_Ess[6,13] * node_int[6,13]
+   + 0.5 P_Chg_Ess[6,13] * ess_int[6,14] ] = 0
+ ESS_Int[15,14]: Aux_soc_ess-t[15,14] - Aux_soc_ess-t[15,13] + [
+   - 0.5 P_Chg_Ess[15,13] * node_int[15,13]
+   + 0.5 P_Chg_Ess[15,13] * ess_int[15,14] ] = 0
+ ESS_Int[30,14]: Aux_soc_ess-t[30,14] - Aux_soc_ess-t[30,13] + [
+   - 0.5 P_Chg_Ess[30,13] * node_int[30,13]
+   + 0.5 P_Chg_Ess[30,13] * ess_int[30,14] ] = 0
+ ESS_Int[6,15]: Aux_soc_ess-t[6,15] - Aux_soc_ess-t[6,14] + [
+   - 0.5 P_Chg_Ess[6,14] * node_int[6,14]
+   + 0.5 P_Chg_Ess[6,14] * ess_int[6,15] ] = 0
+ ESS_Int[15,15]: Aux_soc_ess-t[15,15] - Aux_soc_ess-t[15,14] + [
+   - 0.5 P_Chg_Ess[15,14] * node_int[15,14]
+   + 0.5 P_Chg_Ess[15,14] * ess_int[15,15] ] = 0
+ ESS_Int[30,15]: Aux_soc_ess-t[30,15] - Aux_soc_ess-t[30,14] + [
+   - 0.5 P_Chg_Ess[30,14] * node_int[30,14]
+   + 0.5 P_Chg_Ess[30,14] * ess_int[30,15] ] = 0
+ ESS_Int[6,16]: Aux_soc_ess-t[6,16] - Aux_soc_ess-t[6,15] + [
+   - 0.5 P_Chg_Ess[6,15] * node_int[6,15]
+   + 0.5 P_Chg_Ess[6,15] * ess_int[6,16] ] = 0
+ ESS_Int[15,16]: Aux_soc_ess-t[15,16] - Aux_soc_ess-t[15,15] + [
+   - 0.5 P_Chg_Ess[15,15] * node_int[15,15]
+   + 0.5 P_Chg_Ess[15,15] * ess_int[15,16] ] = 0
+ ESS_Int[30,16]: Aux_soc_ess-t[30,16] - Aux_soc_ess-t[30,15] + [
+   - 0.5 P_Chg_Ess[30,15] * node_int[30,15]
+   + 0.5 P_Chg_Ess[30,15] * ess_int[30,16] ] = 0
+ ESS_Int[6,17]: Aux_soc_ess-t[6,17] - Aux_soc_ess-t[6,16] + [
+   - 0.5 P_Chg_Ess[6,16] * node_int[6,16]
+   + 0.5 P_Chg_Ess[6,16] * ess_int[6,17] ] = 0
+ ESS_Int[15,17]: Aux_soc_ess-t[15,17] - Aux_soc_ess-t[15,16] + [
+   - 0.5 P_Chg_Ess[15,16] * node_int[15,16]
+   + 0.5 P_Chg_Ess[15,16] * ess_int[15,17] ] = 0
+ ESS_Int[30,17]: Aux_soc_ess-t[30,17] - Aux_soc_ess-t[30,16] + [
+   - 0.5 P_Chg_Ess[30,16] * node_int[30,16]
+   + 0.5 P_Chg_Ess[30,16] * ess_int[30,17] ] = 0
+ ESS_Int[6,18]: Aux_soc_ess-t[6,18] - Aux_soc_ess-t[6,17] + [
+   - 0.5 P_Chg_Ess[6,17] * node_int[6,17]
+   + 0.5 P_Chg_Ess[6,17] * ess_int[6,18] ] = 0
+ ESS_Int[15,18]: Aux_soc_ess-t[15,18] - Aux_soc_ess-t[15,17] + [
+   - 0.5 P_Chg_Ess[15,17] * node_int[15,17]
+   + 0.5 P_Chg_Ess[15,17] * ess_int[15,18] ] = 0
+ ESS_Int[30,18]: Aux_soc_ess-t[30,18] - Aux_soc_ess-t[30,17] + [
+   - 0.5 P_Chg_Ess[30,17] * node_int[30,17]
+   + 0.5 P_Chg_Ess[30,17] * ess_int[30,18] ] = 0
+ ESS_Int[6,19]: Aux_soc_ess-t[6,19] - Aux_soc_ess-t[6,18] + [
+   - 0.5 P_Chg_Ess[6,18] * node_int[6,18]
+   + 0.5 P_Chg_Ess[6,18] * ess_int[6,19] ] = 0
+ ESS_Int[15,19]: Aux_soc_ess-t[15,19] - Aux_soc_ess-t[15,18] + [
+   - 0.5 P_Chg_Ess[15,18] * node_int[15,18]
+   + 0.5 P_Chg_Ess[15,18] * ess_int[15,19] ] = 0
+ ESS_Int[30,19]: Aux_soc_ess-t[30,19] - Aux_soc_ess-t[30,18] + [
+   - 0.5 P_Chg_Ess[30,18] * node_int[30,18]
+   + 0.5 P_Chg_Ess[30,18] * ess_int[30,19] ] = 0
+ ESS_Int[6,20]: Aux_soc_ess-t[6,20] - Aux_soc_ess-t[6,19] + [
+   - 0.5 P_Chg_Ess[6,19] * node_int[6,19]
+   + 0.5 P_Chg_Ess[6,19] * ess_int[6,20] ] = 0
+ ESS_Int[15,20]: Aux_soc_ess-t[15,20] - Aux_soc_ess-t[15,19] + [
+   - 0.5 P_Chg_Ess[15,19] * node_int[15,19]
+   + 0.5 P_Chg_Ess[15,19] * ess_int[15,20] ] = 0
+ ESS_Int[30,20]: Aux_soc_ess-t[30,20] - Aux_soc_ess-t[30,19] + [
+   - 0.5 P_Chg_Ess[30,19] * node_int[30,19]
+   + 0.5 P_Chg_Ess[30,19] * ess_int[30,20] ] = 0
+ ESS_Int[6,21]: Aux_soc_ess-t[6,21] - Aux_soc_ess-t[6,20] + [
+   - 0.5 P_Chg_Ess[6,20] * node_int[6,20]
+   + 0.5 P_Chg_Ess[6,20] * ess_int[6,21] ] = 0
+ ESS_Int[15,21]: Aux_soc_ess-t[15,21] - Aux_soc_ess-t[15,20] + [
+   - 0.5 P_Chg_Ess[15,20] * node_int[15,20]
+   + 0.5 P_Chg_Ess[15,20] * ess_int[15,21] ] = 0
+ ESS_Int[30,21]: Aux_soc_ess-t[30,21] - Aux_soc_ess-t[30,20] + [
+   - 0.5 P_Chg_Ess[30,20] * node_int[30,20]
+   + 0.5 P_Chg_Ess[30,20] * ess_int[30,21] ] = 0
+ ESS_Int[6,22]: Aux_soc_ess-t[6,22] - Aux_soc_ess-t[6,21] + [
+   - 0.5 P_Chg_Ess[6,21] * node_int[6,21]
+   + 0.5 P_Chg_Ess[6,21] * ess_int[6,22] ] = 0
+ ESS_Int[15,22]: Aux_soc_ess-t[15,22] - Aux_soc_ess-t[15,21] + [
+   - 0.5 P_Chg_Ess[15,21] * node_int[15,21]
+   + 0.5 P_Chg_Ess[15,21] * ess_int[15,22] ] = 0
+ ESS_Int[30,22]: Aux_soc_ess-t[30,22] - Aux_soc_ess-t[30,21] + [
+   - 0.5 P_Chg_Ess[30,21] * node_int[30,21]
+   + 0.5 P_Chg_Ess[30,21] * ess_int[30,22] ] = 0
+ ESS_Int[6,23]: Aux_soc_ess-t[6,23] - Aux_soc_ess-t[6,22] + [
+   - 0.5 P_Chg_Ess[6,22] * node_int[6,22]
+   + 0.5 P_Chg_Ess[6,22] * ess_int[6,23] ] = 0
+ ESS_Int[15,23]: Aux_soc_ess-t[15,23] - Aux_soc_ess-t[15,22] + [
+   - 0.5 P_Chg_Ess[15,22] * node_int[15,22]
+   + 0.5 P_Chg_Ess[15,22] * ess_int[15,23] ] = 0
+ ESS_Int[30,23]: Aux_soc_ess-t[30,23] - Aux_soc_ess-t[30,22] + [
+   - 0.5 P_Chg_Ess[30,22] * node_int[30,22]
+   + 0.5 P_Chg_Ess[30,22] * ess_int[30,23] ] = 0
+ ESS_Int[6,24]: Aux_soc_ess-t[6,24] - Aux_soc_ess-t[6,23] + [
+   - 0.5 P_Chg_Ess[6,23] * node_int[6,23]
+   + 0.5 P_Chg_Ess[6,23] * ess_int[6,24] ] = 0
+ ESS_Int[15,24]: Aux_soc_ess-t[15,24] - Aux_soc_ess-t[15,23] + [
+   - 0.5 P_Chg_Ess[15,23] * node_int[15,23]
+   + 0.5 P_Chg_Ess[15,23] * ess_int[15,24] ] = 0
+ ESS_Int[30,24]: Aux_soc_ess-t[30,24] - Aux_soc_ess-t[30,23] + [
+   - 0.5 P_Chg_Ess[30,23] * node_int[30,23]
+   + 0.5 P_Chg_Ess[30,23] * ess_int[30,24] ] = 0
+ ESS_Int[6,25]: Aux_soc_ess-t[6,25] - Aux_soc_ess-t[6,24] + [
+   - 0.5 P_Chg_Ess[6,24] * node_int[6,24]
+   + 0.5 P_Chg_Ess[6,24] * ess_int[6,25] ] = 0
+ ESS_Int[15,25]: Aux_soc_ess-t[15,25] - Aux_soc_ess-t[15,24] + [
+   - 0.5 P_Chg_Ess[15,24] * node_int[15,24]
+   + 0.5 P_Chg_Ess[15,24] * ess_int[15,25] ] = 0
+ ESS_Int[30,25]: Aux_soc_ess-t[30,25] - Aux_soc_ess-t[30,24] + [
+   - 0.5 P_Chg_Ess[30,24] * node_int[30,24]
+   + 0.5 P_Chg_Ess[30,24] * ess_int[30,25] ] = 0
+ ESS_Int[6,26]: Aux_soc_ess-t[6,26] - Aux_soc_ess-t[6,25] + [
+   - 0.5 P_Chg_Ess[6,25] * node_int[6,25]
+   + 0.5 P_Chg_Ess[6,25] * ess_int[6,26] ] = 0
+ ESS_Int[15,26]: Aux_soc_ess-t[15,26] - Aux_soc_ess-t[15,25] + [
+   - 0.5 P_Chg_Ess[15,25] * node_int[15,25]
+   + 0.5 P_Chg_Ess[15,25] * ess_int[15,26] ] = 0
+ ESS_Int[30,26]: Aux_soc_ess-t[30,26] - Aux_soc_ess-t[30,25] + [
+   - 0.5 P_Chg_Ess[30,25] * node_int[30,25]
+   + 0.5 P_Chg_Ess[30,25] * ess_int[30,26] ] = 0
+ ESS_Int[6,27]: Aux_soc_ess-t[6,27] - Aux_soc_ess-t[6,26] + [
+   - 0.5 P_Chg_Ess[6,26] * node_int[6,26]
+   + 0.5 P_Chg_Ess[6,26] * ess_int[6,27] ] = 0
+ ESS_Int[15,27]: Aux_soc_ess-t[15,27] - Aux_soc_ess-t[15,26] + [
+   - 0.5 P_Chg_Ess[15,26] * node_int[15,26]
+   + 0.5 P_Chg_Ess[15,26] * ess_int[15,27] ] = 0
+ ESS_Int[30,27]: Aux_soc_ess-t[30,27] - Aux_soc_ess-t[30,26] + [
+   - 0.5 P_Chg_Ess[30,26] * node_int[30,26]
+   + 0.5 P_Chg_Ess[30,26] * ess_int[30,27] ] = 0
+ ESS_Int[6,28]: Aux_soc_ess-t[6,28] - Aux_soc_ess-t[6,27] + [
+   - 0.5 P_Chg_Ess[6,27] * node_int[6,27]
+   + 0.5 P_Chg_Ess[6,27] * ess_int[6,28] ] = 0
+ ESS_Int[15,28]: Aux_soc_ess-t[15,28] - Aux_soc_ess-t[15,27] + [
+   - 0.5 P_Chg_Ess[15,27] * node_int[15,27]
+   + 0.5 P_Chg_Ess[15,27] * ess_int[15,28] ] = 0
+ ESS_Int[30,28]: Aux_soc_ess-t[30,28] - Aux_soc_ess-t[30,27] + [
+   - 0.5 P_Chg_Ess[30,27] * node_int[30,27]
+   + 0.5 P_Chg_Ess[30,27] * ess_int[30,28] ] = 0
+ ESS_Int[6,29]: Aux_soc_ess-t[6,29] - Aux_soc_ess-t[6,28] + [
+   - 0.5 P_Chg_Ess[6,28] * node_int[6,28]
+   + 0.5 P_Chg_Ess[6,28] * ess_int[6,29] ] = 0
+ ESS_Int[15,29]: Aux_soc_ess-t[15,29] - Aux_soc_ess-t[15,28] + [
+   - 0.5 P_Chg_Ess[15,28] * node_int[15,28]
+   + 0.5 P_Chg_Ess[15,28] * ess_int[15,29] ] = 0
+ ESS_Int[30,29]: Aux_soc_ess-t[30,29] - Aux_soc_ess-t[30,28] + [
+   - 0.5 P_Chg_Ess[30,28] * node_int[30,28]
+   + 0.5 P_Chg_Ess[30,28] * ess_int[30,29] ] = 0
+ ESS_Int[6,30]: Aux_soc_ess-t[6,30] - Aux_soc_ess-t[6,29] + [
+   - 0.5 P_Chg_Ess[6,29] * node_int[6,29]
+   + 0.5 P_Chg_Ess[6,29] * ess_int[6,30] ] = 0
+ ESS_Int[15,30]: Aux_soc_ess-t[15,30] - Aux_soc_ess-t[15,29] + [
+   - 0.5 P_Chg_Ess[15,29] * node_int[15,29]
+   + 0.5 P_Chg_Ess[15,29] * ess_int[15,30] ] = 0
+ ESS_Int[30,30]: Aux_soc_ess-t[30,30] - Aux_soc_ess-t[30,29] + [
+   - 0.5 P_Chg_Ess[30,29] * node_int[30,29]
+   + 0.5 P_Chg_Ess[30,29] * ess_int[30,30] ] = 0
+ ESS_Int[6,31]: Aux_soc_ess-t[6,31] - Aux_soc_ess-t[6,30] + [
+   - 0.5 P_Chg_Ess[6,30] * node_int[6,30]
+   + 0.5 P_Chg_Ess[6,30] * ess_int[6,31] ] = 0
+ ESS_Int[15,31]: Aux_soc_ess-t[15,31] - Aux_soc_ess-t[15,30] + [
+   - 0.5 P_Chg_Ess[15,30] * node_int[15,30]
+   + 0.5 P_Chg_Ess[15,30] * ess_int[15,31] ] = 0
+ ESS_Int[30,31]: Aux_soc_ess-t[30,31] - Aux_soc_ess-t[30,30] + [
+   - 0.5 P_Chg_Ess[30,30] * node_int[30,30]
+   + 0.5 P_Chg_Ess[30,30] * ess_int[30,31] ] = 0
+ ESS_Int[6,32]: Aux_soc_ess-t[6,32] - Aux_soc_ess-t[6,31] + [
+   - 0.5 P_Chg_Ess[6,31] * node_int[6,31]
+   + 0.5 P_Chg_Ess[6,31] * ess_int[6,32] ] = 0
+ ESS_Int[15,32]: Aux_soc_ess-t[15,32] - Aux_soc_ess-t[15,31] + [
+   - 0.5 P_Chg_Ess[15,31] * node_int[15,31]
+   + 0.5 P_Chg_Ess[15,31] * ess_int[15,32] ] = 0
+ ESS_Int[30,32]: Aux_soc_ess-t[30,32] - Aux_soc_ess-t[30,31] + [
+   - 0.5 P_Chg_Ess[30,31] * node_int[30,31]
+   + 0.5 P_Chg_Ess[30,31] * ess_int[30,32] ] = 0
+ ESS_Int[6,33]: Aux_soc_ess-t[6,33] - Aux_soc_ess-t[6,32] + [
+   - 0.5 P_Chg_Ess[6,32] * node_int[6,32]
+   + 0.5 P_Chg_Ess[6,32] * ess_int[6,33] ] = 0
+ ESS_Int[15,33]: Aux_soc_ess-t[15,33] - Aux_soc_ess-t[15,32] + [
+   - 0.5 P_Chg_Ess[15,32] * node_int[15,32]
+   + 0.5 P_Chg_Ess[15,32] * ess_int[15,33] ] = 0
+ ESS_Int[30,33]: Aux_soc_ess-t[30,33] - Aux_soc_ess-t[30,32] + [
+   - 0.5 P_Chg_Ess[30,32] * node_int[30,32]
+   + 0.5 P_Chg_Ess[30,32] * ess_int[30,33] ] = 0
+ ESS_Int[6,34]: Aux_soc_ess-t[6,34] - Aux_soc_ess-t[6,33] + [
+   - 0.5 P_Chg_Ess[6,33] * node_int[6,33]
+   + 0.5 P_Chg_Ess[6,33] * ess_int[6,34] ] = 0
+ ESS_Int[15,34]: Aux_soc_ess-t[15,34] - Aux_soc_ess-t[15,33] + [
+   - 0.5 P_Chg_Ess[15,33] * node_int[15,33]
+   + 0.5 P_Chg_Ess[15,33] * ess_int[15,34] ] = 0
+ ESS_Int[30,34]: Aux_soc_ess-t[30,34] - Aux_soc_ess-t[30,33] + [
+   - 0.5 P_Chg_Ess[30,33] * node_int[30,33]
+   + 0.5 P_Chg_Ess[30,33] * ess_int[30,34] ] = 0
+ ESS_Int[6,35]: Aux_soc_ess-t[6,35] - Aux_soc_ess-t[6,34] + [
+   - 0.5 P_Chg_Ess[6,34] * node_int[6,34]
+   + 0.5 P_Chg_Ess[6,34] * ess_int[6,35] ] = 0
+ ESS_Int[15,35]: Aux_soc_ess-t[15,35] - Aux_soc_ess-t[15,34] + [
+   - 0.5 P_Chg_Ess[15,34] * node_int[15,34]
+   + 0.5 P_Chg_Ess[15,34] * ess_int[15,35] ] = 0
+ ESS_Int[30,35]: Aux_soc_ess-t[30,35] - Aux_soc_ess-t[30,34] + [
+   - 0.5 P_Chg_Ess[30,34] * node_int[30,34]
+   + 0.5 P_Chg_Ess[30,34] * ess_int[30,35] ] = 0
+ ESS_Int[6,36]: Aux_soc_ess-t[6,36] - Aux_soc_ess-t[6,35] + [
+   - 0.5 P_Chg_Ess[6,35] * node_int[6,35]
+   + 0.5 P_Chg_Ess[6,35] * ess_int[6,36] ] = 0
+ ESS_Int[15,36]: Aux_soc_ess-t[15,36] - Aux_soc_ess-t[15,35] + [
+   - 0.5 P_Chg_Ess[15,35] * node_int[15,35]
+   + 0.5 P_Chg_Ess[15,35] * ess_int[15,36] ] = 0
+ ESS_Int[30,36]: Aux_soc_ess-t[30,36] - Aux_soc_ess-t[30,35] + [
+   - 0.5 P_Chg_Ess[30,35] * node_int[30,35]
+   + 0.5 P_Chg_Ess[30,35] * ess_int[30,36] ] = 0
+ ESS_Int[6,37]: Aux_soc_ess-t[6,37] - Aux_soc_ess-t[6,36] + [
+   - 0.5 P_Chg_Ess[6,36] * node_int[6,36]
+   + 0.5 P_Chg_Ess[6,36] * ess_int[6,37] ] = 0
+ ESS_Int[15,37]: Aux_soc_ess-t[15,37] - Aux_soc_ess-t[15,36] + [
+   - 0.5 P_Chg_Ess[15,36] * node_int[15,36]
+   + 0.5 P_Chg_Ess[15,36] * ess_int[15,37] ] = 0
+ ESS_Int[30,37]: Aux_soc_ess-t[30,37] - Aux_soc_ess-t[30,36] + [
+   - 0.5 P_Chg_Ess[30,36] * node_int[30,36]
+   + 0.5 P_Chg_Ess[30,36] * ess_int[30,37] ] = 0
+ ESS_Int[6,38]: Aux_soc_ess-t[6,38] - Aux_soc_ess-t[6,37] + [
+   - 0.5 P_Chg_Ess[6,37] * node_int[6,37]
+   + 0.5 P_Chg_Ess[6,37] * ess_int[6,38] ] = 0
+ ESS_Int[15,38]: Aux_soc_ess-t[15,38] - Aux_soc_ess-t[15,37] + [
+   - 0.5 P_Chg_Ess[15,37] * node_int[15,37]
+   + 0.5 P_Chg_Ess[15,37] * ess_int[15,38] ] = 0
+ ESS_Int[30,38]: Aux_soc_ess-t[30,38] - Aux_soc_ess-t[30,37] + [
+   - 0.5 P_Chg_Ess[30,37] * node_int[30,37]
+   + 0.5 P_Chg_Ess[30,37] * ess_int[30,38] ] = 0
+ ESS_Int[6,39]: Aux_soc_ess-t[6,39] - Aux_soc_ess-t[6,38] + [
+   - 0.5 P_Chg_Ess[6,38] * node_int[6,38]
+   + 0.5 P_Chg_Ess[6,38] * ess_int[6,39] ] = 0
+ ESS_Int[15,39]: Aux_soc_ess-t[15,39] - Aux_soc_ess-t[15,38] + [
+   - 0.5 P_Chg_Ess[15,38] * node_int[15,38]
+   + 0.5 P_Chg_Ess[15,38] * ess_int[15,39] ] = 0
+ ESS_Int[30,39]: Aux_soc_ess-t[30,39] - Aux_soc_ess-t[30,38] + [
+   - 0.5 P_Chg_Ess[30,38] * node_int[30,38]
+   + 0.5 P_Chg_Ess[30,38] * ess_int[30,39] ] = 0
+ ESS_Int[6,40]: Aux_soc_ess-t[6,40] - Aux_soc_ess-t[6,39] + [
+   - 0.5 P_Chg_Ess[6,39] * node_int[6,39]
+   + 0.5 P_Chg_Ess[6,39] * ess_int[6,40] ] = 0
+ ESS_Int[15,40]: Aux_soc_ess-t[15,40] - Aux_soc_ess-t[15,39] + [
+   - 0.5 P_Chg_Ess[15,39] * node_int[15,39]
+   + 0.5 P_Chg_Ess[15,39] * ess_int[15,40] ] = 0
+ ESS_Int[30,40]: Aux_soc_ess-t[30,40] - Aux_soc_ess-t[30,39] + [
+   - 0.5 P_Chg_Ess[30,39] * node_int[30,39]
+   + 0.5 P_Chg_Ess[30,39] * ess_int[30,40] ] = 0
+ ESS_Int[6,41]: Aux_soc_ess-t[6,41] - Aux_soc_ess-t[6,40] + [
+   - 0.5 P_Chg_Ess[6,40] * node_int[6,40]
+   + 0.5 P_Chg_Ess[6,40] * ess_int[6,41] ] = 0
+ ESS_Int[15,41]: Aux_soc_ess-t[15,41] - Aux_soc_ess-t[15,40] + [
+   - 0.5 P_Chg_Ess[15,40] * node_int[15,40]
+   + 0.5 P_Chg_Ess[15,40] * ess_int[15,41] ] = 0
+ ESS_Int[30,41]: Aux_soc_ess-t[30,41] - Aux_soc_ess-t[30,40] + [
+   - 0.5 P_Chg_Ess[30,40] * node_int[30,40]
+   + 0.5 P_Chg_Ess[30,40] * ess_int[30,41] ] = 0
+ ESS_Int[6,42]: Aux_soc_ess-t[6,42] - Aux_soc_ess-t[6,41] + [
+   - 0.5 P_Chg_Ess[6,41] * node_int[6,41]
+   + 0.5 P_Chg_Ess[6,41] * ess_int[6,42] ] = 0
+ ESS_Int[15,42]: Aux_soc_ess-t[15,42] - Aux_soc_ess-t[15,41] + [
+   - 0.5 P_Chg_Ess[15,41] * node_int[15,41]
+   + 0.5 P_Chg_Ess[15,41] * ess_int[15,42] ] = 0
+ ESS_Int[30,42]: Aux_soc_ess-t[30,42] - Aux_soc_ess-t[30,41] + [
+   - 0.5 P_Chg_Ess[30,41] * node_int[30,41]
+   + 0.5 P_Chg_Ess[30,41] * ess_int[30,42] ] = 0
+ ESS_Int[6,43]: Aux_soc_ess-t[6,43] - Aux_soc_ess-t[6,42] + [
+   - 0.5 P_Chg_Ess[6,42] * node_int[6,42]
+   + 0.5 P_Chg_Ess[6,42] * ess_int[6,43] ] = 0
+ ESS_Int[15,43]: Aux_soc_ess-t[15,43] - Aux_soc_ess-t[15,42] + [
+   - 0.5 P_Chg_Ess[15,42] * node_int[15,42]
+   + 0.5 P_Chg_Ess[15,42] * ess_int[15,43] ] = 0
+ ESS_Int[30,43]: Aux_soc_ess-t[30,43] - Aux_soc_ess-t[30,42] + [
+   - 0.5 P_Chg_Ess[30,42] * node_int[30,42]
+   + 0.5 P_Chg_Ess[30,42] * ess_int[30,43] ] = 0
+ ESS_Int[6,44]: Aux_soc_ess-t[6,44] - Aux_soc_ess-t[6,43] + [
+   - 0.5 P_Chg_Ess[6,43] * node_int[6,43]
+   + 0.5 P_Chg_Ess[6,43] * ess_int[6,44] ] = 0
+ ESS_Int[15,44]: Aux_soc_ess-t[15,44] - Aux_soc_ess-t[15,43] + [
+   - 0.5 P_Chg_Ess[15,43] * node_int[15,43]
+   + 0.5 P_Chg_Ess[15,43] * ess_int[15,44] ] = 0
+ ESS_Int[30,44]: Aux_soc_ess-t[30,44] - Aux_soc_ess-t[30,43] + [
+   - 0.5 P_Chg_Ess[30,43] * node_int[30,43]
+   + 0.5 P_Chg_Ess[30,43] * ess_int[30,44] ] = 0
+ ESS_Int[6,45]: Aux_soc_ess-t[6,45] - Aux_soc_ess-t[6,44] + [
+   - 0.5 P_Chg_Ess[6,44] * node_int[6,44]
+   + 0.5 P_Chg_Ess[6,44] * ess_int[6,45] ] = 0
+ ESS_Int[15,45]: Aux_soc_ess-t[15,45] - Aux_soc_ess-t[15,44] + [
+   - 0.5 P_Chg_Ess[15,44] * node_int[15,44]
+   + 0.5 P_Chg_Ess[15,44] * ess_int[15,45] ] = 0
+ ESS_Int[30,45]: Aux_soc_ess-t[30,45] - Aux_soc_ess-t[30,44] + [
+   - 0.5 P_Chg_Ess[30,44] * node_int[30,44]
+   + 0.5 P_Chg_Ess[30,44] * ess_int[30,45] ] = 0
+ ESS_Int[6,46]: Aux_soc_ess-t[6,46] - Aux_soc_ess-t[6,45] + [
+   - 0.5 P_Chg_Ess[6,45] * node_int[6,45]
+   + 0.5 P_Chg_Ess[6,45] * ess_int[6,46] ] = 0
+ ESS_Int[15,46]: Aux_soc_ess-t[15,46] - Aux_soc_ess-t[15,45] + [
+   - 0.5 P_Chg_Ess[15,45] * node_int[15,45]
+   + 0.5 P_Chg_Ess[15,45] * ess_int[15,46] ] = 0
+ ESS_Int[30,46]: Aux_soc_ess-t[30,46] - Aux_soc_ess-t[30,45] + [
+   - 0.5 P_Chg_Ess[30,45] * node_int[30,45]
+   + 0.5 P_Chg_Ess[30,45] * ess_int[30,46] ] = 0
+ ESS_Int[6,47]: Aux_soc_ess-t[6,47] - Aux_soc_ess-t[6,46] + [
+   - 0.5 P_Chg_Ess[6,46] * node_int[6,46]
+   + 0.5 P_Chg_Ess[6,46] * ess_int[6,47] ] = 0
+ ESS_Int[15,47]: Aux_soc_ess-t[15,47] - Aux_soc_ess-t[15,46] + [
+   - 0.5 P_Chg_Ess[15,46] * node_int[15,46]
+   + 0.5 P_Chg_Ess[15,46] * ess_int[15,47] ] = 0
+ ESS_Int[30,47]: Aux_soc_ess-t[30,47] - Aux_soc_ess-t[30,46] + [
+   - 0.5 P_Chg_Ess[30,46] * node_int[30,46]
+   + 0.5 P_Chg_Ess[30,46] * ess_int[30,47] ] = 0
+ ESS_Int[6,48]: Aux_soc_ess-t[6,48] - Aux_soc_ess-t[6,47] + [
+   - 0.5 P_Chg_Ess[6,47] * node_int[6,47]
+   + 0.5 P_Chg_Ess[6,47] * ess_int[6,48] ] = 0
+ ESS_Int[15,48]: Aux_soc_ess-t[15,48] - Aux_soc_ess-t[15,47] + [
+   - 0.5 P_Chg_Ess[15,47] * node_int[15,47]
+   + 0.5 P_Chg_Ess[15,47] * ess_int[15,48] ] = 0
+ ESS_Int[30,48]: Aux_soc_ess-t[30,48] - Aux_soc_ess-t[30,47] + [
+   - 0.5 P_Chg_Ess[30,47] * node_int[30,47]
+   + 0.5 P_Chg_Ess[30,47] * ess_int[30,48] ] = 0
 Bounds
  -3.141592653589793 <= Theta[0,0] <= 3.141592653589793
  -3.141592653589793 <= Theta[1,0] <= 3.141592653589793
